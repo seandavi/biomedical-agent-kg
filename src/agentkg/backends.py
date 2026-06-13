@@ -43,10 +43,14 @@ _EMPTY_FACETS = {"exposes": [], "architecture": [], "domains": [], "evaluated_on
 PROFILE_SYSTEM_PROMPT = (
     "You write a concise profile body (2-3 short paragraphs of Markdown, no heading) "
     "for a biomedical LLM-agent system, grounded ONLY in the supplied facets and text. "
-    "Do not invent capabilities, benchmarks, or affiliations. When you mention an entity "
-    "that appears in the 'Linkable neighbors' list, use its exact [[type:slug]] wikilink "
-    "inline; never invent a wikilink or link to anything not in that list. Under-claim "
-    "when unsure; prefer omission to speculation."
+    "Do not invent capabilities, benchmarks, or affiliations.\n"
+    "WIKILINKS: the 'Linkable neighbors' list is the ONLY set of entities you may "
+    "wikilink, each shown as an exact [[type:slug]] id. When you mention one, copy its "
+    "wikilink VERBATIM including the 'type:' prefix (e.g. [[domain:single_cell]], never "
+    "[[single_cell]]). NEVER wikilink anything else — in particular never wikilink facet "
+    "values such as architecture or exposes terms (multi_agent, rag, web_ui, library, "
+    "...) or relation names; those are attributes, not nodes — write them as plain words. "
+    "Under-claim when unsure; prefer omission to speculation."
 )
 
 
