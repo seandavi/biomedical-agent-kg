@@ -7,7 +7,7 @@ from __future__ import annotations
 
 import json
 
-from . import resolve
+from . import profiles, resolve
 from .backends import MockBackend, make_backend
 from .config import Settings
 from .model import Edge, Graph, slugify
@@ -15,7 +15,7 @@ from .parse import classify_url, crawl, looks_like_agent, parse_entries
 from .vocab import ARCH, DOMAIN_ALIASES, DOMAINS, EXPOSES, guard_vocab
 
 
-def build(md: str, review_log: list, backend=None, limit=None) -> Graph:
+def build(md: str, review_log: list, backend=None, limit=None, context_sink=None) -> Graph:
     backend = backend or MockBackend()
     g = Graph()
     agents_done = 0
@@ -37,6 +37,9 @@ def build(md: str, review_log: list, backend=None, limit=None) -> Graph:
         # ground the model in real text (skip for offline mock runs)
         if getattr(backend, "name", None) != "mock":
             e = {**e, **resolve.fetch_context(e["url"], kind, cid)}
+            if context_sink is not None:
+                context_sink[aid] = {"abstract": e.get("abstract"),
+                                     "readme": e.get("readme")}
 
         # --- cheap edges (deterministic) ---
         if kind == "paper":
@@ -94,11 +97,16 @@ def summarize(g: Graph) -> dict:
     return {"nodes": n_by_type, "edges": e_by_rel}
 
 
-def run(settings: Settings, backend=None, limit=None) -> tuple[Graph, list]:
-    """Full pipeline: read list, build graph, write graph.json. Returns (graph, review)."""
+def run(settings: Settings, backend=None, limit=None, n_profiles=0) -> tuple[Graph, list, list]:
+    """Full pipeline: read list, build graph, write graph.json, optionally draft N agent
+    profiles. Returns (graph, review, profile_paths)."""
     backend = backend or make_backend(settings)
     review: list = []
-    g = build(crawl(settings.list_path), review, backend, limit=limit)
+    ctx: dict = {}
+    g = build(crawl(settings.list_path), review, backend, limit=limit, context_sink=ctx)
     out = {"nodes": list(g.nodes.values()), "edges": g.edges}
     settings.out_path.write_text(json.dumps(out, indent=2))
-    return g, review
+    written: list = []
+    if n_profiles:
+        written = profiles.generate(g, ctx, backend, review, limit=n_profiles)
+    return g, review, written

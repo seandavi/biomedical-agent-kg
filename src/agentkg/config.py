@@ -22,6 +22,8 @@ class Settings(BaseSettings):
     # --- pipeline ---
     backend: str = Field("mock", validation_alias="KG_BACKEND")  # mock | vertex
     gemini_model: str = Field("gemini-2.5-flash", validation_alias="KG_GEMINI_MODEL")
+    # prose tier — point at a larger model once judgment matters (SPEC §12.1 tiering)
+    profile_model: str = Field("gemini-3.1-flash-lite", validation_alias="KG_PROFILE_MODEL")
     list_path: Path = Field(Path("list.md"), validation_alias="KG_LIST_PATH")
     out_path: Path = Field(Path("graph.json"), validation_alias="KG_OUT_PATH")
 

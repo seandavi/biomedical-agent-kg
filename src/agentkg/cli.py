@@ -31,16 +31,19 @@ def run_pipeline(
     list_path: Path = typer.Option(None, "--list", "-l", help="awesome-list markdown"),
     out: Path = typer.Option(None, "--out", "-o", help="graph.json output path"),
     limit: int = typer.Option(None, "--limit", "-n", help="process only first N agents"),
+    profiles: int = typer.Option(0, "--profiles", "-p", help="draft prose for first N agents"),
 ):
     """Crawl the list, build the graph, write graph.json."""
     s = _settings(backend, list_path, out)
     b = make_backend(s)
-    g, review = run(s, b, limit=limit)
+    g, review, written = run(s, b, limit=limit, n_profiles=profiles)
     summary = summarize(g)
     typer.secho(f"backend={b.name}  ->  {s.out_path}", fg=typer.colors.GREEN)
     typer.echo(f"nodes: {summary['nodes']}")
     typer.echo(f"edges: {summary['edges']}")
-    typer.echo(f"review log entries (vocab fixes/drops): {len(review)}")
+    typer.echo(f"review log entries: {len(review)}")
+    if written:
+        typer.echo(f"profiles written: {len(written)} -> {', '.join(written)}")
 
 
 @app.command()

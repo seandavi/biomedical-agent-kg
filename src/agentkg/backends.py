@@ -39,6 +39,16 @@ FACET_SYSTEM_PROMPT = (
 
 _EMPTY_FACETS = {"exposes": [], "architecture": [], "domains": [], "evaluated_on": []}
 
+# Prose tier (SPEC §3.1). Fixed -> cache target. Wikilink discipline per SPEC §3.2.
+PROFILE_SYSTEM_PROMPT = (
+    "You write a concise profile body (2-3 short paragraphs of Markdown, no heading) "
+    "for a biomedical LLM-agent system, grounded ONLY in the supplied facets and text. "
+    "Do not invent capabilities, benchmarks, or affiliations. When you mention an entity "
+    "that appears in the 'Linkable neighbors' list, use its exact [[type:slug]] wikilink "
+    "inline; never invent a wikilink or link to anything not in that list. Under-claim "
+    "when unsure; prefer omission to speculation."
+)
+
 
 def truncate(text, max_chars):
     """Deterministic input-token lever: never ship a whole README/abstract."""
@@ -93,6 +103,9 @@ class MockBackend:
         return {"exposes": ["library"], "architecture": ["single_agent"],
                 "domains": ["proteome"], "evaluated_on": []}
 
+    def draft_profile(self, prompt: str) -> str:
+        return "_Mock profile body — run with `-b vertex` for generated prose._"
+
 
 class GeminiBackend:
     """Live backend on Google Gemini. Vertex AI when a project is set (ADC auth via
@@ -108,6 +121,7 @@ class GeminiBackend:
             raise RuntimeError("GeminiBackend needs: uv add google-genai") from e
         self._types = types
         self.model = settings.gemini_model
+        self.profile_model = settings.profile_model
         if settings.project:
             self.client = genai.Client(
                 vertexai=True, project=settings.project, location=settings.location)
@@ -137,6 +151,19 @@ class GeminiBackend:
             facets = dict(_EMPTY_FACETS)  # bad output -> empty, audited via _review
         cache.put("facets", ckey, facets)
         return facets
+
+    def draft_profile(self, prompt: str) -> str:
+        ckey = f"{self.profile_model}\n{PROFILE_SYSTEM_PROMPT}\n{prompt}"
+        hit = cache.get("profiles", ckey)
+        if hit is not None:
+            return hit
+        cfg = self._types.GenerateContentConfig(
+            system_instruction=PROFILE_SYSTEM_PROMPT, temperature=0)
+        resp = self.client.models.generate_content(
+            model=self.profile_model, contents=prompt, config=cfg)
+        text = (resp.text or "").strip()
+        cache.put("profiles", ckey, text)
+        return text
 
 
 def make_backend(settings: Settings):
