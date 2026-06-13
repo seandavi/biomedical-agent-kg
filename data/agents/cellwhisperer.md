@@ -2,10 +2,10 @@
 slug: cellwhisperer
 name: CellWhisperer
 type: agent
-exposes: [web_ui]
+exposes: [api, cli, web_ui]
 architecture: [single_agent]
 ---
 
-CellWhisperer is a single_agent biomedical LLM-agent system developed by [[org:epigen]]. As detailed in Nature Biotechnology 2025, the system is designed to assist researchers in the analysis of [[domain:single_cell]] data.
+CellWhisperer is a multimodal AI model developed by [[org:epigen]] that integrates transcriptomics with natural language to facilitate intuitive interaction with [[domain:single_cell]] datasets. Published in Nature Biotechnology in 2025, the system enables users to analyze scRNA-seq data through a single-agent architecture.
 
-The platform exposes a web_ui to facilitate user interaction and streamline complex biological workflows. By leveraging its specialized architecture, CellWhisperer provides targeted computational support for high-resolution genomic studies.
+The platform is accessible via an api, cli, and web_ui, supporting both local and containerized deployments. It provides comprehensive tools for importing custom datasets and reproducing analyses, with model weights and curated data available for research use.

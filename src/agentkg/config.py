@@ -28,6 +28,9 @@ class Settings(BaseSettings):
     out_path: Path = Field(Path("data/graph.json"), validation_alias="KG_OUT_PATH")
     review_path: Path = Field(Path("_review.json"), validation_alias="KG_REVIEW_PATH")
     log_level: str = Field("INFO", validation_alias="KG_LOG_LEVEL")
+    # min catalog papers an external paper must connect to earn a cocitation node
+    # (SPEC §6.2 friction). 2 = inclusive; raise to trim tangential connectors.
+    cocite_min: int = Field(2, validation_alias="KG_COCITE_MIN")
 
     # --- Google Cloud (shared with gcloud / ADC) ---
     project: str | None = Field(None, validation_alias="GOOGLE_CLOUD_PROJECT")
