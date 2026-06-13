@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biomedical Agent Knowledge Graph</title>
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <div id="app">
+      <button id="menu-btn" type="button" aria-label="Toggle filters">☰</button>
+      <aside id="sidebar">
+        <header>
+          <h1>Agent KG</h1>
+          <p class="subtitle">Biomedical LLM agent systems</p>
+        </header>
+
+        <section class="control">
+          <label class="field-label" for="search">Search</label>
+          <input id="search" type="search" placeholder="name, title, id…" autocomplete="off" />
+        </section>
+
+        <section class="control">
+          <div class="field-label">Node types</div>
+          <div id="type-filters" class="chips"></div>
+        </section>
+
+        <section class="control">
+          <div class="field-label">Agent facets</div>
+          <div id="facet-filters" class="facets"></div>
+        </section>
+
+        <section class="control">
+          <label class="toggle">
+            <input id="cites-toggle" type="checkbox" />
+            <span>Show <code>cites</code> citation overlay</span>
+          </label>
+          <button id="fit-btn" type="button" class="ghost-btn">Reset view</button>
+        </section>
+
+        <footer id="stats"></footer>
+      </aside>
+
+      <main id="graph"></main>
+
+      <section id="panel" class="empty" aria-live="polite">
+        <button id="panel-close" type="button" aria-label="Close panel">×</button>
+        <div id="panel-body">
+          <p class="panel-hint">Click a node to inspect it.</p>
+        </div>
+      </section>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
