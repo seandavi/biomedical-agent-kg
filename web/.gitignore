@@ -1,0 +1,5 @@
+node_modules/
+dist/
+public/data/
+*.log
+shots/
