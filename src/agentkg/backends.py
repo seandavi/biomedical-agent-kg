@@ -39,6 +39,17 @@ FACET_SYSTEM_PROMPT = (
 
 _EMPTY_FACETS = {"exposes": [], "architecture": [], "domains": [], "evaluated_on": []}
 
+# Entry-type classification (SPEC §12.1 — "NOT a regex"). Fixed -> cache target.
+CLASSIFY_SYSTEM_PROMPT = (
+    "Classify one entry from a curated list of biomedical AI systems. Reply with ONLY a "
+    'JSON object {"kind": ..., "name": ...}. "kind" is one of: "agent" (a named '
+    "LLM-based agent or system one could run, build on, or call), \"benchmark\" (a named "
+    "evaluation dataset or benchmark), \"paper\" (a survey, vision, or method paper that "
+    "is not itself a runnable system), \"other\". \"name\" is the system or benchmark's "
+    "short proper name (usually the text before a colon in the title), or null for "
+    "paper/other. A name like 'FooBench' is usually a benchmark, not an agent."
+)
+
 # Prose tier (SPEC §3.1). Fixed -> cache target. Wikilink discipline per SPEC §3.2.
 PROFILE_SYSTEM_PROMPT = (
     "You write a concise profile body (2-3 short paragraphs of Markdown, no heading) "
@@ -107,6 +118,11 @@ class MockBackend:
         return {"exposes": ["library"], "architecture": ["single_agent"],
                 "domains": ["proteome"], "evaluated_on": []}
 
+    def classify(self, entry: dict) -> dict:
+        from .parse import looks_like_agent  # offline regex fallback
+        name = looks_like_agent(entry["title"])
+        return {"kind": "agent" if name else "paper", "name": name}
+
     def draft_profile(self, prompt: str) -> str:
         return "_Mock profile body — run with `-b vertex` for generated prose._"
 
@@ -155,6 +171,29 @@ class GeminiBackend:
             facets = dict(_EMPTY_FACETS)  # bad output -> empty, audited via _review
         cache.put("facets", ckey, facets)
         return facets
+
+    def classify(self, entry: dict) -> dict:
+        payload = f"Title: {entry['title']}"
+        if entry.get("venue"):
+            payload += f"\nVenue: {entry['venue']}"
+        if entry.get("section"):
+            payload += f"\nList section: {entry['section']}"
+        ckey = f"classify\n{self.model}\n{CLASSIFY_SYSTEM_PROMPT}\n{payload}"
+        hit = cache.get("classify", ckey)
+        if hit is not None:
+            return hit
+        cfg = self._types.GenerateContentConfig(
+            system_instruction=CLASSIFY_SYSTEM_PROMPT,
+            response_mime_type="application/json", temperature=0)
+        resp = self.client.models.generate_content(
+            model=self.model, contents=payload, config=cfg)
+        try:
+            d = json.loads(resp.text)
+            out = {"kind": d.get("kind", "other"), "name": d.get("name")}
+        except (json.JSONDecodeError, TypeError, AttributeError):
+            out = {"kind": "other", "name": None}
+        cache.put("classify", ckey, out)
+        return out
 
     def draft_profile(self, prompt: str) -> str:
         ckey = f"{self.profile_model}\n{PROFILE_SYSTEM_PROMPT}\n{prompt}"

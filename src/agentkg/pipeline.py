@@ -11,7 +11,7 @@ from . import profiles, resolve
 from .backends import MockBackend, make_backend
 from .config import Settings
 from .model import Edge, Graph, slugify
-from .parse import classify_url, crawl, looks_like_agent, parse_entries
+from .parse import classify_url, crawl, parse_entries
 from .vocab import ARCH, DOMAIN_ALIASES, DOMAINS, EXPOSES, guard_vocab
 
 
@@ -22,32 +22,37 @@ def build(md: str, review_log: list, backend=None, limit=None, context_sink=None
     paper_refs: dict = {}  # paper cid -> (openalex_id, [referenced_work_ids]) for cites
     online = getattr(backend, "name", None) != "mock"  # mock stays fully offline
     for e in parse_entries(md):
-        kind, cid = classify_url(e["url"])
-        agent_name = looks_like_agent(e["title"])
+        url_kind, cid = classify_url(e["url"])
+        cls = backend.classify(e)  # LLM (or regex for mock); not classify_url
+        etype, name = cls.get("kind"), cls.get("name")
 
-        if not agent_name:
-            g.add_node(cid, "paper", title=e["title"], venue=e["venue"])
-            if online:
-                oa = resolve.openalex(cid)
-                paper_refs[cid] = (oa.get("openalex_id"), oa.get("referenced_works", []))
+        if etype != "agent" or not name:
+            if etype == "benchmark" and name:
+                g.add_node("benchmark:" + slugify(name), "benchmark", name=name)
+            else:  # paper / other -> paper node (kept only if something links it)
+                g.add_node(cid, "paper", title=e["title"], venue=e["venue"])
+                if online:
+                    oa = resolve.openalex(cid)
+                    paper_refs[cid] = (oa.get("openalex_id"),
+                                       oa.get("referenced_works", []))
             continue
 
         if limit is not None and agents_done >= limit:
             break  # iteration budget: stop after N agents
         agents_done += 1
 
-        aid = "agent:" + slugify(agent_name)
-        g.add_node(aid, "agent", name=agent_name, one_liner=e["title"])
+        aid = "agent:" + slugify(name)
+        g.add_node(aid, "agent", name=name, one_liner=e["title"])
 
         # ground the model in real text (skip for offline mock runs)
         if online:
-            e = {**e, **resolve.fetch_context(e["url"], kind, cid)}
+            e = {**e, **resolve.fetch_context(e["url"], url_kind, cid)}
             if context_sink is not None:
                 context_sink[aid] = {"abstract": e.get("abstract"),
                                      "readme": e.get("readme")}
 
         # --- cheap edges (deterministic) ---
-        if kind == "paper":
+        if url_kind == "paper":
             pid = g.add_node(cid, "paper", title=e["title"], venue=e["venue"])
             g.add_edge(Edge(aid, "described_by", pid, primary=True))
             if online:
@@ -105,6 +110,18 @@ def build(md: str, review_log: list, backend=None, limit=None, context_sink=None
             tgt = oaid_to_cid.get(r)
             if tgt and tgt != c:
                 g.add_edge(Edge(c, "cites", tgt))
+
+    # prune orphans: a node you cannot traverse to/from earns no place (SPEC §1 — nodes
+    # are things you traverse *through*). Drops unlinked survey papers and benchmarks no
+    # catalog agent is evaluated on; they return as soon as an edge connects them.
+    degree: dict = {}
+    for ed in g.edges:
+        degree[ed["src"]] = degree.get(ed["src"], 0) + 1
+        degree[ed["dst"]] = degree.get(ed["dst"], 0) + 1
+    pruned = [nid for nid in g.nodes if not degree.get(nid)]
+    for nid in pruned:
+        del g.nodes[nid]
+    review_log.extend({"pruned_orphan": nid} for nid in pruned)
     return g
 
 
