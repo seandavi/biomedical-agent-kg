@@ -152,6 +152,7 @@ def run(settings: Settings, backend=None, limit=None, n_profiles=0,
     logger.info(f"crawled {len(md)} chars; building (backend={backend.name}, limit={limit})")
     g = build(md, review, backend, limit=limit, context_sink=ctx)
     out = {"nodes": list(g.nodes.values()), "edges": g.edges}
+    settings.out_path.parent.mkdir(parents=True, exist_ok=True)
     settings.out_path.write_text(json.dumps(out, indent=2))
     settings.review_path.write_text(json.dumps(review, indent=2))
     written: list = []

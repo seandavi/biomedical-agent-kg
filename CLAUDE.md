@@ -18,7 +18,7 @@ uv-managed (Python provisioned by uv, ≥3.11). Entry point `agentkg`:
 
 ```bash
 uv sync                                # install deps + create .venv
-uv run agentkg run                     # mock backend (fully offline) -> graph.json
+uv run agentkg run                     # mock backend (fully offline) -> data/graph.json
 uv run agentkg run -b vertex           # live Gemini extraction (needs ADC, see .env)
 uv run agentkg run -b vertex -n 2      # first N agents only (-n bounds classify spend too)
 uv run agentkg run -b vertex -p 5      # also draft prose profiles for first N agents
@@ -102,13 +102,16 @@ survey papers and benchmarks no catalog agent evaluates (SPEC §1: nodes are tra
 
 ### Output shape
 
-`graph.json` = `{nodes, edges}`; `agents/<slug>.md` profiles (YAML frontmatter + LLM prose
-with validated `[[type:slug]]` wikilinks — unresolved links logged) are progressive
-enhancement, version-controlled per SPEC §3.1. `_review.json` captures drops / reconciles /
-pruned orphans / bad wikilinks — **not a work queue**, it signals where a *prompt* needs
-work. `built_by` and `cites` are correct but sparse on arXiv-preprint inputs (OpenAlex has
-no preprint affiliations/references) — they populate on published DOIs. Frontend SPA is a
-**separate effort** (another worktree); this package only emits the static artifacts.
+Generated artifacts live under **`data/`** (committed — this is the published catalog,
+served raw from GitHub and mirrored into the SPA): `data/graph.json` = `{nodes, edges}`,
+and `data/agents/<slug>.md` profiles (YAML frontmatter + LLM prose with validated
+`[[type:slug]]` wikilinks — unresolved links logged), progressive enhancement per SPEC
+§3.1. `_review.json` (gitignored) captures drops / reconciles / pruned orphans / bad
+wikilinks — **not a work queue**, it signals where a *prompt* needs work. `built_by` and
+`cites` are correct but sparse on arXiv-preprint inputs (OpenAlex has no preprint
+affiliations/references) — they populate on published DOIs. The frontend SPA (`web/`,
+a separate effort) mirrors `data/` into its static assets via `web/scripts/copy-data.ts`
+(override the source with `KG_GRAPH_JSON`).
 
 ## Conventions
 
