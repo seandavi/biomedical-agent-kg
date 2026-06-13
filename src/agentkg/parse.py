@@ -9,9 +9,12 @@ from __future__ import annotations
 import pathlib
 import re
 
-ENTRY_RE = re.compile(r"^- \*\*\[(?P<title>.+?)\]\((?P<url>.+?)\)\*\*\s*$")
-META_RE = re.compile(r"^\s+\*(?P<authors>.+?)\.\*\s*(?P<venue>.+?)\s*$")
-HDR_RE = re.compile(r"^(#{2,4})\s+(.*)$")
+# Permissive: any bulleted list item (real awesome-lists vary in style). The first
+# http(s) markdown link in the item is the entry; the rest of the line is its blurb.
+# Anchor-only ToC links (](#section)) are skipped — the link must be a real URL.
+ENTRY_RE = re.compile(r"^\s*[-*+]\s+(?P<body>.*\S)\s*$")
+LINK_RE = re.compile(r"\[(?P<title>[^\]]+)\]\((?P<url>https?://[^)\s]+)\)")
+HDR_RE = re.compile(r"^(#{1,6})\s+(.*\S)\s*$")
 
 # heuristic: an entry names a system if it matches one of these shapes near the head.
 AGENT_HINT = re.compile(
@@ -40,24 +43,26 @@ def classify_url(url: str) -> tuple[str, str]:
 
 def parse_entries(md: str):
     section = subsection = None
-    lines = md.splitlines()
-    for i, line in enumerate(lines):
+    for line in md.splitlines():
         h = HDR_RE.match(line)
         if h:
-            level = len(h.group(1))
-            if level == 3:
-                section, subsection = h.group(2), None
-            elif level == 4:
-                subsection = h.group(2)
+            txt = h.group(2).strip()
+            if len(h.group(1)) <= 2:        # h1/h2 -> section
+                section, subsection = txt, None
+            else:                           # deeper -> subsection
+                subsection = txt
             continue
         m = ENTRY_RE.match(line)
         if not m:
             continue
-        meta = META_RE.match(lines[i + 1]) if i + 1 < len(lines) else None
+        lm = LINK_RE.search(m.group("body"))
+        if not lm:
+            continue
+        title = lm.group("title").strip().strip("*").strip()
+        desc = LINK_RE.sub(" ", m.group("body")).strip(" -—:·|*\t")
         yield {
-            "title": m.group("title"), "url": m.group("url"),
-            "authors": meta.group("authors") if meta else None,
-            "venue": meta.group("venue") if meta else None,
+            "title": title, "url": lm.group("url"), "desc": desc or None,
+            "authors": None, "venue": None,
             "section": section, "subsection": subsection,
         }
 

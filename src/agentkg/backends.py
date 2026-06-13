@@ -47,7 +47,12 @@ CLASSIFY_SYSTEM_PROMPT = (
     "evaluation dataset or benchmark), \"paper\" (a survey, vision, or method paper that "
     "is not itself a runnable system), \"other\". \"name\" is the system or benchmark's "
     "short proper name (usually the text before a colon in the title), or null for "
-    "paper/other. A name like 'FooBench' is usually a benchmark, not an agent."
+    "paper/other. A name like 'FooBench' is usually a benchmark, not an agent.\n"
+    "DOMAIN GATE: only label something \"agent\" or \"benchmark\" if it is specifically "
+    "for biomedicine, bioinformatics, healthcare, clinical, or life-science research. "
+    "General-purpose agent frameworks or libraries (e.g. CAMEL, AutoGen, LangChain, "
+    "MetaGPT) and agents for unrelated domains (materials, pure chemistry, finance, "
+    "robotics, software) are \"other\", even if they are agents."
 )
 
 # Prose tier (SPEC §3.1). Fixed -> cache target. Wikilink discipline per SPEC §3.2.
@@ -74,8 +79,8 @@ def build_payload(entry: dict) -> str:
     """Per-entry payload (the only part that varies; system prompt stays cached).
     abstract/readme are populated by the resolve stage in production; absent here."""
     parts = [f"Title: {entry['title']}"]
-    if entry.get("venue"):
-        parts.append(f"Venue: {entry['venue']}")
+    if entry.get("desc"):
+        parts.append(f"List blurb: {entry['desc'][:300]}")
     if entry.get("section"):
         parts.append(f"List section: {entry['section']}")
     if entry.get("abstract"):
@@ -174,8 +179,8 @@ class GeminiBackend:
 
     def classify(self, entry: dict) -> dict:
         payload = f"Title: {entry['title']}"
-        if entry.get("venue"):
-            payload += f"\nVenue: {entry['venue']}"
+        if entry.get("desc"):
+            payload += f"\nList blurb: {entry['desc'][:300]}"
         if entry.get("section"):
             payload += f"\nList section: {entry['section']}"
         ckey = f"classify\n{self.model}\n{CLASSIFY_SYSTEM_PROMPT}\n{payload}"

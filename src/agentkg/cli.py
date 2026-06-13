@@ -32,11 +32,12 @@ def run_pipeline(
     out: Path = typer.Option(None, "--out", "-o", help="graph.json output path"),
     limit: int = typer.Option(None, "--limit", "-n", help="process only first N agents"),
     profiles: int = typer.Option(0, "--profiles", "-p", help="draft prose for first N agents"),
+    use_sources: bool = typer.Option(False, "--sources", help="crawl SPEC §11 lists instead of list.md"),
 ):
     """Crawl the list, build the graph, write graph.json."""
     s = _settings(backend, list_path, out)
     b = make_backend(s)
-    g, review, written = run(s, b, limit=limit, n_profiles=profiles)
+    g, review, written = run(s, b, limit=limit, n_profiles=profiles, use_sources=use_sources)
     summary = summarize(g)
     typer.secho(f"backend={b.name}  ->  {s.out_path}", fg=typer.colors.GREEN)
     typer.echo(f"nodes: {summary['nodes']}")

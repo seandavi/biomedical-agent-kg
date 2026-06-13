@@ -7,7 +7,7 @@ from __future__ import annotations
 
 import json
 
-from . import profiles, resolve
+from . import profiles, resolve, sources
 from .backends import MockBackend, make_backend
 from .config import Settings
 from .model import Edge, Graph, slugify
@@ -22,6 +22,8 @@ def build(md: str, review_log: list, backend=None, limit=None, context_sink=None
     paper_refs: dict = {}  # paper cid -> (openalex_id, [referenced_work_ids]) for cites
     online = getattr(backend, "name", None) != "mock"  # mock stays fully offline
     for e in parse_entries(md):
+        if limit is not None and agents_done >= limit:
+            break  # iteration budget: stop after N agents (bounds classify spend too)
         url_kind, cid = classify_url(e["url"])
         cls = backend.classify(e)  # LLM (or regex for mock); not classify_url
         etype, name = cls.get("kind"), cls.get("name")
@@ -37,8 +39,6 @@ def build(md: str, review_log: list, backend=None, limit=None, context_sink=None
                                        oa.get("referenced_works", []))
             continue
 
-        if limit is not None and agents_done >= limit:
-            break  # iteration budget: stop after N agents
         agents_done += 1
 
         aid = "agent:" + slugify(name)
@@ -134,13 +134,15 @@ def summarize(g: Graph) -> dict:
     return {"nodes": n_by_type, "edges": e_by_rel}
 
 
-def run(settings: Settings, backend=None, limit=None, n_profiles=0) -> tuple[Graph, list, list]:
-    """Full pipeline: read list, build graph, write graph.json, optionally draft N agent
-    profiles. Returns (graph, review, profile_paths)."""
+def run(settings: Settings, backend=None, limit=None, n_profiles=0,
+        use_sources=False) -> tuple[Graph, list, list]:
+    """Full pipeline: read list (local file or SPEC §11 sources), build graph, write
+    graph.json, optionally draft N agent profiles. Returns (graph, review, paths)."""
     backend = backend or make_backend(settings)
     review: list = []
     ctx: dict = {}
-    g = build(crawl(settings.list_path), review, backend, limit=limit, context_sink=ctx)
+    md = sources.crawl_sources() if use_sources else crawl(settings.list_path)
+    g = build(md, review, backend, limit=limit, context_sink=ctx)
     out = {"nodes": list(g.nodes.values()), "edges": g.edges}
     settings.out_path.write_text(json.dumps(out, indent=2))
     settings.review_path.write_text(json.dumps(review, indent=2))
