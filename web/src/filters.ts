@@ -1,4 +1,5 @@
 import type { Core, NodeSingular } from "cytoscape";
+import { runLayout } from "./cy";
 import { ALL_TYPES, CITES_REL, TYPE_COLOR, TYPE_LABEL } from "./theme";
 import type { GraphNode, NodeType } from "./types";
 
@@ -91,7 +92,12 @@ export function createFilters(cy: Core, nodes: GraphNode[]): FilterState {
   }
 
   searchInput.addEventListener("input", () => apply());
-  citesToggle.addEventListener("change", () => apply());
+  // Toggling cites reveals/hides the ~280 citation-only nodes, so relayout to
+  // give them positions (they were excluded from the catalog layout).
+  citesToggle.addEventListener("change", () => {
+    apply();
+    runLayout(cy);
+  });
 
   function agentMatchesFacets(n: GraphNode): boolean {
     if (selectedFacets.size === 0) return true;
@@ -101,8 +107,11 @@ export function createFilters(cy: Core, nodes: GraphNode[]): FilterState {
     return false;
   }
 
-  function nodeVisible(n: GraphNode, query: string): boolean {
+  function nodeVisible(n: GraphNode, degree: number, query: string, citesOn: boolean): boolean {
     if (!enabledTypes.has(n.type)) return false;
+    // Citation-only nodes (no catalog edges) belong to the cites overlay; keep
+    // them out of the default catalog view so it isn't littered with islands.
+    if (!citesOn && degree === 0) return false;
     if (n.type === "agent" && !agentMatchesFacets(n)) return false;
     if (query) {
       const hay = [n.id, n.name, n.title, n.one_liner]
@@ -121,7 +130,7 @@ export function createFilters(cy: Core, nodes: GraphNode[]): FilterState {
     let visibleNodes = 0;
     cy.nodes().forEach((el: NodeSingular) => {
       const n = el.data("node") as GraphNode;
-      const vis = nodeVisible(n, query);
+      const vis = nodeVisible(n, el.data("degree") ?? 0, query, citesOn);
       el.toggleClass("hidden", !vis);
       if (vis) visibleNodes++;
     });
