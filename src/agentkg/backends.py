@@ -48,11 +48,13 @@ CLASSIFY_SYSTEM_PROMPT = (
     "is not itself a runnable system), \"other\". \"name\" is the system or benchmark's "
     "short proper name (usually the text before a colon in the title), or null for "
     "paper/other. A name like 'FooBench' is usually a benchmark, not an agent.\n"
-    "DOMAIN GATE: only label something \"agent\" or \"benchmark\" if it is specifically "
-    "for biomedicine, bioinformatics, healthcare, clinical, or life-science research. "
-    "General-purpose agent frameworks or libraries (e.g. CAMEL, AutoGen, LangChain, "
-    "MetaGPT) and agents for unrelated domains (materials, pure chemistry, finance, "
-    "robotics, software) are \"other\", even if they are agents."
+    "DOMAIN GATE: label \"agent\" or \"benchmark\" ONLY if the system's PRIMARY "
+    "application is biomedicine, bioinformatics, healthcare, clinical medicine, or "
+    "life-science research (biology, genomics, drugs, disease, cells, proteins). These "
+    "are \"other\", even if they are agents: general-purpose agent frameworks or "
+    "libraries (CAMEL, AutoGen, LangChain, MetaGPT); general scientific-discovery or "
+    "research-automation agents not specific to biology/medicine; and agents for "
+    "unrelated domains (materials, pure chemistry, finance, robotics, software)."
 )
 
 # Prose tier (SPEC §3.1). Fixed -> cache target. Wikilink discipline per SPEC §3.2.
