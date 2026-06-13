@@ -1,0 +1,31 @@
+"""Controlled vocabularies (SPEC §4/§5/§7) + the deterministic vocab guard.
+
+These mirror SPEC; extending a vocab is a deliberate edit here, never auto-merged from
+extraction. The guard canonicalizes via class-level aliases (the rules.yml stand-in)
+and drops out-of-vocab values — the determinism boundary after the model stage.
+"""
+from __future__ import annotations
+
+EXPOSES = {"library", "cli", "mcp", "a2a", "skills", "web_ui", "api", "notebook"}
+ARCH = {"single_agent", "multi_agent", "rag", "self_evolving", "tool_registry"}
+DOMAINS = {
+    "single_cell", "spatial", "proteomics", "genomics_db", "multi_omics",
+    "perturbation", "drug_discovery", "medical_imaging", "clinical_qa",
+    "literature", "hypothesis_gen", "protein_structure",
+}
+
+# rules.yml stand-in: alias tables catching CLASSES of extraction noise (SPEC §1.3).
+DOMAIN_ALIASES = {
+    "proteome": "proteomics", "proteomic": "proteomics",
+    "scrna": "single_cell", "single-cell": "single_cell",
+    "multiomics": "multi_omics", "multi-omics": "multi_omics",
+}
+
+
+def guard_vocab(values, vocab, aliases=None):
+    """Return (kept_sorted_unique, dropped). Aliased then membership-filtered."""
+    out, dropped = [], []
+    for v in values:
+        v2 = (aliases or {}).get(v.lower(), v.lower())
+        (out if v2 in vocab else dropped).append(v2)
+    return sorted(set(out)), dropped
