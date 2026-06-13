@@ -13,6 +13,7 @@ import urllib.error
 import urllib.request
 
 from . import cache
+from .vocab import ORG_ALIASES
 
 _TIMEOUT = 20
 _UA = {"User-Agent": "agentkg/0.1 (research pipeline)"}
@@ -36,6 +37,16 @@ def fetch_readme(repo_url: str) -> str | None:
     if os.environ.get("GITHUB_TOKEN"):  # optional: raises the unauth rate limit
         headers["Authorization"] = f"Bearer {os.environ['GITHUB_TOKEN']}"
     return _get(f"https://api.github.com/repos/{owner}/{repo}/readme", headers)
+
+
+def github_org(repo_url: str) -> dict | None:
+    """Freeform building org from the GitHub owner (SPEC §13). ROR null — the alias
+    table canonicalizes known owners; the rest pass through as their handle."""
+    m = re.search(r"github\.com/([^/#?]+)/", repo_url)
+    if not m:
+        return None
+    owner = m.group(1)
+    return {"name": ORG_ALIASES.get(owner.lower(), owner), "ror": None}
 
 
 def fetch_arxiv_abstract(arxiv_id: str) -> str | None:

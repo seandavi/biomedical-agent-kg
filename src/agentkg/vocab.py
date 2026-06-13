@@ -21,6 +21,15 @@ DOMAIN_ALIASES = {
     "multiomics": "multi_omics", "multi-omics": "multi_omics",
 }
 
+# GitHub owner -> canonical org name (SPEC §13: freeform-with-aliases org resolution).
+# Used when OpenAlex carries no affiliation (e.g. arXiv preprints). Unlisted owners
+# fall through as their literal owner handle. ROR is left null (freeform, not strict).
+ORG_ALIASES = {
+    "mims-harvard": "Harvard Medical School",
+    "snap-stanford": "Stanford University",
+    "ncbi": "National Center for Biotechnology Information",
+}
+
 
 def guard_vocab(values, vocab, aliases=None):
     """Return (kept_sorted_unique, dropped). Aliased then membership-filtered."""

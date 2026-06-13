@@ -49,6 +49,12 @@ def build(md: str, review_log: list, backend=None, limit=None) -> Graph:
         else:
             rid = g.add_node(cid, "repo", url=cid)
             g.add_edge(Edge(aid, "implemented_by", rid))
+            # freeform built_by from the GitHub owner (OpenAlex lacks preprint affils)
+            org = resolve.github_org(cid)
+            if org:
+                oid = g.add_node("org:" + slugify(org["name"]), "org",
+                                 name=org["name"], ror=org.get("ror"))
+                g.add_edge(Edge(aid, "built_by", oid))
 
         # --- facets + expensive edge (backend-swappable) ---
         f = backend.extract_facets(e)
