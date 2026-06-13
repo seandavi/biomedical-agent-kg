@@ -20,14 +20,16 @@ def build(md: str, review_log: list, backend=None, limit=None, context_sink=None
     g = Graph()
     agents_done = 0
     paper_refs: dict = {}  # paper cid -> (openalex_id, [referenced_work_ids]) for cites
+    online = getattr(backend, "name", None) != "mock"  # mock stays fully offline
     for e in parse_entries(md):
         kind, cid = classify_url(e["url"])
         agent_name = looks_like_agent(e["title"])
 
         if not agent_name:
             g.add_node(cid, "paper", title=e["title"], venue=e["venue"])
-            oa = resolve.openalex(cid)
-            paper_refs[cid] = (oa.get("openalex_id"), oa.get("referenced_works", []))
+            if online:
+                oa = resolve.openalex(cid)
+                paper_refs[cid] = (oa.get("openalex_id"), oa.get("referenced_works", []))
             continue
 
         if limit is not None and agents_done >= limit:
@@ -38,7 +40,7 @@ def build(md: str, review_log: list, backend=None, limit=None, context_sink=None
         g.add_node(aid, "agent", name=agent_name, one_liner=e["title"])
 
         # ground the model in real text (skip for offline mock runs)
-        if getattr(backend, "name", None) != "mock":
+        if online:
             e = {**e, **resolve.fetch_context(e["url"], kind, cid)}
             if context_sink is not None:
                 context_sink[aid] = {"abstract": e.get("abstract"),
@@ -48,17 +50,19 @@ def build(md: str, review_log: list, backend=None, limit=None, context_sink=None
         if kind == "paper":
             pid = g.add_node(cid, "paper", title=e["title"], venue=e["venue"])
             g.add_edge(Edge(aid, "described_by", pid, primary=True))
-            oa = resolve.openalex(cid)
-            paper_refs[cid] = (oa.get("openalex_id"), oa.get("referenced_works", []))
-            for o in oa["orgs"]:
-                oid = g.add_node("org:" + slugify(o["name"]), "org",
-                                 name=o["name"], ror=o.get("ror"))
-                g.add_edge(Edge(aid, "built_by", oid))
+            if online:
+                oa = resolve.openalex(cid)
+                paper_refs[cid] = (oa.get("openalex_id"), oa.get("referenced_works", []))
+                for o in oa["orgs"]:
+                    oid = g.add_node("org:" + slugify(o["name"]), "org",
+                                     name=o["name"], ror=o.get("ror"))
+                    g.add_edge(Edge(aid, "built_by", oid))
         else:
-            rid = g.add_node(cid, "repo", url=cid)
+            health = resolve.repo_health(cid) if online else {}
+            rid = g.add_node(cid, "repo", url=cid, **health)
             g.add_edge(Edge(aid, "implemented_by", rid))
             # freeform built_by from the GitHub owner (OpenAlex lacks preprint affils)
-            org = resolve.github_org(cid)
+            org = resolve.github_org(cid) if online else None
             if org:
                 oid = g.add_node("org:" + slugify(org["name"]), "org",
                                  name=org["name"], ror=org.get("ror"))

@@ -39,6 +39,36 @@ def fetch_readme(repo_url: str) -> str | None:
     return _get(f"https://api.github.com/repos/{owner}/{repo}/readme", headers)
 
 
+def repo_health(repo_url: str) -> dict:
+    """Freshness/health attributes for a Repo node (SPEC §10). Cached by url — a
+    scheduled crawl busts it to refresh. Empty on failure (node still exists)."""
+    hit = cache.get("repo", repo_url)
+    if hit is not None:
+        return hit
+    m = re.search(r"github\.com/([^/]+)/([^/#?]+)", repo_url)
+    if not m:
+        return {}
+    owner, repo = m.group(1), m.group(2).removesuffix(".git")
+    headers = {"Accept": "application/vnd.github+json"}
+    if os.environ.get("GITHUB_TOKEN"):
+        headers["Authorization"] = f"Bearer {os.environ['GITHUB_TOKEN']}"
+    raw = _get(f"https://api.github.com/repos/{owner}/{repo}", headers)
+    if not raw:
+        return {}
+    try:
+        d = json.loads(raw)
+    except json.JSONDecodeError:
+        return {}
+    out = {
+        "stars": d.get("stargazers_count"),
+        "last_commit": d.get("pushed_at"),  # staleness signal — surfaced, not hidden
+        "language": d.get("language"),
+        "license": (d.get("license") or {}).get("spdx_id"),
+    }
+    cache.put("repo", repo_url, out)
+    return out
+
+
 def github_org(repo_url: str) -> dict | None:
     """Freeform building org from the GitHub owner (SPEC §13). ROR null — the alias
     table canonicalizes known owners; the rest pass through as their handle."""
