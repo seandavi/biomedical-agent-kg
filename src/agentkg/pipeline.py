@@ -19,12 +19,15 @@ def build(md: str, review_log: list, backend=None, limit=None, context_sink=None
     backend = backend or MockBackend()
     g = Graph()
     agents_done = 0
+    paper_refs: dict = {}  # paper cid -> (openalex_id, [referenced_work_ids]) for cites
     for e in parse_entries(md):
         kind, cid = classify_url(e["url"])
         agent_name = looks_like_agent(e["title"])
 
         if not agent_name:
             g.add_node(cid, "paper", title=e["title"], venue=e["venue"])
+            oa = resolve.openalex(cid)
+            paper_refs[cid] = (oa.get("openalex_id"), oa.get("referenced_works", []))
             continue
 
         if limit is not None and agents_done >= limit:
@@ -45,7 +48,9 @@ def build(md: str, review_log: list, backend=None, limit=None, context_sink=None
         if kind == "paper":
             pid = g.add_node(cid, "paper", title=e["title"], venue=e["venue"])
             g.add_edge(Edge(aid, "described_by", pid, primary=True))
-            for o in resolve.openalex(cid)["orgs"]:
+            oa = resolve.openalex(cid)
+            paper_refs[cid] = (oa.get("openalex_id"), oa.get("referenced_works", []))
+            for o in oa["orgs"]:
                 oid = g.add_node("org:" + slugify(o["name"]), "org",
                                  name=o["name"], ror=o.get("ror"))
                 g.add_edge(Edge(aid, "built_by", oid))
@@ -85,6 +90,17 @@ def build(md: str, review_log: list, backend=None, limit=None, context_sink=None
                             provenance={"source": ev["source"], "evidence": ev["evidence"]}))
         for d in (d1 + d2 + d3):
             review_log.append({"agent": aid, "dropped_or_aliased": d})
+
+    # cites overlay (SPEC §6.2): catalog-internal Paper->Paper edges from OpenAlex
+    # referenced_works. Only edges between papers BOTH in the catalog are kept — never
+    # pull external refs in (they would explode and dominate layout). Default-off is a
+    # rendering concern; the data is always present.
+    oaid_to_cid = {oaid: c for c, (oaid, _) in paper_refs.items() if oaid}
+    for c, (_, refs) in paper_refs.items():
+        for r in refs:
+            tgt = oaid_to_cid.get(r)
+            if tgt and tgt != c:
+                g.add_edge(Edge(c, "cites", tgt))
     return g
 
 
@@ -106,6 +122,7 @@ def run(settings: Settings, backend=None, limit=None, n_profiles=0) -> tuple[Gra
     g = build(crawl(settings.list_path), review, backend, limit=limit, context_sink=ctx)
     out = {"nodes": list(g.nodes.values()), "edges": g.edges}
     settings.out_path.write_text(json.dumps(out, indent=2))
+    settings.review_path.write_text(json.dumps(review, indent=2))
     written: list = []
     if n_profiles:
         written = profiles.generate(g, ctx, backend, review, limit=n_profiles)

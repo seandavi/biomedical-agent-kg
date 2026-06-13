@@ -41,7 +41,7 @@ def run_pipeline(
     typer.secho(f"backend={b.name}  ->  {s.out_path}", fg=typer.colors.GREEN)
     typer.echo(f"nodes: {summary['nodes']}")
     typer.echo(f"edges: {summary['edges']}")
-    typer.echo(f"review log entries: {len(review)}")
+    typer.echo(f"review log entries: {len(review)} -> {s.review_path}")
     if written:
         typer.echo(f"profiles written: {len(written)} -> {', '.join(written)}")
 

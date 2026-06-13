@@ -26,6 +26,7 @@ class Settings(BaseSettings):
     profile_model: str = Field("gemini-3.1-flash-lite", validation_alias="KG_PROFILE_MODEL")
     list_path: Path = Field(Path("list.md"), validation_alias="KG_LIST_PATH")
     out_path: Path = Field(Path("graph.json"), validation_alias="KG_OUT_PATH")
+    review_path: Path = Field(Path("_review.json"), validation_alias="KG_REVIEW_PATH")
 
     # --- Google Cloud (shared with gcloud / ADC) ---
     project: str | None = Field(None, validation_alias="GOOGLE_CLOUD_PROJECT")

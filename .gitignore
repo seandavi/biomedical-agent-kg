@@ -7,3 +7,4 @@ graph.json
 dist/
 *.egg-info/
 .cache/
+_review.json

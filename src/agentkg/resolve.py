@@ -126,7 +126,8 @@ def openalex(cid: str) -> dict:
     Empty orgs when the work isn't found — built_by is simply omitted (honest)."""
     work = _openalex_work(cid)
     if not work:
-        return {"orgs": [], "cited_by_count": None, "referenced_works": []}
+        return {"openalex_id": None, "orgs": [], "cited_by_count": None,
+                "referenced_works": []}
     seen, orgs = set(), []
     for a in work.get("authorships", []):
         for inst in a.get("institutions", []):
@@ -137,6 +138,7 @@ def openalex(cid: str) -> dict:
             seen.add(key)
             orgs.append({"name": name, "ror": ror})
     return {
+        "openalex_id": work.get("id"),
         "orgs": orgs,
         "cited_by_count": work.get("cited_by_count"),
         "referenced_works": work.get("referenced_works", []),
