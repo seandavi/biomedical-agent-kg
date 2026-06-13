@@ -6,6 +6,7 @@ Results are url-cached; failures are non-fatal (return {} -> backend under-claim
 """
 from __future__ import annotations
 
+import json
 import os
 import re
 import urllib.error
@@ -45,21 +46,43 @@ def fetch_arxiv_abstract(arxiv_id: str) -> str | None:
     return " ".join(m.group(1).split()) if m else None
 
 
-def fetch_openalex_abstract(doi: str) -> str | None:
-    import json
+def _openalex_id(cid: str) -> str | None:
+    """Map a canonical id to an OpenAlex /works selector. arXiv works are indexed
+    under their registered DOI (10.48550/arXiv.<id>)."""
+    if cid.startswith("doi:"):
+        return "doi:" + cid.split(":", 1)[1]
+    if cid.startswith("arxiv:"):
+        return "doi:10.48550/arXiv." + cid.split(":", 1)[1]
+    return None
 
+
+def _openalex_work(cid: str) -> dict | None:
+    """Fetch + cache the OpenAlex work once; abstract and orgs both derive from it."""
+    hit = cache.get("openalex", cid)
+    if hit is not None:
+        return hit or None  # cached {} means "resolved to nothing"
+    oid = _openalex_id(cid)
+    if not oid:
+        cache.put("openalex", cid, {})
+        return None
     mailto = os.environ.get("OPENALEX_MAILTO", "")
     suffix = f"?mailto={mailto}" if mailto else ""
-    raw = _get(f"https://api.openalex.org/works/doi:{doi}{suffix}")
+    raw = _get(f"https://api.openalex.org/works/{oid}{suffix}")
     if not raw:
-        return None
+        return None  # transient failure — don't cache, allow retry next run
     try:
-        idx = json.loads(raw).get("abstract_inverted_index")
+        work = json.loads(raw)
     except json.JSONDecodeError:
         return None
+    cache.put("openalex", cid, work)
+    return work
+
+
+def _abstract_from_work(work: dict) -> str | None:
+    idx = work.get("abstract_inverted_index")
     if not idx:
         return None
-    words = sorted(((pos, w) for w, ps in idx.items() for pos in ps))
+    words = sorted((pos, w) for w, ps in idx.items() for pos in ps)
     return " ".join(w for _, w in words)
 
 
@@ -78,18 +101,32 @@ def fetch_context(url: str, kind: str, cid: str) -> dict:
         if ab:
             out["abstract"] = ab
     elif cid.startswith("doi:"):
-        ab = fetch_openalex_abstract(cid.split(":", 1)[1])
+        work = _openalex_work(cid)
+        ab = _abstract_from_work(work) if work else None
         if ab:
             out["abstract"] = ab
     cache.put("context", url, out)
     return out
 
 
-def openalex(paper_id: str) -> dict:
-    """Org/citation resolve — still MOCK (orgs feed built_by). Real call shape:
-    GET https://api.openalex.org/works/{id} -> authorships[].institutions[].ror."""
+def openalex(cid: str) -> dict:
+    """Resolve building orgs (feed built_by) + citation signal from OpenAlex.
+    GET /works/{id} -> authorships[].institutions[] (display_name, ror), deduped.
+    Empty orgs when the work isn't found — built_by is simply omitted (honest)."""
+    work = _openalex_work(cid)
+    if not work:
+        return {"orgs": [], "cited_by_count": None, "referenced_works": []}
+    seen, orgs = set(), []
+    for a in work.get("authorships", []):
+        for inst in a.get("institutions", []):
+            name, ror = inst.get("display_name"), inst.get("ror")
+            key = ror or name
+            if not name or key in seen:
+                continue
+            seen.add(key)
+            orgs.append({"name": name, "ror": ror})
     return {
-        "orgs": [{"name": "Stanford University", "ror": "https://ror.org/00f54p054"}],
-        "cited_by_count": 42,
-        "referenced_works": [],
+        "orgs": orgs,
+        "cited_by_count": work.get("cited_by_count"),
+        "referenced_works": work.get("referenced_works", []),
     }
