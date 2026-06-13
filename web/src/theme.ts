@@ -36,10 +36,11 @@ export const EDGE_COLOR: Record<EdgeRel, string> = {
   implemented_by: "#3bc9db", // agent → repo
   evaluated_on: "#f783ac", // agent → benchmark
   built_by: "#69db7c", // agent → org
+  owned_by: "#fab005", // repo → org
   targets: "#7d8590", // agent → domain (densest rel — neutral so it recedes)
   built_on: "#da77f2", // agent → toolenv
   queries: "#4dabf7", // agent → database
-  cites: "#39424d", // paper → paper (muted, dashed, default-off)
+  cites: "#5b6b82", // paper → paper (slate, dashed; visible when the overlay is on)
 };
 
 export const EDGE_LABEL: Record<EdgeRel, string> = {
@@ -47,6 +48,7 @@ export const EDGE_LABEL: Record<EdgeRel, string> = {
   implemented_by: "implemented by",
   evaluated_on: "evaluated on",
   built_by: "built by",
+  owned_by: "owned by",
   targets: "targets",
   built_on: "built on",
   queries: "queries",
