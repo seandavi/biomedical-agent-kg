@@ -15,6 +15,7 @@ export type EdgeRel =
   | "implemented_by"
   | "evaluated_on"
   | "built_by"
+  | "owned_by"
   | "targets"
   | "built_on"
   | "queries"
