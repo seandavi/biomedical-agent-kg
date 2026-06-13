@@ -17,7 +17,8 @@ from .vocab import (ARCH, DATABASES, DB_ALIASES, DOMAIN_ALIASES, DOMAINS, EXPOSE
                     guard_vocab)
 
 
-def build(md: str, review_log: list, backend=None, limit=None, context_sink=None) -> Graph:
+def build(md: str, review_log: list, backend=None, limit=None, context_sink=None,
+          cocite_min=2) -> Graph:
     backend = backend or MockBackend()
     g = Graph()
     agents_done = 0
@@ -124,7 +125,7 @@ def build(md: str, review_log: list, backend=None, limit=None, context_sink=None
     # citation layer (SPEC §6.2): internal cites + cocitation externals that connect
     # >=2 catalog papers (in_catalog=False). Default-off overlay is a rendering concern.
     if online:
-        cocite.build_citation_layer(g, paper_refs, review_log)
+        cocite.build_citation_layer(g, paper_refs, review_log, min_links=cocite_min)
 
     # prune orphans: a node you cannot traverse to/from earns no place (SPEC §1 — nodes
     # are things you traverse *through*). Drops unlinked survey papers and benchmarks no
@@ -172,7 +173,8 @@ def run(settings: Settings, backend=None, limit=None, n_profiles=0,
     logger.info(f"crawl: {src}")
     md = sources.crawl_sources() if use_sources else crawl(settings.list_path)
     logger.info(f"crawled {len(md)} chars; building (backend={backend.name}, limit={limit})")
-    g = build(md, review, backend, limit=limit, context_sink=ctx)
+    g = build(md, review, backend, limit=limit, context_sink=ctx,
+              cocite_min=settings.cocite_min)
     out = {"nodes": list(g.nodes.values()), "edges": g.edges}
     settings.out_path.parent.mkdir(parents=True, exist_ok=True)
     settings.out_path.write_text(json.dumps(out, indent=2))

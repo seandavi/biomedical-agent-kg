@@ -775,6 +775,11 @@
       "ror": null
     },
     {
+      "id": "toolenv:claude-code",
+      "type": "toolenv",
+      "name": "Claude Code"
+    },
+    {
       "id": "agent:llm-for-zotero",
       "type": "agent",
       "name": "llm-for-zotero",
@@ -903,7 +908,7 @@
       "id": "https://github.com/SakanaAI/AI-Scientist",
       "type": "repo",
       "url": "https://github.com/SakanaAI/AI-Scientist",
-      "stars": 13959,
+      "stars": 13960,
       "last_commit": "2025-12-19T07:46:21Z",
       "language": "Jupyter Notebook",
       "license": "NOASSERTION"
@@ -1212,7 +1217,7 @@
       "type": "repo",
       "url": "https://github.com/mims-harvard/ToolUniverse",
       "stars": 1448,
-      "last_commit": "2026-06-13T19:11:34Z",
+      "last_commit": "2026-06-13T22:14:39Z",
       "language": "Python",
       "license": "Apache-2.0"
     },
@@ -1413,7 +1418,7 @@
       "id": "https://github.com/EvoScientist/EvoScientist",
       "type": "repo",
       "url": "https://github.com/EvoScientist/EvoScientist",
-      "stars": 3553,
+      "stars": 3557,
       "last_commit": "2026-06-13T17:43:54Z",
       "language": "Python",
       "license": "Apache-2.0"
@@ -1568,7 +1573,7 @@
       "id": "https://github.com/bio-xyz/BioAgents",
       "type": "repo",
       "url": "https://github.com/bio-xyz/BioAgents",
-      "stars": 168,
+      "stars": 169,
       "last_commit": "2026-06-08T10:21:38Z",
       "language": "TypeScript",
       "license": null
@@ -1671,9 +1676,11 @@
       "type": "agent",
       "name": "MOOSE",
       "one_liner": "MOOSE",
-      "exposes": [],
+      "exposes": [
+        "cli"
+      ],
       "architecture": [
-        "multi_agent"
+        "single_agent"
       ]
     },
     {
@@ -1940,6 +1947,8 @@
       "name": "CellWhisperer",
       "one_liner": "CellWhisperer (Nature Biotechnology 2025)",
       "exposes": [
+        "api",
+        "cli",
         "web_ui"
       ],
       "architecture": [
@@ -1967,7 +1976,10 @@
       "name": "mLLMCelltype",
       "one_liner": "mLLMCelltype",
       "exposes": [
-        "library"
+        "api",
+        "library",
+        "notebook",
+        "web_ui"
       ],
       "architecture": [
         "multi_agent"
@@ -1989,6 +2001,11 @@
       "ror": null
     },
     {
+      "id": "benchmark:yang-et-al-2025",
+      "type": "benchmark",
+      "name": "Yang et al., 2025"
+    },
+    {
       "id": "agent:chatspatial",
       "type": "agent",
       "name": "ChatSpatial",
@@ -1997,7 +2014,7 @@
         "mcp"
       ],
       "architecture": [
-        "single_agent"
+        "tool_registry"
       ]
     },
     {
@@ -2014,9 +2031,11 @@
       "type": "agent",
       "name": "BioReason",
       "one_liner": "BioReason (NeurIPS 2025)",
-      "exposes": [],
+      "exposes": [
+        "library"
+      ],
       "architecture": [
-        "rag"
+        "multi_agent"
       ]
     },
     {
@@ -2033,11 +2052,6 @@
       "type": "org",
       "name": "bowang-lab",
       "ror": null
-    },
-    {
-      "id": "domain:genomics_db",
-      "type": "domain",
-      "name": "genomics_db"
     },
     {
       "id": "agent:dna-claude-analysis",
@@ -2066,6 +2080,11 @@
       "type": "org",
       "name": "shmlkv",
       "ror": null
+    },
+    {
+      "id": "domain:genomics_db",
+      "type": "domain",
+      "name": "genomics_db"
     },
     {
       "id": "agent:pathchat",
@@ -4724,6 +4743,16 @@
       "provenance": null
     },
     {
+      "src": "agent:openbiomed",
+      "rel": "built_on",
+      "dst": "toolenv:claude-code",
+      "primary": false,
+      "provenance": {
+        "source": null,
+        "evidence": "OpenBioMed Skills, a comprehensive collection of 45 skills for biomedical research and drug discovery empowered by Claude Code."
+      }
+    },
+    {
       "src": "agent:llm-for-zotero",
       "rel": "implemented_by",
       "dst": "https://github.com/yilewang/llm-for-zotero",
@@ -5717,13 +5746,6 @@
       "provenance": null
     },
     {
-      "src": "agent:llm-peer-review",
-      "rel": "targets",
-      "dst": "domain:literature",
-      "primary": false,
-      "provenance": null
-    },
-    {
       "src": "agent:biodiscoveryagent",
       "rel": "implemented_by",
       "dst": "https://github.com/snap-stanford/BioDiscoveryAgent",
@@ -6218,6 +6240,16 @@
       "provenance": null
     },
     {
+      "src": "agent:mllmcelltype",
+      "rel": "evaluated_on",
+      "dst": "benchmark:yang-et-al-2025",
+      "primary": false,
+      "provenance": {
+        "source": "readme",
+        "evidence": "In our benchmarks (Yang et al., 2025), the consensus approach achieved up to 95% accuracy on tested datasets."
+      }
+    },
+    {
       "src": "agent:chatspatial",
       "rel": "implemented_by",
       "dst": "https://github.com/cafferychen777/ChatSpatial",
@@ -6269,7 +6301,14 @@
     {
       "src": "agent:bioreason",
       "rel": "targets",
-      "dst": "domain:genomics_db",
+      "dst": "domain:clinical_qa",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:bioreason",
+      "rel": "targets",
+      "dst": "domain:hypothesis_gen",
       "primary": false,
       "provenance": null
     },
@@ -6300,6 +6339,16 @@
       "dst": "domain:genomics_db",
       "primary": false,
       "provenance": null
+    },
+    {
+      "src": "agent:dna-claude-analysis",
+      "rel": "built_on",
+      "dst": "toolenv:claude-code",
+      "primary": false,
+      "provenance": {
+        "source": "README",
+        "evidence": "built with Claude Code"
+      }
     },
     {
       "src": "agent:pathchat",

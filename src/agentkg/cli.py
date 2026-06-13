@@ -59,6 +59,11 @@ def config():
 
 
 def main():
+    # Load .env into the process env so os.environ-based code (GITHUB_TOKEN in
+    # resolve, OPENALEX_MAILTO) sees it too — pydantic-settings reads .env for the
+    # Settings model only, not the environment. Real env vars still win (override=False).
+    from dotenv import load_dotenv
+    load_dotenv()
     app()
 
 

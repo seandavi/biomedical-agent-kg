@@ -2,10 +2,10 @@
 slug: mllmcelltype
 name: mLLMCelltype
 type: agent
-exposes: [library]
+exposes: [api, library, notebook, web_ui]
 architecture: [multi_agent]
 ---
 
-mLLMCelltype is a multi_agent system designed to function as a library for biomedical analysis. It is built by [[org:cafferychen777]] to facilitate computational workflows.
+mLLMCelltype is a multi-agent framework designed for automated cell type annotation in [[domain:single_cell]] transcriptomics. Built by [[org:cafferychen777]], the system utilizes a consensus-based approach that integrates predictions from multiple large language models to improve annotation accuracy and provide uncertainty metrics without requiring reference datasets.
 
-The system specifically targets the [[domain:single_cell]] domain. It leverages its multi-agent architecture to process and interpret complex biological data.
+The platform is accessible via an api, library, notebook, and web_ui, allowing for integration into existing analysis workflows. Its performance has been validated through [[benchmark:yang-et-al-2025]], demonstrating the efficacy of its multi-model consensus methodology.
