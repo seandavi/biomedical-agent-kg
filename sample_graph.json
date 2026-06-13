@@ -1,0 +1,649 @@
+{
+  "nodes": [
+    {
+      "id": "url:https://www.nature.com/articles/s41592-021-01091-w",
+      "type": "paper",
+      "title": "Nobel Turing Challenge: Creating the Engine for Scientific Discovery",
+      "venue": "NPJ Systems Biology and Applications 2021"
+    },
+    {
+      "id": "url:https://www.aaai.org/ojs/index.php/aimagazine/article/view/2624",
+      "type": "paper",
+      "title": "Artificial Intelligence to Win the Nobel Prize and Beyond: Creating the Engine for Scientific Discovery",
+      "venue": "AI Magazine 2016"
+    },
+    {
+      "id": "arxiv:2408.06292",
+      "type": "paper",
+      "title": "The AI Scientist: Towards Fully Automated Open-ended Scientific Discovery",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "arxiv:2304.05332",
+      "type": "paper",
+      "title": "Emergent autonomous scientific research capabilities of large language models",
+      "venue": "arXiv 2023"
+    },
+    {
+      "id": "url:https://pubs.rsc.org/en/content/articlelanding/2023/dd/d3dd00089c",
+      "type": "paper",
+      "title": "What is missing in autonomous discovery: open challenges for the community",
+      "venue": "Digital Discovery 2023"
+    },
+    {
+      "id": "arxiv:2307.07522",
+      "type": "paper",
+      "title": "The future of fundamental science led by generative closed-loop artificial intelligence",
+      "venue": "arXiv 2023"
+    },
+    {
+      "id": "url:https://proceedings.neurips.cc/paper_files/paper/2023/hash/9a86e0c5-e09e-4ad7-96d6-b2ed61855e37-Abstract-Conference.html",
+      "type": "paper",
+      "title": "CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society",
+      "venue": "NeurIPS 2023"
+    },
+    {
+      "id": "arxiv:2310.02170",
+      "type": "paper",
+      "title": "Dynamic LLM-Agent Network: An LLM-Agent Collaboration Framework with Agent Team Optimization",
+      "venue": "arXiv 2023"
+    },
+    {
+      "id": "arxiv:2308.08155",
+      "type": "paper",
+      "title": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation Framework",
+      "venue": "arXiv 2023"
+    },
+    {
+      "id": "url:https://ojs.aaai.org/index.php/AAAI/article/view/28877",
+      "type": "paper",
+      "title": "Graph of Thoughts: Solving Elaborate Problems with Large Language Models",
+      "venue": "AAAI 2024"
+    },
+    {
+      "id": "agent:knowagent",
+      "type": "agent",
+      "name": "KnowAgent",
+      "one_liner": "KnowAgent: Knowledge-augmented Planning for LLM-based Agents",
+      "exposes": [
+        "library"
+      ],
+      "architecture": [
+        "single_agent"
+      ]
+    },
+    {
+      "id": "arxiv:2403.03101",
+      "type": "paper",
+      "title": "KnowAgent: Knowledge-augmented Planning for LLM-based Agents",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "org:stanford-university",
+      "type": "org",
+      "name": "Stanford University",
+      "ror": "https://ror.org/00f54p054"
+    },
+    {
+      "id": "domain:proteomics",
+      "type": "domain",
+      "name": "proteomics"
+    },
+    {
+      "id": "arxiv:2305.14325",
+      "type": "paper",
+      "title": "Improving Factuality and Reasoning in Language Models through Multiagent Debate",
+      "venue": "arXiv 2023"
+    },
+    {
+      "id": "agent:researchagent",
+      "type": "agent",
+      "name": "ResearchAgent",
+      "one_liner": "ResearchAgent: Iterative Research Idea Generation over Scientific Literature with Large Language Models",
+      "exposes": [
+        "library"
+      ],
+      "architecture": [
+        "single_agent"
+      ]
+    },
+    {
+      "id": "arxiv:2404.07738",
+      "type": "paper",
+      "title": "ResearchAgent: Iterative Research Idea Generation over Scientific Literature with Large Language Models",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "arxiv:2305.14259",
+      "type": "paper",
+      "title": "SciMon: Scientific Inspiration Machines Optimized for Novelty",
+      "venue": "arXiv 2023"
+    },
+    {
+      "id": "arxiv:2406.10252",
+      "type": "paper",
+      "title": "AutoSurvey: Large Language Models Can Automatically Write Surveys",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "arxiv:2406.06769",
+      "type": "paper",
+      "title": "DISCOVERYWORLD: A Virtual Environment for Developing and Evaluating Automated Scientific Discovery Agents",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "arxiv:2408.10689",
+      "type": "paper",
+      "title": "Genesis: Towards the Automation of Systems Biology Research",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "arxiv:2411.00248",
+      "type": "paper",
+      "title": "MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making",
+      "venue": "NeurIPS 2024"
+    },
+    {
+      "id": "arxiv:2401.16107",
+      "type": "paper",
+      "title": "Beyond Direct Diagnosis: LLM-based Multi-Specialist Agent Consultation for Automatic Diagnosis",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "arxiv:2410.12532",
+      "type": "paper",
+      "title": "MedAide: Towards an Omni Medical Aide via Specialized LLM-based Multi-Agent Collaboration",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "arxiv:2309.10895",
+      "type": "paper",
+      "title": "Large Language Models as Agents in the Clinic",
+      "venue": "NPJ Digital Medicine 2024"
+    },
+    {
+      "id": "doi:10.1007/978-3-031-49673-3_15",
+      "type": "paper",
+      "title": "MAGDA: Multi-Agent Guideline-Driven Diagnostic Assistance",
+      "venue": "FMGMAI 2024"
+    },
+    {
+      "id": "arxiv:2410.02551",
+      "type": "paper",
+      "title": "ColaCare: Enhancing Electronic Health Record Modeling through Large Language Model-Driven Multi-Agent Collaboration",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "arxiv:2405.02957",
+      "type": "paper",
+      "title": "Agent Hospital: A Simulacrum of Hospital with Evolvable Medical Agents",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "arxiv:2406.13890",
+      "type": "paper",
+      "title": "ClinicalLab: Aligning Agents for Multi-Departmental Clinical Diagnostics in the Real World",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "arxiv:2409.18924",
+      "type": "paper",
+      "title": "AIPatient: Simulating Patients with EHRs and LLM Powered Agentic Workflow",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "arxiv:2408.12496",
+      "type": "paper",
+      "title": "Medco: Medical education copilots based on a multi-agent framework",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "arxiv:2405.07960",
+      "type": "paper",
+      "title": "AgentClinic: a multimodal agent benchmark to evaluate AI in simulated clinical environments",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "arxiv:2407.08811",
+      "type": "paper",
+      "title": "CXR-Agent: Vision-language models for chest X-ray interpretation with uncertainty aware radiology reporting",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "arxiv:2407.00203",
+      "type": "paper",
+      "title": "PathGen-1.6M: 1.6 Million Pathology Image-text Pairs Generation through Multi-agent Collaboration",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "arxiv:2509.14778",
+      "type": "paper",
+      "title": "OpenLens AI: Fully Autonomous Research Agent for Health Infomatics",
+      "venue": null
+    },
+    {
+      "id": "agent:biodiscoveryagent",
+      "type": "agent",
+      "name": "BioDiscoveryAgent",
+      "one_liner": "BioDiscoveryAgent: An AI Agent for Designing Genetic Perturbation Experiments",
+      "exposes": [
+        "library"
+      ],
+      "architecture": [
+        "single_agent"
+      ]
+    },
+    {
+      "id": "arxiv:2405.17631",
+      "type": "paper",
+      "title": "BioDiscoveryAgent: An AI Agent for Designing Genetic Perturbation Experiments",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "agent:geneagent",
+      "type": "agent",
+      "name": "GeneAgent",
+      "one_liner": "GeneAgent: Self-verification Language Agent for Gene Set Knowledge Discovery using Domain Databases",
+      "exposes": [
+        "library"
+      ],
+      "architecture": [
+        "single_agent"
+      ]
+    },
+    {
+      "id": "arxiv:2405.16205",
+      "type": "paper",
+      "title": "GeneAgent: Self-verification Language Agent for Gene Set Knowledge Discovery using Domain Databases",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "arxiv:2407.08940",
+      "type": "paper",
+      "title": "Large Language Models as Biomedical Hypothesis Generators: A Comprehensive Evaluation",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "doi:10.1101/2024.05.22.595240v1",
+      "type": "paper",
+      "title": "BIA: BioInformatics Agent - Unleashing the Power of Large Language Models to Reshape Bioinformatics Workflow",
+      "venue": "bioRxiv 2024"
+    },
+    {
+      "id": "agent:cellagent",
+      "type": "agent",
+      "name": "CellAgent",
+      "one_liner": "CellAgent: An LLM-driven Multi-Agent Framework for Automated Single-cell Data Analysis",
+      "exposes": [
+        "library"
+      ],
+      "architecture": [
+        "multi_agent"
+      ]
+    },
+    {
+      "id": "doi:10.1101/2024.05.13.593861v1",
+      "type": "paper",
+      "title": "CellAgent: An LLM-driven Multi-Agent Framework for Automated Single-cell Data Analysis",
+      "venue": "bioRxiv 2024"
+    },
+    {
+      "id": "domain:single_cell",
+      "type": "domain",
+      "name": "single_cell"
+    },
+    {
+      "id": "arxiv:2407.03381",
+      "type": "paper",
+      "title": "SeqMate: A Novel Large Language Model Pipeline for Automating RNA Sequencing",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "agent:drugagent",
+      "type": "agent",
+      "name": "DrugAgent",
+      "one_liner": "DrugAgent: Explainable Drug Repurposing Agent with Large Language Model-based Reasoning",
+      "exposes": [
+        "library"
+      ],
+      "architecture": [
+        "single_agent"
+      ]
+    },
+    {
+      "id": "arxiv:2408.13378",
+      "type": "paper",
+      "title": "DrugAgent: Explainable Drug Repurposing Agent with Large Language Model-based Reasoning",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "arxiv:2408.01869",
+      "type": "paper",
+      "title": "Malade: Orchestration of LLM-powered agents with retrieval augmented generation for pharmacovigilance",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "url:https://aclanthology.org/2024.lm-1.6/",
+      "type": "paper",
+      "title": "ChatMol Copilot: An Agent for Molecular Modeling and Computation Powered by LLMs",
+      "venue": "L+M Workshop 2024"
+    },
+    {
+      "id": "arxiv:2407.01603",
+      "type": "paper",
+      "title": "A review of large language models and autonomous agents in chemistry",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "arxiv:2410.18792",
+      "type": "paper",
+      "title": "An LLM Agent for Automatic Geospatial Data Analysis",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "agent:agentbench",
+      "type": "agent",
+      "name": "AgentBench",
+      "one_liner": "AgentBench: Evaluating LLMs as Agents",
+      "exposes": [
+        "library"
+      ],
+      "architecture": [
+        "single_agent"
+      ]
+    },
+    {
+      "id": "arxiv:2308.03688",
+      "type": "paper",
+      "title": "AgentBench: Evaluating LLMs as Agents",
+      "venue": "arXiv 2023"
+    },
+    {
+      "id": "arxiv:2308.07201",
+      "type": "paper",
+      "title": "ChatEval: Towards Better LLM-based Evaluators through Multi-Agent Debate",
+      "venue": "arXiv 2023"
+    },
+    {
+      "id": "arxiv:2311.12741",
+      "type": "paper",
+      "title": "Benchmarking large language models as ai research agents",
+      "venue": "NeurIPS 2023 Workshop"
+    },
+    {
+      "id": "agent:biokgbench",
+      "type": "agent",
+      "name": "BioKGBench",
+      "one_liner": "BioKGBench: A Knowledge Graph Checking Benchmark of AI Agent for Biomedical Science",
+      "exposes": [
+        "library"
+      ],
+      "architecture": [
+        "single_agent"
+      ]
+    },
+    {
+      "id": "arxiv:2407.00466",
+      "type": "paper",
+      "title": "BioKGBench: A Knowledge Graph Checking Benchmark of AI Agent for Biomedical Science",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "arxiv:2406.15341",
+      "type": "paper",
+      "title": "GenoTEX: A Benchmark for Evaluating LLM-Based Exploration of Gene Expression Data",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "agent:ideabench",
+      "type": "agent",
+      "name": "IdeaBench",
+      "one_liner": "IdeaBench: Benchmarking Large Language Models for Research Idea Generation",
+      "exposes": [
+        "library"
+      ],
+      "architecture": [
+        "single_agent"
+      ]
+    },
+    {
+      "id": "arxiv:2411.02429",
+      "type": "paper",
+      "title": "IdeaBench: Benchmarking Large Language Models for Research Idea Generation",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "url:https://www.nature.com/articles/s41586-023-06221-2",
+      "type": "paper",
+      "title": "Scientific discovery in the age of artificial intelligence",
+      "venue": "Nature 2023"
+    },
+    {
+      "id": "arxiv:2309.07864",
+      "type": "paper",
+      "title": "The rise and potential of large language model based agents: A survey",
+      "venue": "arXiv 2023"
+    },
+    {
+      "id": "arxiv:2402.01680",
+      "type": "paper",
+      "title": "Large language model based multi-agents: A survey of progress and challenges",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "doi:10.1007/s44223-024-00009-0",
+      "type": "paper",
+      "title": "A survey on LLM-based multi-agent systems: workflow, infrastructure, and challenges",
+      "venue": "Vicinagearth 2024"
+    },
+    {
+      "id": "arxiv:2403.15673",
+      "type": "paper",
+      "title": "AI for Biomedicine in the Era of Large Language Models",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "arxiv:2406.03712",
+      "type": "paper",
+      "title": "A Survey on Medical Large Language Models: Technology, Application, Trustworthiness, and Future Directions",
+      "venue": "arXiv 2024"
+    },
+    {
+      "id": "arxiv:2408.02479",
+      "type": "paper",
+      "title": "From LLMs to LLM-based Agents for Software Engineering: A Survey",
+      "venue": "arXiv 2024"
+    }
+  ],
+  "edges": [
+    {
+      "src": "agent:knowagent",
+      "rel": "described_by",
+      "dst": "arxiv:2403.03101",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:knowagent",
+      "rel": "built_by",
+      "dst": "org:stanford-university",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:knowagent",
+      "rel": "targets",
+      "dst": "domain:proteomics",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:researchagent",
+      "rel": "described_by",
+      "dst": "arxiv:2404.07738",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:researchagent",
+      "rel": "built_by",
+      "dst": "org:stanford-university",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:researchagent",
+      "rel": "targets",
+      "dst": "domain:proteomics",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:biodiscoveryagent",
+      "rel": "described_by",
+      "dst": "arxiv:2405.17631",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:biodiscoveryagent",
+      "rel": "built_by",
+      "dst": "org:stanford-university",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:biodiscoveryagent",
+      "rel": "targets",
+      "dst": "domain:proteomics",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:geneagent",
+      "rel": "described_by",
+      "dst": "arxiv:2405.16205",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:geneagent",
+      "rel": "built_by",
+      "dst": "org:stanford-university",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:geneagent",
+      "rel": "targets",
+      "dst": "domain:proteomics",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:cellagent",
+      "rel": "described_by",
+      "dst": "doi:10.1101/2024.05.13.593861v1",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:cellagent",
+      "rel": "built_by",
+      "dst": "org:stanford-university",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:cellagent",
+      "rel": "targets",
+      "dst": "domain:single_cell",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:drugagent",
+      "rel": "described_by",
+      "dst": "arxiv:2408.13378",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:drugagent",
+      "rel": "built_by",
+      "dst": "org:stanford-university",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:drugagent",
+      "rel": "targets",
+      "dst": "domain:proteomics",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:agentbench",
+      "rel": "described_by",
+      "dst": "arxiv:2308.03688",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:agentbench",
+      "rel": "built_by",
+      "dst": "org:stanford-university",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:agentbench",
+      "rel": "targets",
+      "dst": "domain:proteomics",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:biokgbench",
+      "rel": "described_by",
+      "dst": "arxiv:2407.00466",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:biokgbench",
+      "rel": "built_by",
+      "dst": "org:stanford-university",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:biokgbench",
+      "rel": "targets",
+      "dst": "domain:proteomics",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:ideabench",
+      "rel": "described_by",
+      "dst": "arxiv:2411.02429",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:ideabench",
+      "rel": "built_by",
+      "dst": "org:stanford-university",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:ideabench",
+      "rel": "targets",
+      "dst": "domain:proteomics",
+      "primary": false,
+      "provenance": null
+    }
+  ]
+}
