@@ -1,0 +1,27 @@
+{
+  "name": "agentkg-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Static SPA for the Biomedical Agent Knowledge Graph (reads graph.json + generated profiles)",
+  "scripts": {
+    "sync-data": "bun run scripts/copy-data.ts",
+    "predev": "bun run sync-data",
+    "dev": "vite",
+    "prebuild": "bun run sync-data",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "cytoscape": "^3.30.2",
+    "cytoscape-fcose": "^2.2.0",
+    "marked": "^14.1.3"
+  },
+  "devDependencies": {
+    "@types/cytoscape": "^3.21.8",
+    "@types/node": "^25.9.3",
+    "playwright-core": "^1.60.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}
