@@ -12,6 +12,9 @@ DOMAINS = {
     "single_cell", "spatial", "proteomics", "genomics_db", "multi_omics",
     "perturbation", "drug_discovery", "medical_imaging", "clinical_qa",
     "literature", "hypothesis_gen", "protein_structure",
+    # general scientific-discovery / research-automation (not biomedicine-specific) —
+    # lets broad-scope agents be tagged + filtered rather than dropped (ADR 0002).
+    "scientific_discovery",
 }
 
 # rules.yml stand-in: alias tables catching CLASSES of extraction noise (SPEC §1.3).
