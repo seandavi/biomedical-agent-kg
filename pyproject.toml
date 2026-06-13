@@ -8,6 +8,7 @@ dependencies = [
     "typer>=0.12",
     "pydantic-settings>=2.4",
     "google-genai>=0.3",
+    "loguru>=0.7.3",
 ]
 
 [project.scripts]

@@ -27,6 +27,7 @@ class Settings(BaseSettings):
     list_path: Path = Field(Path("list.md"), validation_alias="KG_LIST_PATH")
     out_path: Path = Field(Path("graph.json"), validation_alias="KG_OUT_PATH")
     review_path: Path = Field(Path("_review.json"), validation_alias="KG_REVIEW_PATH")
+    log_level: str = Field("INFO", validation_alias="KG_LOG_LEVEL")
 
     # --- Google Cloud (shared with gcloud / ADC) ---
     project: str | None = Field(None, validation_alias="GOOGLE_CLOUD_PROJECT")

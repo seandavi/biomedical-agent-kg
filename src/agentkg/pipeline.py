@@ -10,6 +10,7 @@ import json
 from . import profiles, resolve, sources
 from .backends import MockBackend, make_backend
 from .config import Settings
+from .log import logger
 from .model import Edge, Graph, slugify
 from .parse import classify_url, crawl, parse_entries
 from .vocab import ARCH, DOMAIN_ALIASES, DOMAINS, EXPOSES, guard_vocab
@@ -40,6 +41,7 @@ def build(md: str, review_log: list, backend=None, limit=None, context_sink=None
             continue
 
         agents_done += 1
+        logger.info(f"agent [{agents_done}]: {name}")
 
         aid = "agent:" + slugify(name)
         g.add_node(aid, "agent", name=name, one_liner=e["title"])
@@ -122,6 +124,9 @@ def build(md: str, review_log: list, backend=None, limit=None, context_sink=None
     for nid in pruned:
         del g.nodes[nid]
     review_log.extend({"pruned_orphan": nid} for nid in pruned)
+    cites_n = sum(1 for ed in g.edges if ed["rel"] == "cites")
+    logger.info(f"built {agents_done} agents, {len(g.nodes)} nodes, {len(g.edges)} "
+                f"edges (cites={cites_n}); pruned {len(pruned)} orphans")
     return g
 
 
@@ -141,7 +146,10 @@ def run(settings: Settings, backend=None, limit=None, n_profiles=0,
     backend = backend or make_backend(settings)
     review: list = []
     ctx: dict = {}
+    src = "SPEC §11 sources" if use_sources else str(settings.list_path)
+    logger.info(f"crawl: {src}")
     md = sources.crawl_sources() if use_sources else crawl(settings.list_path)
+    logger.info(f"crawled {len(md)} chars; building (backend={backend.name}, limit={limit})")
     g = build(md, review, backend, limit=limit, context_sink=ctx)
     out = {"nodes": list(g.nodes.values()), "edges": g.edges}
     settings.out_path.write_text(json.dumps(out, indent=2))

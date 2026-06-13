@@ -13,6 +13,7 @@ import urllib.error
 import urllib.request
 
 from . import cache
+from .log import logger
 from .vocab import ORG_ALIASES
 
 _TIMEOUT = 20
@@ -24,7 +25,8 @@ def _get(url: str, headers: dict | None = None) -> str | None:
         req = urllib.request.Request(url, headers={**_UA, **(headers or {})})
         with urllib.request.urlopen(req, timeout=_TIMEOUT) as r:
             return r.read().decode("utf-8", "replace")
-    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError):
+    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as exc:
+        logger.debug(f"fetch failed: {url} ({exc})")
         return None
 
 

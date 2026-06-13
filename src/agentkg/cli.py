@@ -5,6 +5,7 @@ from pathlib import Path
 
 import typer
 
+from . import log
 from .backends import make_backend
 from .config import Settings
 from .pipeline import run, summarize
@@ -33,9 +34,11 @@ def run_pipeline(
     limit: int = typer.Option(None, "--limit", "-n", help="process only first N agents"),
     profiles: int = typer.Option(0, "--profiles", "-p", help="draft prose for first N agents"),
     use_sources: bool = typer.Option(False, "--sources", help="crawl SPEC §11 lists instead of list.md"),
+    log_level: str = typer.Option(None, "--log-level", help="DEBUG | INFO | WARNING | ERROR"),
 ):
     """Crawl the list, build the graph, write graph.json."""
     s = _settings(backend, list_path, out)
+    log.configure(log_level or s.log_level)
     b = make_backend(s)
     g, review, written = run(s, b, limit=limit, n_profiles=profiles, use_sources=use_sources)
     summary = summarize(g)

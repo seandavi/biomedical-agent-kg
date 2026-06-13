@@ -10,6 +10,8 @@ from __future__ import annotations
 import pathlib
 import re
 
+from .log import logger
+
 # node types with clean type:slug ids that wikilinks can target
 LINKABLE = {"agent", "benchmark", "domain", "org"}
 _WIKILINK = re.compile(r"\[\[([^\]|]+)(?:\|[^\]]+)?\]\]")
@@ -62,11 +64,12 @@ def generate(graph, ctx: dict, backend, review_log: list, limit=None,
         aid = node["id"]
         nbrs = _neighbors(graph, aid)
         body = backend.draft_profile(_prompt(node, nbrs, ctx.get(aid, {})))
-        for link in _WIKILINK.findall(body):
-            if link not in valid:
-                review_log.append({"agent": aid, "bad_wikilink": link})
+        bad = [link for link in _WIKILINK.findall(body) if link not in valid]
+        for link in bad:
+            review_log.append({"agent": aid, "bad_wikilink": link})
         path = out / f"{aid.split(':', 1)[1]}.md"
         path.write_text(_frontmatter(node) + "\n\n" + body.strip() + "\n",
                         encoding="utf-8")
         written.append(str(path))
+        logger.info(f"profile: {path}" + (f"  ({len(bad)} bad wikilinks)" if bad else ""))
     return written
