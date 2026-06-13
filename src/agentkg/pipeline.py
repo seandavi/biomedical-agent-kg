@@ -7,7 +7,7 @@ from __future__ import annotations
 
 import json
 
-from . import profiles, resolve, sources
+from . import cocite, profiles, resolve, sources
 from .backends import MockBackend, make_backend
 from .config import Settings
 from .log import logger
@@ -75,6 +75,7 @@ def build(md: str, review_log: list, backend=None, limit=None, context_sink=None
                 oid = g.add_node("org:" + slugify(org["name"]), "org",
                                  name=org["name"], ror=org.get("ror"))
                 g.add_edge(Edge(aid, "built_by", oid))
+                g.add_edge(Edge(rid, "owned_by", oid))  # tie the repo to its GitHub org
 
         # --- facets + expensive edge (backend-swappable) ---
         f = backend.extract_facets(e)
@@ -120,16 +121,10 @@ def build(md: str, review_log: list, backend=None, limit=None, context_sink=None
         for d in (d1 + d2 + d3):
             review_log.append({"agent": aid, "dropped_or_aliased": d})
 
-    # cites overlay (SPEC §6.2): catalog-internal Paper->Paper edges from OpenAlex
-    # referenced_works. Only edges between papers BOTH in the catalog are kept — never
-    # pull external refs in (they would explode and dominate layout). Default-off is a
-    # rendering concern; the data is always present.
-    oaid_to_cid = {oaid: c for c, (oaid, _) in paper_refs.items() if oaid}
-    for c, (_, refs) in paper_refs.items():
-        for r in refs:
-            tgt = oaid_to_cid.get(r)
-            if tgt and tgt != c:
-                g.add_edge(Edge(c, "cites", tgt))
+    # citation layer (SPEC §6.2): internal cites + cocitation externals that connect
+    # >=2 catalog papers (in_catalog=False). Default-off overlay is a rendering concern.
+    if online:
+        cocite.build_citation_layer(g, paper_refs, review_log)
 
     # prune orphans: a node you cannot traverse to/from earns no place (SPEC §1 — nodes
     # are things you traverse *through*). Drops unlinked survey papers and benchmarks no

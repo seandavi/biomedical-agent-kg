@@ -1,6 +1,48 @@
 {
   "nodes": [
     {
+      "id": "arxiv:2408.06292",
+      "type": "paper",
+      "title": "The AI Scientist: Towards Fully Automated Open-ended Scientific Discovery",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2304.05332",
+      "type": "paper",
+      "title": "Emergent autonomous scientific research capabilities of large language models",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2307.07522",
+      "type": "paper",
+      "title": "The future of fundamental science led by generative closed-loop artificial intelligence",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2310.02170",
+      "type": "paper",
+      "title": "Dynamic LLM-Agent Network: An LLM-Agent Collaboration Framework with Agent Team Optimization",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2308.08155",
+      "type": "paper",
+      "title": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation Framework",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2403.03101",
+      "type": "paper",
+      "title": "KnowAgent: Knowledge-augmented Planning for LLM-based Agents",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2305.14325",
+      "type": "paper",
+      "title": "Improving Factuality and Reasoning in Language Models through Multiagent Debate",
+      "venue": null
+    },
+    {
       "id": "agent:researchagent",
       "type": "agent",
       "name": "ResearchAgent",
@@ -71,6 +113,12 @@
       "id": "domain:literature",
       "type": "domain",
       "name": "literature"
+    },
+    {
+      "id": "arxiv:2406.10252",
+      "type": "paper",
+      "title": "AutoSurvey: Large Language Models Can Automatically Write Surveys",
+      "venue": null
     },
     {
       "id": "agent:genesis",
@@ -359,6 +407,12 @@
       "venue": null
     },
     {
+      "id": "arxiv:2407.08940",
+      "type": "paper",
+      "title": "Large Language Models as Biomedical Hypothesis Generators: A Comprehensive Evaluation",
+      "venue": null
+    },
+    {
       "id": "agent:bia",
       "type": "agent",
       "name": "BIA",
@@ -394,6 +448,12 @@
       "id": "domain:single_cell",
       "type": "domain",
       "name": "single_cell"
+    },
+    {
+      "id": "arxiv:2407.03381",
+      "type": "paper",
+      "title": "SeqMate: A Novel Large Language Model Pipeline for Automating RNA Sequencing",
+      "venue": null
     },
     {
       "id": "agent:drugagent",
@@ -457,6 +517,60 @@
       "id": "domain:protein_structure",
       "type": "domain",
       "name": "protein_structure"
+    },
+    {
+      "id": "arxiv:2407.01603",
+      "type": "paper",
+      "title": "A review of large language models and autonomous agents in chemistry",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2410.18792",
+      "type": "paper",
+      "title": "An LLM Agent for Automatic Geospatial Data Analysis",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2308.03688",
+      "type": "paper",
+      "title": "AgentBench: Evaluating LLMs as Agents",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2308.07201",
+      "type": "paper",
+      "title": "ChatEval: Towards Better LLM-based Evaluators through Multi-Agent Debate",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2309.07864",
+      "type": "paper",
+      "title": "The rise and potential of large language model based agents: A survey",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2402.01680",
+      "type": "paper",
+      "title": "Large language model based multi-agents: A survey of progress and challenges",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2403.15673",
+      "type": "paper",
+      "title": "AI for Biomedicine in the Era of Large Language Models",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2406.03712",
+      "type": "paper",
+      "title": "A Survey on Medical Large Language Models: Technology, Application, Trustworthiness, and Future Directions",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2408.02479",
+      "type": "paper",
+      "title": "From LLMs to LLM-based Agents for Software Engineering: A Survey",
+      "venue": null
     },
     {
       "id": "agent:apex-metabolic-ai-lab",
@@ -1578,6 +1692,12 @@
       "ror": null
     },
     {
+      "id": "arxiv:2304.05376",
+      "type": "paper",
+      "title": "ChemCrow",
+      "venue": null
+    },
+    {
       "id": "agent:txagent",
       "type": "agent",
       "name": "TxAgent",
@@ -1628,6 +1748,84 @@
       "name": "DescriptionPC"
     },
     {
+      "id": "arxiv:1806.07366",
+      "type": "paper",
+      "title": "Neural Ordinary Differential Equations",
+      "venue": null
+    },
+    {
+      "id": "arxiv:1711.10561",
+      "type": "paper",
+      "title": "Physics-Informed Neural Networks",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2502.05151",
+      "type": "paper",
+      "title": "A Survey on AI-assisted Scientific Discovery",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2307.08423",
+      "type": "paper",
+      "title": "Artificial Intelligence for Science in Quantum, Atomistic, and Continuum Systems",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2505.13259",
+      "type": "paper",
+      "title": "From Automation to Autonomy: A Survey on Large Language Models in Scientific Discovery",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2508.14111",
+      "type": "paper",
+      "title": "From AI for Science to Agentic Science: A Survey on Autonomous Scientific Discovery",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2503.08979",
+      "type": "paper",
+      "title": "Agentic AI for Scientific Discovery: A Survey of Progress, Challenges, and Future Directions",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2503.24047",
+      "type": "paper",
+      "title": "Towards Scientific Intelligence: A Survey of LLM-based Scientific Agents",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2406.10833",
+      "type": "paper",
+      "title": "A Comprehensive Survey of Scientific Large Language Models and Their Applications",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2401.14656",
+      "type": "paper",
+      "title": "Scientific Large Language Models: A Survey on Biological & Chemical Domains",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2201.05624",
+      "type": "paper",
+      "title": "Scientific Machine Learning through Physics-Informed Neural Networks: Where we are and What's next",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2408.16806",
+      "type": "paper",
+      "title": "Physics-Informed Neural Networks and Extensions",
+      "venue": null
+    },
+    {
+      "id": "doi:10.1073/pnas.1912789117",
+      "type": "paper",
+      "title": "The frontier of simulation-based inference",
+      "venue": null
+    },
+    {
       "id": "doi:10.1021/acs.chemrev.4c00055",
       "type": "paper",
       "title": "Self-Driving Laboratories for Chemistry and Materials Science",
@@ -1643,6 +1841,12 @@
       "id": "arxiv:2505.16938",
       "type": "paper",
       "title": "InternAgent: When Agent Becomes the Scientist -- Building Closed-Loop System from Hypothesis to Verification",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2309.02726",
+      "type": "paper",
+      "title": "MOOSE: Large Language Models for Automated Open-domain Scientific Hypotheses Discovery",
       "venue": null
     },
     {
@@ -1680,9 +1884,21 @@
       "name": "MMLU"
     },
     {
+      "id": "arxiv:2509.23426",
+      "type": "paper",
+      "title": "Democratizing AI scientists using ToolUniverse",
+      "venue": null
+    },
+    {
       "id": "arxiv:2503.10970",
       "type": "paper",
       "title": "TxAgent: An AI Agent for Therapeutic Reasoning Across a Universe of Tools",
+      "venue": null
+    },
+    {
+      "id": "arxiv:2412.21154",
+      "type": "paper",
+      "title": "Aviary: Training Language Agents on Challenging Scientific Tasks",
       "venue": null
     },
     {
@@ -1917,6 +2133,1940 @@
       "type": "org",
       "name": "NVIDIA-AI-Blueprints",
       "ror": null
+    },
+    {
+      "id": "arxiv:2411.14499",
+      "type": "paper",
+      "title": "arXiv",
+      "venue": null
+    },
+    {
+      "id": "openalex:W4385571062",
+      "type": "paper",
+      "title": "Exploring and Verbalizing Academic Ideas by Concept Co-occurrence",
+      "year": 2023,
+      "cited_by_count": 5,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4389991792",
+      "type": "paper",
+      "title": "Autonomous chemical research with large language models",
+      "year": 2023,
+      "cited_by_count": 796,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W299440670",
+      "type": "paper",
+      "title": null,
+      "year": null,
+      "cited_by_count": null,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W2587284713",
+      "type": "paper",
+      "title": "Improved Variational Inference with Inverse Autoregressive Flow",
+      "year": 2016,
+      "cited_by_count": 812,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W2745110207",
+      "type": "paper",
+      "title": "Hidden physics models: Machine learning of nonlinear partial differential equations",
+      "year": 2017,
+      "cited_by_count": 1357,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W2962727772",
+      "type": "paper",
+      "title": "Automatic differentiation in machine learning: a survey",
+      "year": 2015,
+      "cited_by_count": 2097,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W1853291804",
+      "type": "paper",
+      "title": "Automatic differentiation in machine learning: a survey",
+      "year": 2015,
+      "cited_by_count": 848,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W2919115771",
+      "type": "paper",
+      "title": "Deep learning",
+      "year": 2015,
+      "cited_by_count": 81342,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W1489977799",
+      "type": "paper",
+      "title": "Simplex optimization of reaction conditions with an automated system.",
+      "year": 1988,
+      "cited_by_count": 13,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W1975616406",
+      "type": "paper",
+      "title": "Unattended optimisation of reversed-phase high-performance liquid chromatographic separations using the modified simplex algorithm",
+      "year": 1982,
+      "cited_by_count": 189,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W2112724747",
+      "type": "paper",
+      "title": "Cheaper faster drug development validated by the repositioning of drugs against neglected tropical diseases",
+      "year": 2015,
+      "cited_by_count": 161,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W2114804859",
+      "type": "paper",
+      "title": "The Automation of Science",
+      "year": 2009,
+      "cited_by_count": 634,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W2132402242",
+      "type": "paper",
+      "title": "Intelligent routes to the controlled synthesis of nanoparticles",
+      "year": 2007,
+      "cited_by_count": 319,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W2830440988",
+      "type": "paper",
+      "title": "Controlling an organic synthesis robot with machine learning to search for new reactivity",
+      "year": 2018,
+      "cited_by_count": 771,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W2973461618",
+      "type": "paper",
+      "title": "FINDUS: An Open-Source 3D Printable Liquid-Handling Workstation for Laboratory Automation in Life Sciences",
+      "year": 2019,
+      "cited_by_count": 64,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W2986937238",
+      "type": "paper",
+      "title": "Towards a fully automated algorithm driven platform for biosystems design",
+      "year": 2019,
+      "cited_by_count": 194,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W3016862866",
+      "type": "paper",
+      "title": "ChemOS: An orchestration software to democratize autonomous discovery",
+      "year": 2020,
+      "cited_by_count": 145,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W3018637171",
+      "type": "paper",
+      "title": "Autonomous discovery of optically active chiral inorganic perovskite nanocrystals through an intelligent cloud lab",
+      "year": 2020,
+      "cited_by_count": 165,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W3024236153",
+      "type": "paper",
+      "title": null,
+      "year": null,
+      "cited_by_count": null,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W3042021489",
+      "type": "paper",
+      "title": "A mobile robotic chemist",
+      "year": 2020,
+      "cited_by_count": 1416,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W3132956480",
+      "type": "paper",
+      "title": "Combining Machine Learning and Computational Chemistry for Predictive Insights Into Chemical Systems",
+      "year": 2021,
+      "cited_by_count": 808,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W3155456766",
+      "type": "paper",
+      "title": "Toward autonomous additive manufacturing: Bayesian optimization on a 3D printer",
+      "year": 2021,
+      "cited_by_count": 144,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W3177828909",
+      "type": "paper",
+      "title": "Highly accurate protein structure prediction with AlphaFold",
+      "year": 2021,
+      "cited_by_count": 44845,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W3178108585",
+      "type": "paper",
+      "title": null,
+      "year": null,
+      "cited_by_count": null,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W3214990797",
+      "type": "paper",
+      "title": "Cross-Platform Bayesian Optimization System for Autonomous Biological Assay Development",
+      "year": 2021,
+      "cited_by_count": 11,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4212913440",
+      "type": "paper",
+      "title": "A self-driving laboratory advances the Pareto front for material properties",
+      "year": 2022,
+      "cited_by_count": 197,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4283693458",
+      "type": "paper",
+      "title": "Robotic search for optimal cell culture in regenerative medicine",
+      "year": 2022,
+      "cited_by_count": 96,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4285141178",
+      "type": "paper",
+      "title": "A self-driving laboratory designed to accelerate the discovery of adhesive materials",
+      "year": 2022,
+      "cited_by_count": 48,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4292639835",
+      "type": "paper",
+      "title": "Autonomous Chemical Experiments: Challenges and Perspectives on Establishing a Self-Driving Lab",
+      "year": 2022,
+      "cited_by_count": 263,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4307410169",
+      "type": "paper",
+      "title": "Closed-loop optimization of general reaction conditions for heteroaryl Suzuki-Miyaura coupling",
+      "year": 2022,
+      "cited_by_count": 211,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4313531587",
+      "type": "paper",
+      "title": "Perspectives for self-driving labs in synthetic biology",
+      "year": 2023,
+      "cited_by_count": 101,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4385197639",
+      "type": "paper",
+      "title": "From alchemist to AI chemist",
+      "year": 2023,
+      "cited_by_count": 22,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4385671288",
+      "type": "paper",
+      "title": "14 examples of how LLMs can transform materials science and chemistry: a reflection on a large language model hackathon",
+      "year": 2023,
+      "cited_by_count": 201,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4385955818",
+      "type": "paper",
+      "title": "Brokering between tenants for an international materials acceleration platform",
+      "year": 2023,
+      "cited_by_count": 41,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4387826128",
+      "type": "paper",
+      "title": "PyLabRobot: An open-source, hardware-agnostic interface for liquid-handling robots and accessories",
+      "year": 2023,
+      "cited_by_count": 40,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4387937021",
+      "type": "paper",
+      "title": "Large language models for chemistry robotics",
+      "year": 2023,
+      "cited_by_count": 98,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4388173934",
+      "type": "paper",
+      "title": "AI-driven robotic chemist for autonomous synthesis of organic molecules",
+      "year": 2023,
+      "cited_by_count": 92,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4388560379",
+      "type": "paper",
+      "title": "ChatGPT Research Group for Optimizing the Crystallinity of MOFs and COFs",
+      "year": 2023,
+      "cited_by_count": 147,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4390090299",
+      "type": "paper",
+      "title": "Autonomous, multiproperty-driven molecular discovery: From predictions to measurements and back",
+      "year": 2023,
+      "cited_by_count": 141,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4390754450",
+      "type": "paper",
+      "title": "Self-driving laboratories to autonomously navigate the protein fitness landscape",
+      "year": 2024,
+      "cited_by_count": 169,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4391219067",
+      "type": "paper",
+      "title": "MicroCycle: An Integrated and Automated Platform to Accelerate Drug Discovery",
+      "year": 2024,
+      "cited_by_count": 18,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4391853808",
+      "type": "paper",
+      "title": "Review of low-cost self-driving laboratories in chemistry and materials science: the \u201cfrugal twin\u201d concept",
+      "year": 2024,
+      "cited_by_count": 68,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4396723768",
+      "type": "paper",
+      "title": "Augmenting large language models with chemistry tools",
+      "year": 2024,
+      "cited_by_count": 569,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4396906933",
+      "type": "paper",
+      "title": "ChemOS 2.0: An orchestration architecture for chemical self-driving laboratories",
+      "year": 2024,
+      "cited_by_count": 69,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4396977868",
+      "type": "paper",
+      "title": "Delocalized, asynchronous, closed-loop discovery of organic laser emitters",
+      "year": 2024,
+      "cited_by_count": 135,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4399786080",
+      "type": "paper",
+      "title": "Self-Driving Laboratories for Chemistry and Materials Science",
+      "year": 2024,
+      "cited_by_count": 6,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4403925918",
+      "type": "paper",
+      "title": "Empowering biomedical discovery with AI agents",
+      "year": 2024,
+      "cited_by_count": 241,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4407236000",
+      "type": "paper",
+      "title": "Accelerating structure prediction of molecular crystals using actively trained moment tensor potential",
+      "year": 2025,
+      "cited_by_count": 6,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4409086391",
+      "type": "paper",
+      "title": "Rapid synthesis of metastable materials for electrocatalysis",
+      "year": 2025,
+      "cited_by_count": 34,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4409502949",
+      "type": "paper",
+      "title": "Accelerating aqueous electrolyte design with automated full-cell battery experimentation and Bayesian optimization",
+      "year": 2025,
+      "cited_by_count": 15,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4410549543",
+      "type": "paper",
+      "title": "Democratizing self-driving labs: advances in low-cost 3D printing for laboratory automation",
+      "year": 2025,
+      "cited_by_count": 13,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4414849058",
+      "type": "paper",
+      "title": "Generative artificial intelligence in medicine",
+      "year": 2025,
+      "cited_by_count": 58,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4411161961",
+      "type": "paper",
+      "title": "AIGC-empowered smart manufacturing: Prospects and challenges",
+      "year": 2025,
+      "cited_by_count": 48,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4405628342",
+      "type": "paper",
+      "title": "Generative AI in Marketing and Principles for Ethical Design and Deployment",
+      "year": 2024,
+      "cited_by_count": 44,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4405355275",
+      "type": "paper",
+      "title": "From intention to implementation: automating biomedical research via LLMs",
+      "year": 2025,
+      "cited_by_count": 20,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4405459204",
+      "type": "paper",
+      "title": "How AI agents will change cancer research and oncology",
+      "year": 2024,
+      "cited_by_count": 20,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4414260950",
+      "type": "paper",
+      "title": "GIScience in the era of Artificial Intelligence: a research agenda towards Autonomous GIS",
+      "year": 2025,
+      "cited_by_count": 20,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4402507667",
+      "type": "paper",
+      "title": "Spiers Memorial Lecture: How to do impactful research in artificial intelligence for chemistry and materials science",
+      "year": 2024,
+      "cited_by_count": 16,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4414099476",
+      "type": "paper",
+      "title": "Towards agentic science for advancing scientific discovery",
+      "year": 2025,
+      "cited_by_count": 11,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4410775828",
+      "type": "paper",
+      "title": "Self-driving laboratories in Japan",
+      "year": 2025,
+      "cited_by_count": 9,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4409025678",
+      "type": "paper",
+      "title": "A vision of human\u2013AI collaboration for enhanced biological collection curation and research",
+      "year": 2025,
+      "cited_by_count": 8,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7122487524",
+      "type": "paper",
+      "title": "Artificial intelligence agents in cancer research and oncology",
+      "year": 2026,
+      "cited_by_count": 8,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4413306021",
+      "type": "paper",
+      "title": "Automating <i>care</i> by self-maintainability for full laboratory automation",
+      "year": 2025,
+      "cited_by_count": 6,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7127338657",
+      "type": "paper",
+      "title": "Autonomous artificial intelligence, scientific research, and human values",
+      "year": 2026,
+      "cited_by_count": 5,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7131288999",
+      "type": "paper",
+      "title": "Agentic AI and the rise of in silico team science in biomedical research",
+      "year": 2026,
+      "cited_by_count": 5,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4401702120",
+      "type": "paper",
+      "title": "Towards a science exocortex",
+      "year": 2024,
+      "cited_by_count": 9,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4408417845",
+      "type": "paper",
+      "title": "Exploring the opportunities and challenges of using large language models to represent institutional agency in land system modelling",
+      "year": 2025,
+      "cited_by_count": 6,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4411039580",
+      "type": "paper",
+      "title": "Collective predictive coding as model of science: formalizing scientific activities towards generative science",
+      "year": 2025,
+      "cited_by_count": 5,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4412024857",
+      "type": "paper",
+      "title": "Considering the ethics of large machine learning models in the chemical sciences",
+      "year": 2025,
+      "cited_by_count": 5,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4414100590",
+      "type": "paper",
+      "title": "Breaking interdisciplinary barriers in solid-state battery research: BatteryAgent for multifaceted analysis",
+      "year": 2025,
+      "cited_by_count": 4,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4412655177",
+      "type": "paper",
+      "title": "Building an Intelligent Data Exploring Assistant for Geoscientists",
+      "year": 2025,
+      "cited_by_count": 1,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4415443294",
+      "type": "paper",
+      "title": "Exocortex Network for AI-Augmented Human-Led Scientific Expedition",
+      "year": 2025,
+      "cited_by_count": 1,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4415965425",
+      "type": "paper",
+      "title": "Agentic Large Language Models for Conceptual Systems Engineering and Design",
+      "year": 2025,
+      "cited_by_count": 1,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4404283941",
+      "type": "paper",
+      "title": "The Virtual Lab: AI Agents Design New SARS-CoV-2 Nanobodies with Experimental Validation",
+      "year": 2024,
+      "cited_by_count": 50,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4408224138",
+      "type": "paper",
+      "title": "DORA AI Scientist: Multi-agent Virtual Research Team for Scientific Exploration Discovery and Automated Report Generation",
+      "year": 2025,
+      "cited_by_count": 3,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4410833419",
+      "type": "paper",
+      "title": "PerTurboAgent: A Self-Planning Agent for Boosting Sequential Perturb-seq Experiments",
+      "year": 2025,
+      "cited_by_count": 2,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4410477085",
+      "type": "paper",
+      "title": "Case Study of Using AI as Co-Pilot in Biotech Research: Functional Network Analysis of Invasive Cancer",
+      "year": 2025,
+      "cited_by_count": 1,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4408020906",
+      "type": "paper",
+      "title": "AIRUS: a simple workflow for AI-assisted exploration of scientific data",
+      "year": 2025,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7118690722",
+      "type": "paper",
+      "title": "Can AI Conduct Autonomous Scientific Research? Case Studies on Two Real-World Tasks",
+      "year": 2026,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7140324928",
+      "type": "paper",
+      "title": "Agents of discovery",
+      "year": 2026,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7141642849",
+      "type": "paper",
+      "title": "From foundation models to autonomous agents in biology",
+      "year": 2026,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7160988562",
+      "type": "paper",
+      "title": "Building MCP-native hierarchical AI scientist ecosystems: a perspective on scaling multi-agent scientific discovery",
+      "year": 2026,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4406800520",
+      "type": "paper",
+      "title": "The rise and potential of large language model based agents: a survey",
+      "year": 2025,
+      "cited_by_count": 395,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4387393188",
+      "type": "paper",
+      "title": "A GPT\u20104 Reticular Chemist for Guiding MOF Discovery**",
+      "year": 2023,
+      "cited_by_count": 150,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4387078269",
+      "type": "paper",
+      "title": "In Pursuit of the Exceptional: Research Directions for Machine Learning in Chemical and Materials Science",
+      "year": 2023,
+      "cited_by_count": 93,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4389407755",
+      "type": "paper",
+      "title": "Accelerated chemical science with AI",
+      "year": 2023,
+      "cited_by_count": 85,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4407922851",
+      "type": "paper",
+      "title": "Igniting Language Intelligence: The Hitchhiker\u2019s Guide from Chain-of-Thought Reasoning to Language Agents",
+      "year": 2025,
+      "cited_by_count": 31,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4399205591",
+      "type": "paper",
+      "title": "Future Shock: Generative AI and the International AI Policy and Governance Crisis",
+      "year": 2024,
+      "cited_by_count": 18,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4406903024",
+      "type": "paper",
+      "title": "TDAG: A multi-agent framework based on dynamic Task Decomposition and Agent Generation",
+      "year": 2025,
+      "cited_by_count": 16,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4389523833",
+      "type": "paper",
+      "title": "BioPlanner: Automatic Evaluation of LLMs on Protocol Planning in Biology",
+      "year": 2023,
+      "cited_by_count": 14,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4387507766",
+      "type": "paper",
+      "title": "Domain-specific chatbots for science using embeddings",
+      "year": 2023,
+      "cited_by_count": 26,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4389518977",
+      "type": "paper",
+      "title": "HoneyBee: Progressive Instruction Finetuning of Large Language Models for Materials Science",
+      "year": 2023,
+      "cited_by_count": 16,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4387406013",
+      "type": "paper",
+      "title": "A GPT\u20104 Reticular Chemist for Guiding MOF Discovery**",
+      "year": 2023,
+      "cited_by_count": 13,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4396767228",
+      "type": "paper",
+      "title": "Evaluation of information quality derived from AI-related information systems used for risk applications",
+      "year": 2024,
+      "cited_by_count": 5,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7125789118",
+      "type": "paper",
+      "title": "High-throughput yeast engineering in biofoundries: towards autonomous and scalable synthetic biology",
+      "year": 2026,
+      "cited_by_count": 3,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4406157726",
+      "type": "paper",
+      "title": "AstroMLab 2: AstroLLaMA-2-70B Model and Benchmarking Specialised LLMs for Astronomy",
+      "year": 2024,
+      "cited_by_count": 3,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4367278217",
+      "type": "paper",
+      "title": "A focus on the use of real-world datasets for yield prediction",
+      "year": 2023,
+      "cited_by_count": 2,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4389519864",
+      "type": "paper",
+      "title": "Monte Carlo Thought Search: Large Language Model Querying for Complex Scientific Reasoning in Catalyst Design",
+      "year": 2023,
+      "cited_by_count": 4,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4386563364",
+      "type": "paper",
+      "title": "Review of Low-cost Self-driving Laboratories: The \"Frugal Twin\" Concept",
+      "year": 2023,
+      "cited_by_count": 3,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4388732400",
+      "type": "paper",
+      "title": "Review of Low-cost Self-driving Laboratories: The \"Frugal Twin\" Concept",
+      "year": 2023,
+      "cited_by_count": 2,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4388718403",
+      "type": "paper",
+      "title": "Large Language Model-Empowered Agents for Simulating Macroeconomic Activities",
+      "year": 2023,
+      "cited_by_count": 26,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4387508266",
+      "type": "paper",
+      "title": "Open-Sourcing Highly Capable Foundation Models: An Evaluation of Risks, Benefits, and Alternative Methods for Pursuing Open-Source Objectives",
+      "year": 2023,
+      "cited_by_count": 24,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4382536579",
+      "type": "paper",
+      "title": "A GPT-4 Reticular Chemist for Guiding MOF Discovery",
+      "year": 2023,
+      "cited_by_count": 2,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4393353341",
+      "type": "paper",
+      "title": "Photonics for Energy in the Age of AI",
+      "year": 2024,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7161786165",
+      "type": "paper",
+      "title": "PRISM: protocol refinement through intelligent simulation modeling",
+      "year": 2026,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4391855109",
+      "type": "paper",
+      "title": "A Review on Large Language Models: Architectures, Applications, Taxonomies, Open Issues and Challenges",
+      "year": 2024,
+      "cited_by_count": 685,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4387034804",
+      "type": "paper",
+      "title": "A Review on Large Language Models: Architectures, Applications, Taxonomies, Open Issues and Challenges",
+      "year": 2023,
+      "cited_by_count": 47,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4416137592",
+      "type": "paper",
+      "title": "The rise and potential opportunities of large language model agents in bioinformatics and biomedicine",
+      "year": 2025,
+      "cited_by_count": 5,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4401719266",
+      "type": "paper",
+      "title": "Towards Responsible Generative AI: A Reference Architecture for Designing Foundation Model Based Agents",
+      "year": 2024,
+      "cited_by_count": 13,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4413232935",
+      "type": "paper",
+      "title": "AgentCoord: Visually exploring coordination strategy for LLM-based multi-agent collaboration",
+      "year": 2025,
+      "cited_by_count": 9,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4414261328",
+      "type": "paper",
+      "title": "Auto-scaling LLM-based multi-agent systems through dynamic integration of agents",
+      "year": 2025,
+      "cited_by_count": 4,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4405488295",
+      "type": "paper",
+      "title": "Serverless Ai Agents in the Cloud",
+      "year": 2024,
+      "cited_by_count": 3,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4400016510",
+      "type": "paper",
+      "title": "Advances in edge-cloud collaboration and evolution for large-small models",
+      "year": 2024,
+      "cited_by_count": 3,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4408247476",
+      "type": "paper",
+      "title": "A Multiagent-Driven Robotic AI Chemist Enabling Autonomous Chemical Research On Demand",
+      "year": 2025,
+      "cited_by_count": 120,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4413427262",
+      "type": "paper",
+      "title": "AI Agents vs. Agentic AI: A Conceptual taxonomy, applications and challenges",
+      "year": 2025,
+      "cited_by_count": 100,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4402713326",
+      "type": "paper",
+      "title": "How large language models can reshape collective intelligence",
+      "year": 2024,
+      "cited_by_count": 88,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4391862446",
+      "type": "paper",
+      "title": "MechAgents: Large language model multi-agent collaborations can solve mechanics problems, generate new data, and integrate knowledge",
+      "year": 2024,
+      "cited_by_count": 85,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4397004462",
+      "type": "paper",
+      "title": "ProtAgents: protein discovery <i>via</i> large language model multi-agent collaborations combining physics and machine learning",
+      "year": 2024,
+      "cited_by_count": 83,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4408411093",
+      "type": "paper",
+      "title": "Enhancing diagnostic capability with multi-agents conversational large language models",
+      "year": 2025,
+      "cited_by_count": 71,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4396918564",
+      "type": "paper",
+      "title": "LLM-Based Framework for Administrative Task Automation in Healthcare",
+      "year": 2024,
+      "cited_by_count": 44,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4401352024",
+      "type": "paper",
+      "title": "D-Bot: Database Diagnosis System using Large Language Models",
+      "year": 2024,
+      "cited_by_count": 32,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4403424906",
+      "type": "paper",
+      "title": "An Investigation on Utilizing Large Language Model for Industrial Computer-Aided Design Automation",
+      "year": 2024,
+      "cited_by_count": 25,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4413243547",
+      "type": "paper",
+      "title": "A Survey of Conversational Search",
+      "year": 2025,
+      "cited_by_count": 18,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4404336302",
+      "type": "paper",
+      "title": "Large language models (LLMs) as agents for augmented democracy",
+      "year": 2024,
+      "cited_by_count": 16,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4408301312",
+      "type": "paper",
+      "title": "Agents for Change: Artificial Intelligent Workflows for Quantitative Clinical Pharmacology and Translational Sciences",
+      "year": 2025,
+      "cited_by_count": 15,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4409228901",
+      "type": "paper",
+      "title": "MRAgent: an LLM-based automated agent for causal knowledge discovery in disease via Mendelian randomization",
+      "year": 2025,
+      "cited_by_count": 15,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4403866530",
+      "type": "paper",
+      "title": "Comparative Analysis of Single and Multiagent Large Language Model Architectures for Domain-Specific Tasks in Well Construction",
+      "year": 2024,
+      "cited_by_count": 11,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4405582672",
+      "type": "paper",
+      "title": "Aligning Large Language Models with Humans: A Comprehensive Survey of ChatGPT\u2019s Aptitude in Pharmacology",
+      "year": 2024,
+      "cited_by_count": 9,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4406236141",
+      "type": "paper",
+      "title": "AI agents in chemical research: GVIM \u2013 an intelligent research assistant system",
+      "year": 2025,
+      "cited_by_count": 9,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4412602986",
+      "type": "paper",
+      "title": "Automating Monte Carlo simulations in nuclear engineering with domain knowledge-embedded large language model agents",
+      "year": 2025,
+      "cited_by_count": 8,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4401119582",
+      "type": "paper",
+      "title": "A multi-agent-driven robotic AI chemist enabling autonomous chemical research on demand",
+      "year": 2024,
+      "cited_by_count": 5,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4402655055",
+      "type": "paper",
+      "title": "Studies on\u00a0the\u00a0Use of\u00a0Large Language Models for\u00a0the\u00a0Automation of\u00a0Business Processes in\u00a0Enterprise Resource Planning Systems",
+      "year": 2024,
+      "cited_by_count": 5,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4406884898",
+      "type": "paper",
+      "title": "Privacy dilemmas and opportunities in large language models: a brief review",
+      "year": 2025,
+      "cited_by_count": 4,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7119479065",
+      "type": "paper",
+      "title": "An LLM-based multi-agent system for remote sensing analysis",
+      "year": 2026,
+      "cited_by_count": 2,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7128043854",
+      "type": "paper",
+      "title": "General-Purpose Models for the Chemical Sciences: LLMs and Beyond",
+      "year": 2026,
+      "cited_by_count": 2,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4404013544",
+      "type": "paper",
+      "title": "Application of Self-Supervised Autonomous Agent Framework for Digital Transformation of Elder Well Potentials Discovery",
+      "year": 2024,
+      "cited_by_count": 4,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4401644503",
+      "type": "paper",
+      "title": "Application of Self-Evolving AI Agents in Chemical Research: A Novel Intelligent Assistance System",
+      "year": 2024,
+      "cited_by_count": 2,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4401132497",
+      "type": "paper",
+      "title": "A multi-agent-driven robotic AI chemist enabling autonomous chemical research on demand",
+      "year": 2024,
+      "cited_by_count": 4,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4407608081",
+      "type": "paper",
+      "title": "Application of Self-Supervised Autonomous Agent Framework With Growing Scheme for Digital Transformation of Elder/Existed Well Potentials Discovery",
+      "year": 2025,
+      "cited_by_count": 3,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4401547487",
+      "type": "paper",
+      "title": "LMM Chemical Research with Document Retrieval",
+      "year": 2024,
+      "cited_by_count": 1,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4242282425",
+      "type": "paper",
+      "title": "Philosophical Transactions of the Royal Society of London. Series A, Mathematical and Physical Sciences",
+      "year": 2019,
+      "cited_by_count": 391,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4390154668",
+      "type": "paper",
+      "title": "Iterative Prompt Refinement for Mining Gene Relationships from ChatGPT",
+      "year": 2023,
+      "cited_by_count": 9,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4398161918",
+      "type": "paper",
+      "title": "A Data-Intelligence-Intensive Bioinformatics Copilot System for Large-scale Omics Researches and Scientific Insights",
+      "year": 2024,
+      "cited_by_count": 1,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4409641305",
+      "type": "paper",
+      "title": "Ramasc: A Retrieval-Augmented Multi-Agent Framework for Automated Structural Calculation of Precast Concrete Floor Panels",
+      "year": 2025,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4413453485",
+      "type": "paper",
+      "title": "LLMAGENTNET: A COLLABORATIVE NETWORK OF AUTONOMOUS AI AGENTS FOR COMPLEX TASK EXECUTION",
+      "year": 2025,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4414594016",
+      "type": "paper",
+      "title": "Crash Scene to Resolution: LLM-based Agents Driven for Efficient Traffic Accident Handling",
+      "year": 2025,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4417117131",
+      "type": "paper",
+      "title": "Information Network Flux interprets the importance of regulatory circuits in the protein and gene spaces",
+      "year": 2025,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4417285575",
+      "type": "paper",
+      "title": "SagaLLM: Persistent Context Management, Constraint Validation, and Transaction Guarantees",
+      "year": 2025,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7125866004",
+      "type": "paper",
+      "title": "A Study on\u00a0Multi-agent Collaboration for\u00a0Business Process Automation in\u00a0Enterprise Resource Planning Systems",
+      "year": 2026,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7131083166",
+      "type": "paper",
+      "title": "Agents and Workflows",
+      "year": 2026,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7134125098",
+      "type": "paper",
+      "title": "[Withdrawn] AI Agents Need Memory Control Over More Context",
+      "year": 2026,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7151910642",
+      "type": "paper",
+      "title": "When collaboration fails: persuasion driven adversarial influence in multi agent large language model debate",
+      "year": 2026,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7152364666",
+      "type": "paper",
+      "title": "Belief-Driven Multi-Agent Collaboration via Approximate Perfect Bayesian Equilibrium for Social Simulation",
+      "year": 2026,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7161945243",
+      "type": "paper",
+      "title": "From Stateless Code Generation to Living Ontologies",
+      "year": 2026,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7163341066",
+      "type": "paper",
+      "title": "Evidence-based AI: from trailblazer to trustblazer?",
+      "year": 2026,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4399790320",
+      "type": "paper",
+      "title": "Large Knowledge Model: Perspectives and Challenges",
+      "year": 2024,
+      "cited_by_count": 22,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4405185373",
+      "type": "paper",
+      "title": "A review of large language models and autonomous agents in chemistry",
+      "year": 2024,
+      "cited_by_count": 191,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4405616956",
+      "type": "paper",
+      "title": "From text to insight: large language models for chemical data extraction",
+      "year": 2024,
+      "cited_by_count": 98,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4399205331",
+      "type": "paper",
+      "title": "Stance Detection with Collaborative Role-Infused LLM-Based Agents",
+      "year": 2024,
+      "cited_by_count": 54,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4404355908",
+      "type": "paper",
+      "title": "Agent design pattern catalogue: A collection of architectural patterns for foundation model based agents",
+      "year": 2024,
+      "cited_by_count": 29,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4404409655",
+      "type": "paper",
+      "title": "Mitigating reasoning hallucination through Multi-agent Collaborative Filtering",
+      "year": 2024,
+      "cited_by_count": 20,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4412930131",
+      "type": "paper",
+      "title": "(Perhaps) Beyond Human Translation: Harnessing Multi-Agent Collaboration for Translating Ultra-Long Literary Texts",
+      "year": 2025,
+      "cited_by_count": 17,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4389764468",
+      "type": "paper",
+      "title": "A Survey of Reasoning with Foundation Models",
+      "year": 2023,
+      "cited_by_count": 16,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4405432725",
+      "type": "paper",
+      "title": "Generative AI Agents for Knowledge Work Augmentation in Finance",
+      "year": 2024,
+      "cited_by_count": 6,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4413725215",
+      "type": "paper",
+      "title": "AI-powered Automatic Item Generation for Psychological Tests: A Conceptual Framework for an LLM-based Multi-Agent AIG System",
+      "year": 2025,
+      "cited_by_count": 5,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4403433659",
+      "type": "paper",
+      "title": "\u201cTipping the Balance\u201d: Human Intervention in Large Language Model Multi\u2010Agent Debate",
+      "year": 2024,
+      "cited_by_count": 6,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4405845335",
+      "type": "paper",
+      "title": "ConfidenceCal: Enhancing LLMs Reliability through Confidence Calibration in Multi-Agent Debate",
+      "year": 2024,
+      "cited_by_count": 1,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7125646697",
+      "type": "paper",
+      "title": "EMRDCM : An experience-enhanced multi-role debate method based on compromise mechanisms",
+      "year": 2026,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4409736143",
+      "type": "paper",
+      "title": "IdeaSynth: Iterative Research Idea Development Through Evolving and Composing Idea Facets with Literature-Grounded Feedback",
+      "year": 2025,
+      "cited_by_count": 12,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4411057454",
+      "type": "paper",
+      "title": "Automating traffic model enhancement with AI research agent",
+      "year": 2025,
+      "cited_by_count": 9,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4406458040",
+      "type": "paper",
+      "title": "Embracing Foundation Models for Advancing Scientific Discovery",
+      "year": 2024,
+      "cited_by_count": 1,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4399146196",
+      "type": "paper",
+      "title": "FinRobot: An Open-Source AI Agent Platform for Financial Applications using Large Language Models",
+      "year": 2024,
+      "cited_by_count": 32,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7133700978",
+      "type": "paper",
+      "title": "AI agent in healthcare: applications, evaluations, and future directions",
+      "year": 2026,
+      "cited_by_count": 4,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4413180152",
+      "type": "paper",
+      "title": "LLM-Powered AI Agent Systems and Their Applications in Industry",
+      "year": 2025,
+      "cited_by_count": 11,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4412203333",
+      "type": "paper",
+      "title": "A Survey on the Memory Mechanism of Large Language Model-based Agents",
+      "year": 2025,
+      "cited_by_count": 71,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4410176137",
+      "type": "paper",
+      "title": "Performance of single-agent and multi-agent language models in Spanish language medical competency exams",
+      "year": 2025,
+      "cited_by_count": 13,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4414571785",
+      "type": "paper",
+      "title": "A foundational architecture for AI agents in healthcare",
+      "year": 2025,
+      "cited_by_count": 12,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4414554088",
+      "type": "paper",
+      "title": "Autonomous Droplet Microfluidic Design Framework with Large Language Models",
+      "year": 2025,
+      "cited_by_count": 2,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7135030448",
+      "type": "paper",
+      "title": "A clinical environment simulator for dynamic AI evaluation",
+      "year": 2026,
+      "cited_by_count": 1,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4413638854",
+      "type": "paper",
+      "title": "AI Agents in Clinical Medicine: A Systematic Review",
+      "year": 2025,
+      "cited_by_count": 22,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4412954363",
+      "type": "paper",
+      "title": "Exploring the role of large language models in the scientific method: from hypothesis to discovery",
+      "year": 2025,
+      "cited_by_count": 46,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4412683160",
+      "type": "paper",
+      "title": "A conceptual framework for human\u2013AI collaborative genome annotation",
+      "year": 2025,
+      "cited_by_count": 3,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7131698947",
+      "type": "paper",
+      "title": "Artificial Intelligence agents for biological research: a survey",
+      "year": 2026,
+      "cited_by_count": 3,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4411182071",
+      "type": "paper",
+      "title": "PhenoGraph: A Multi-Agent Framework for Phenotype-driven Discovery in Spatial Transcriptomics Data Augmented with Knowledge Graphs",
+      "year": 2025,
+      "cited_by_count": 1,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4410422038",
+      "type": "paper",
+      "title": "VISION: a modular AI assistant for natural human-instrument interaction at scientific user facilities",
+      "year": 2025,
+      "cited_by_count": 9,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4402796844",
+      "type": "paper",
+      "title": "Building a literature knowledge base towards transparent biomedical AI",
+      "year": 2024,
+      "cited_by_count": 8,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4407406911",
+      "type": "paper",
+      "title": "AI-enabled language models (LMs) to large language models (LLMs) and multimodal large language models (MLLMs) in drug discovery and development",
+      "year": 2025,
+      "cited_by_count": 32,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4410513777",
+      "type": "paper",
+      "title": "Abstractive text summarization: A comprehensive survey of techniques, systems, and challenges",
+      "year": 2025,
+      "cited_by_count": 8,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4415689736",
+      "type": "paper",
+      "title": "Leveraging large language models for enzymatic reaction prediction and characterization",
+      "year": 2025,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4399364360",
+      "type": "paper",
+      "title": "Visibility into AI Agents",
+      "year": 2024,
+      "cited_by_count": 51,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4415070954",
+      "type": "paper",
+      "title": "Toward large reasoning models: A survey of reinforced reasoning with large language models",
+      "year": 2025,
+      "cited_by_count": 33,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4403289843",
+      "type": "paper",
+      "title": "Artificial general intelligence for the upstream geoenergy industry: A review",
+      "year": 2024,
+      "cited_by_count": 20,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4411575899",
+      "type": "paper",
+      "title": "Rethinking chemical research in the age of large language models",
+      "year": 2025,
+      "cited_by_count": 7,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4391925834",
+      "type": "paper",
+      "title": "Enabling Synergistic Knowledge Sharing and Reasoning in Large Language Models with Collaborative Multi-Agents",
+      "year": 2023,
+      "cited_by_count": 5,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4410641171",
+      "type": "paper",
+      "title": "AgentBuilder: Automating agent creation via large language model-driven systems",
+      "year": 2025,
+      "cited_by_count": 5,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4400141361",
+      "type": "paper",
+      "title": "ReTA: Recursively Thinking Ahead to Improve the Strategic Reasoning of Large Language Models",
+      "year": 2024,
+      "cited_by_count": 2,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4401201613",
+      "type": "paper",
+      "title": "The Emerged Security and Privacy of LLM Agent: A Survey with Case Studies",
+      "year": 2025,
+      "cited_by_count": 7,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4387963755",
+      "type": "paper",
+      "title": "RCAgent: Cloud Root Cause Analysis by Autonomous Agents with Tool-Augmented Large Language Models",
+      "year": 2023,
+      "cited_by_count": 1,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7147435254",
+      "type": "paper",
+      "title": "Meta-reasoning in autonomous agents: performance gains across benchmarks and models",
+      "year": 2026,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4407755370",
+      "type": "paper",
+      "title": "A comprehensive overview of Generative AI (GAI): Technologies, applications, and challenges",
+      "year": 2025,
+      "cited_by_count": 22,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4414475428",
+      "type": "paper",
+      "title": "Automating quantum computing laboratory experiments with an agent-based AI framework",
+      "year": 2025,
+      "cited_by_count": 6,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4407405968",
+      "type": "paper",
+      "title": "ChatLLM network: More brains, more intelligence",
+      "year": 2025,
+      "cited_by_count": 3,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4402429489",
+      "type": "paper",
+      "title": "PharmaBench: Enhancing ADMET benchmarks with large language models",
+      "year": 2024,
+      "cited_by_count": 48,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4402959784",
+      "type": "paper",
+      "title": "Generative Artificial Intelligence: A New Engine for Advancing Environmental Science and Engineering",
+      "year": 2024,
+      "cited_by_count": 35,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4412899734",
+      "type": "paper",
+      "title": "Generative Artificial Intelligence for Software Engineering\u2014A Research Agenda",
+      "year": 2025,
+      "cited_by_count": 26,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4401737904",
+      "type": "paper",
+      "title": "Large models of what? Mistaking engineering achievements for human linguistic agency",
+      "year": 2024,
+      "cited_by_count": 22,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4405366282",
+      "type": "paper",
+      "title": "Large Language Model Supply Chain: A Research Agenda",
+      "year": 2024,
+      "cited_by_count": 19,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4404317680",
+      "type": "paper",
+      "title": "A Survey of LLM-based Agents: Theories, Technologies, Applications and Suggestions",
+      "year": 2024,
+      "cited_by_count": 17,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4400680326",
+      "type": "paper",
+      "title": "Bandwidth Characterization of DeepSpeed on Distributed Large Language Model Training",
+      "year": 2024,
+      "cited_by_count": 6,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4399323548",
+      "type": "paper",
+      "title": "Enhancing RAG Systems: A Survey of Optimization Strategies for Performance and Scalability",
+      "year": 2024,
+      "cited_by_count": 1,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4416178376",
+      "type": "paper",
+      "title": "Agentic Lab: An Agentic-physical AI system for cell and organoid experimentation and manufacturing",
+      "year": 2025,
+      "cited_by_count": 2,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4405930778",
+      "type": "paper",
+      "title": "Potential and Dangers of LLM-based Agents",
+      "year": 2024,
+      "cited_by_count": 1,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4410742653",
+      "type": "paper",
+      "title": "CartoAgent: a multimodal large language model-powered multi-agent cartographic framework for map style transfer and evaluation",
+      "year": 2025,
+      "cited_by_count": 18,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4410719341",
+      "type": "paper",
+      "title": "GeoFactory: an LLM performance enhancement framework for geoscience factual and inferential tasks",
+      "year": 2025,
+      "cited_by_count": 5,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4416354678",
+      "type": "paper",
+      "title": "The agentic age of predictive chemical kinetics",
+      "year": 2025,
+      "cited_by_count": 2,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4409240168",
+      "type": "paper",
+      "title": "DNA sequence analysis landscape: a comprehensive review of DNA sequence analysis task types, databases, datasets, word embedding methods, and language models",
+      "year": 2025,
+      "cited_by_count": 10,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7139101859",
+      "type": "paper",
+      "title": "Generalist biological artificial intelligence in modeling the language of life",
+      "year": 2026,
+      "cited_by_count": 4,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7136080341",
+      "type": "paper",
+      "title": "Accelerated Knowledge Discovery: A Vision for NASA Science",
+      "year": 2026,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4401010920",
+      "type": "paper",
+      "title": "Temperature excavation to boost machine learning battery thermochemical predictions",
+      "year": 2024,
+      "cited_by_count": 57,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4409801681",
+      "type": "paper",
+      "title": "Cross-disciplinary perspectives on the potential for artificial intelligence across chemistry",
+      "year": 2025,
+      "cited_by_count": 36,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4403909032",
+      "type": "paper",
+      "title": "Quo Vadis ChatGPT? From large language models to Large Knowledge Models",
+      "year": 2024,
+      "cited_by_count": 31,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4410288281",
+      "type": "paper",
+      "title": "Language models for materials discovery and sustainability: Progress, challenges, and opportunities",
+      "year": 2025,
+      "cited_by_count": 19,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4389519899",
+      "type": "paper",
+      "title": "ReLM: Leveraging Language Models for Enhanced Chemical Reaction Prediction",
+      "year": 2023,
+      "cited_by_count": 8,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4400370609",
+      "type": "paper",
+      "title": "Integration of artificial intelligence and big data in materials science: New paradigms and scientific discoveries",
+      "year": 2024,
+      "cited_by_count": 1,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W3185585276",
+      "type": "paper",
+      "title": "Integrating Scientific Knowledge with Machine Learning for Engineering and Environmental Systems",
+      "year": 2022,
+      "cited_by_count": 620,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W2903660960",
+      "type": "paper",
+      "title": "PDE-Net 2.0: Learning PDEs from data with a numeric-symbolic hybrid deep network",
+      "year": 2019,
+      "cited_by_count": 545,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W2887383111",
+      "type": "paper",
+      "title": "Deep learning of dynamics and signal-noise decomposition with time-stepping constraints",
+      "year": 2019,
+      "cited_by_count": 181,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W3004006062",
+      "type": "paper",
+      "title": "Time-series learning of latent-space dynamics for reduced-order model closure",
+      "year": 2020,
+      "cited_by_count": 126,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W3204169784",
+      "type": "paper",
+      "title": "Combining physics and deep learning to learn continuous-time dynamics models",
+      "year": 2023,
+      "cited_by_count": 53,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W3019560754",
+      "type": "paper",
+      "title": "Combining Machine Learning and Simulation to a Hybrid Modelling Approach: Current and Future Directions",
+      "year": 2020,
+      "cited_by_count": 167,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4408339746",
+      "type": "paper",
+      "title": "From PINNs to PIKANs: recent advances in physics-informed machine learning",
+      "year": 2025,
+      "cited_by_count": 160,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4402100280",
+      "type": "paper",
+      "title": "Physics-Informed Computer Vision: A Review and Perspectives",
+      "year": 2024,
+      "cited_by_count": 54,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4389518724",
+      "type": "paper",
+      "title": "Defining a New NLP Playground",
+      "year": 2023,
+      "cited_by_count": 7,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7147036522",
+      "type": "paper",
+      "title": "Physical AI: Evolution, Progress, Challenges, and Prospects",
+      "year": 2026,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7133326240",
+      "type": "paper",
+      "title": "Toward self-driving laboratory 2.0 for chemistry and materials discovery",
+      "year": 2026,
+      "cited_by_count": 1,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7154888128",
+      "type": "paper",
+      "title": "CGAgentX: Agentic AI Framework to Develop Transferable Coarse-Grained Models",
+      "year": 2026,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7160654892",
+      "type": "paper",
+      "title": "Autonomous Chemistry and Materials Innovation Driven by Scientific Agents",
+      "year": 2026,
+      "cited_by_count": 0,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4411571587",
+      "type": "paper",
+      "title": "Large language models transform biological research: from architecture to utilization",
+      "year": 2025,
+      "cited_by_count": 9,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4411932316",
+      "type": "paper",
+      "title": "El Agente: An autonomous agent for quantum chemistry",
+      "year": 2025,
+      "cited_by_count": 32,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W4416806893",
+      "type": "paper",
+      "title": "Design biology and mind\u2013body health",
+      "year": 2025,
+      "cited_by_count": 2,
+      "in_catalog": false
+    },
+    {
+      "id": "openalex:W7135182795",
+      "type": "paper",
+      "title": "Artificial Intelligence as a Disruptive Force in Pharmaceutical Innovation: Transforming Discovery, Development, and Manufacturing",
+      "year": 2026,
+      "cited_by_count": 2,
+      "in_catalog": false
     }
   ],
   "edges": [
@@ -2359,6 +4509,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/bytedance/pasa",
+      "rel": "owned_by",
+      "dst": "org:bytedance",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:pasa",
       "rel": "targets",
       "dst": "domain:literature",
@@ -2428,6 +4585,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/future-house/paper-qa",
+      "rel": "owned_by",
+      "dst": "org:future-house",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:paperqa2",
       "rel": "targets",
       "dst": "domain:literature",
@@ -2444,6 +4608,13 @@
     {
       "src": "agent:openscholar",
       "rel": "built_by",
+      "dst": "org:akariasai",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/AkariAsai/OpenScholar",
+      "rel": "owned_by",
       "dst": "org:akariasai",
       "primary": false,
       "provenance": null
@@ -2490,6 +4661,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/bricee98/Valsci",
+      "rel": "owned_by",
+      "dst": "org:bricee98",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:valsci",
       "rel": "targets",
       "dst": "domain:literature",
@@ -2506,6 +4684,13 @@
     {
       "src": "agent:openbiomed",
       "rel": "built_by",
+      "dst": "org:pharmolix",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/PharMolix/OpenBioMed",
+      "rel": "owned_by",
       "dst": "org:pharmolix",
       "primary": false,
       "provenance": null
@@ -2553,6 +4738,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/yilewang/llm-for-zotero",
+      "rel": "owned_by",
+      "dst": "org:yilewang",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:llm-for-zotero",
       "rel": "targets",
       "dst": "domain:literature",
@@ -2569,6 +4761,13 @@
     {
       "src": "agent:funsearch",
       "rel": "built_by",
+      "dst": "org:google-deepmind",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/google-deepmind/funsearch",
+      "rel": "owned_by",
       "dst": "org:google-deepmind",
       "primary": false,
       "provenance": null
@@ -2595,6 +4794,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/algorithmicsuperintelligence/openevolve",
+      "rel": "owned_by",
+      "dst": "org:algorithmicsuperintelligence",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:openevolve",
       "rel": "targets",
       "dst": "domain:scientific_discovery",
@@ -2616,6 +4822,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/zou-group/virtual-lab",
+      "rel": "owned_by",
+      "dst": "org:zou-group",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:virtual-lab",
       "rel": "targets",
       "dst": "domain:scientific_discovery",
@@ -2632,6 +4845,13 @@
     {
       "src": "agent:the-ai-scientist",
       "rel": "built_by",
+      "dst": "org:sakanaai",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/SakanaAI/AI-Scientist",
+      "rel": "owned_by",
       "dst": "org:sakanaai",
       "primary": false,
       "provenance": null
@@ -2660,6 +4880,13 @@
     {
       "src": "agent:kosmos",
       "rel": "built_by",
+      "dst": "org:jimmc414",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/jimmc414/Kosmos",
+      "rel": "owned_by",
       "dst": "org:jimmc414",
       "primary": false,
       "provenance": null
@@ -2706,6 +4933,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/aiming-lab/AutoResearchClaw",
+      "rel": "owned_by",
+      "dst": "org:aiming-lab",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:autoresearchclaw",
       "rel": "targets",
       "dst": "domain:scientific_discovery",
@@ -2747,6 +4981,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/beita6969/ScienceClaw",
+      "rel": "owned_by",
+      "dst": "org:beita6969",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:scienceclaw",
       "rel": "targets",
       "dst": "domain:literature",
@@ -2783,6 +5024,13 @@
     {
       "src": "agent:ai-researcher",
       "rel": "built_by",
+      "dst": "org:hkuds",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/HKUDS/AI-Researcher",
+      "rel": "owned_by",
       "dst": "org:hkuds",
       "primary": false,
       "provenance": null
@@ -2833,6 +5081,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/allenai/codescientist",
+      "rel": "owned_by",
+      "dst": "org:allenai",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:codescientist",
       "rel": "targets",
       "dst": "domain:scientific_discovery",
@@ -2849,6 +5104,13 @@
     {
       "src": "agent:internagent",
       "rel": "built_by",
+      "dst": "org:alpha-innovator",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/Alpha-Innovator/InternAgent",
+      "rel": "owned_by",
       "dst": "org:alpha-innovator",
       "primary": false,
       "provenance": null
@@ -2920,6 +5182,13 @@
     {
       "src": "agent:autoscientists",
       "rel": "built_by",
+      "dst": "org:harvard-medical-school",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/mims-harvard/AutoScientists",
+      "rel": "owned_by",
       "dst": "org:harvard-medical-school",
       "primary": false,
       "provenance": null
@@ -2997,6 +5266,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/mims-harvard/ToolUniverse",
+      "rel": "owned_by",
+      "dst": "org:harvard-medical-school",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:tooluniverse",
       "rel": "targets",
       "dst": "domain:drug_discovery",
@@ -3042,6 +5318,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/Future-House/robin",
+      "rel": "owned_by",
+      "dst": "org:future-house",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:robin",
       "rel": "targets",
       "dst": "domain:drug_discovery",
@@ -3072,6 +5355,13 @@
     {
       "src": "agent:aviary",
       "rel": "built_by",
+      "dst": "org:future-house",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/Future-House/aviary",
+      "rel": "owned_by",
       "dst": "org:future-house",
       "primary": false,
       "provenance": null
@@ -3110,6 +5400,13 @@
     {
       "src": "agent:curie",
       "rel": "built_by",
+      "dst": "org:just-curieous",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/Just-Curieous/Curie",
+      "rel": "owned_by",
       "dst": "org:just-curieous",
       "primary": false,
       "provenance": null
@@ -3156,6 +5453,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/snap-stanford/POPPER",
+      "rel": "owned_by",
+      "dst": "org:stanford-university",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:popper",
       "rel": "targets",
       "dst": "domain:scientific_discovery",
@@ -3192,6 +5496,13 @@
     {
       "src": "agent:uniscientist",
       "rel": "built_by",
+      "dst": "org:unipat-ai",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/UniPat-AI/UniScientist",
+      "rel": "owned_by",
       "dst": "org:unipat-ai",
       "primary": false,
       "provenance": null
@@ -3268,6 +5579,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/EvoScientist/EvoScientist",
+      "rel": "owned_by",
+      "dst": "org:evoscientist",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:evoscientist",
       "rel": "targets",
       "dst": "domain:scientific_discovery",
@@ -3309,6 +5627,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/aristoteleo/PantheonOS",
+      "rel": "owned_by",
+      "dst": "org:aristoteleo",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:pantheonos",
       "rel": "targets",
       "dst": "domain:single_cell",
@@ -3332,6 +5657,13 @@
     {
       "src": "agent:science-star",
       "rel": "built_by",
+      "dst": "org:ustc-ai4science",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/ustc-ai4science/Science-Star",
+      "rel": "owned_by",
       "dst": "org:ustc-ai4science",
       "primary": false,
       "provenance": null
@@ -3378,6 +5710,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/VijayGKR/LLM-Peer-Review",
+      "rel": "owned_by",
+      "dst": "org:vijaygkr",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:llm-peer-review",
       "rel": "targets",
       "dst": "domain:literature",
@@ -3399,6 +5738,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/snap-stanford/BioDiscoveryAgent",
+      "rel": "owned_by",
+      "dst": "org:stanford-university",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:biomni",
       "rel": "implemented_by",
       "dst": "https://github.com/snap-stanford/Biomni",
@@ -3408,6 +5754,13 @@
     {
       "src": "agent:biomni",
       "rel": "built_by",
+      "dst": "org:stanford-university",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/snap-stanford/Biomni",
+      "rel": "owned_by",
       "dst": "org:stanford-university",
       "primary": false,
       "provenance": null
@@ -3443,6 +5796,13 @@
     {
       "src": "agent:bioagents",
       "rel": "built_by",
+      "dst": "org:bio-xyz",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/bio-xyz/BioAgents",
+      "rel": "owned_by",
       "dst": "org:bio-xyz",
       "primary": false,
       "provenance": null
@@ -3486,6 +5846,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/ArcInstitute/SRAgent",
+      "rel": "owned_by",
+      "dst": "org:arcinstitute",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:stagent",
       "rel": "implemented_by",
       "dst": "https://github.com/LiuLab-Bioelectronics-Harvard/STAgent",
@@ -3495,6 +5862,13 @@
     {
       "src": "agent:stagent",
       "rel": "built_by",
+      "dst": "org:liulab-bioelectronics-harvard",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/LiuLab-Bioelectronics-Harvard/STAgent",
+      "rel": "owned_by",
       "dst": "org:liulab-bioelectronics-harvard",
       "primary": false,
       "provenance": null
@@ -3516,6 +5890,13 @@
     {
       "src": "agent:camyla",
       "rel": "built_by",
+      "dst": "org:yifangao112",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/yifangao112/Camyla",
+      "rel": "owned_by",
       "dst": "org:yifangao112",
       "primary": false,
       "provenance": null
@@ -3569,6 +5950,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/ZonglinY/MOOSE",
+      "rel": "owned_by",
+      "dst": "org:zongliny",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:moose",
       "rel": "targets",
       "dst": "domain:hypothesis_gen",
@@ -3592,6 +5980,13 @@
     {
       "src": "agent:txagent",
       "rel": "built_by",
+      "dst": "org:harvard-medical-school",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/mims-harvard/TxAgent",
+      "rel": "owned_by",
       "dst": "org:harvard-medical-school",
       "primary": false,
       "provenance": null
@@ -3753,6 +6148,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/blazerye/DrugAssist",
+      "rel": "owned_by",
+      "dst": "org:blazerye",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:drugassist",
       "rel": "targets",
       "dst": "domain:drug_discovery",
@@ -3769,6 +6171,13 @@
     {
       "src": "agent:cellwhisperer",
       "rel": "built_by",
+      "dst": "org:epigen",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/epigen/cellwhisperer",
+      "rel": "owned_by",
       "dst": "org:epigen",
       "primary": false,
       "provenance": null
@@ -3795,6 +6204,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/cafferychen777/mLLMCelltype",
+      "rel": "owned_by",
+      "dst": "org:cafferychen777",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:mllmcelltype",
       "rel": "targets",
       "dst": "domain:single_cell",
@@ -3811,6 +6227,13 @@
     {
       "src": "agent:chatspatial",
       "rel": "built_by",
+      "dst": "org:cafferychen777",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/cafferychen777/ChatSpatial",
+      "rel": "owned_by",
       "dst": "org:cafferychen777",
       "primary": false,
       "provenance": null
@@ -3837,6 +6260,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/bowang-lab/BioReason",
+      "rel": "owned_by",
+      "dst": "org:bowang-lab",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:bioreason",
       "rel": "targets",
       "dst": "domain:genomics_db",
@@ -3853,6 +6283,13 @@
     {
       "src": "agent:dna-claude-analysis",
       "rel": "built_by",
+      "dst": "org:shmlkv",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/shmlkv/dna-claude-analysis",
+      "rel": "owned_by",
       "dst": "org:shmlkv",
       "primary": false,
       "provenance": null
@@ -3879,6 +6316,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/MahmoodLab/PathChat",
+      "rel": "owned_by",
+      "dst": "org:mahmoodlab",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:pathchat",
       "rel": "targets",
       "dst": "domain:clinical_qa",
@@ -3900,6 +6344,13 @@
       "provenance": null
     },
     {
+      "src": "https://github.com/gersteinlab/MedAgents",
+      "rel": "owned_by",
+      "dst": "org:gersteinlab",
+      "primary": false,
+      "provenance": null
+    },
+    {
       "src": "agent:nvidia-biomedical-ai-q-research-agent",
       "rel": "implemented_by",
       "dst": "https://github.com/NVIDIA-AI-Blueprints/biomedical-aiq-research-agent",
@@ -3909,6 +6360,13 @@
     {
       "src": "agent:nvidia-biomedical-ai-q-research-agent",
       "rel": "built_by",
+      "dst": "org:nvidia-ai-blueprints",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/NVIDIA-AI-Blueprints/biomedical-aiq-research-agent",
+      "rel": "owned_by",
       "dst": "org:nvidia-ai-blueprints",
       "primary": false,
       "provenance": null
@@ -3938,6 +6396,4101 @@
       "src": "doi:10.1098/rsos.250646",
       "rel": "cites",
       "dst": "doi:10.1021/acs.chemrev.4c00055",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "arxiv:2305.14259",
+      "rel": "cites",
+      "dst": "openalex:W4385571062",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4385571062",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "arxiv:2305.14259",
+      "rel": "cites",
+      "dst": "openalex:W4389991792",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W4389991792",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W4389991792",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "arxiv:1806.07366",
+      "rel": "cites",
+      "dst": "openalex:W299440670",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1073/pnas.1912789117",
+      "rel": "cites",
+      "dst": "openalex:W299440670",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "arxiv:1806.07366",
+      "rel": "cites",
+      "dst": "openalex:W2587284713",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1073/pnas.1912789117",
+      "rel": "cites",
+      "dst": "openalex:W2587284713",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "arxiv:1806.07366",
+      "rel": "cites",
+      "dst": "openalex:W2745110207",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "arxiv:1711.10561",
+      "rel": "cites",
+      "dst": "openalex:W2745110207",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "arxiv:1806.07366",
+      "rel": "cites",
+      "dst": "openalex:W2962727772",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1073/pnas.1912789117",
+      "rel": "cites",
+      "dst": "openalex:W2962727772",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "arxiv:1711.10561",
+      "rel": "cites",
+      "dst": "openalex:W1853291804",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1073/pnas.1912789117",
+      "rel": "cites",
+      "dst": "openalex:W1853291804",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "arxiv:1711.10561",
+      "rel": "cites",
+      "dst": "openalex:W2919115771",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1073/pnas.1912789117",
+      "rel": "cites",
+      "dst": "openalex:W2919115771",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W1489977799",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W1489977799",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W1975616406",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W1975616406",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W2112724747",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W2112724747",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W2114804859",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W2114804859",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W2132402242",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W2132402242",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W2830440988",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W2830440988",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W2973461618",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W2973461618",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W2986937238",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W2986937238",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W3016862866",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W3016862866",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W3018637171",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W3018637171",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W3024236153",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W3024236153",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W3042021489",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W3042021489",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W3132956480",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W3132956480",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W3155456766",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W3155456766",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W3177828909",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W3177828909",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W3178108585",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W3178108585",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W3214990797",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W3214990797",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W4212913440",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W4212913440",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W4283693458",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W4283693458",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W4285141178",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W4285141178",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W4292639835",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W4292639835",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W4307410169",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W4307410169",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W4313531587",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W4313531587",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W4385197639",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W4385197639",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W4385671288",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4385671288",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4385671288",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4385671288",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W4385955818",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W4385955818",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W4387826128",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4387826128",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W4387937021",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4387937021",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4387937021",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4387937021",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W4388173934",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W4388173934",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W4388560379",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W4388560379",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4388560379",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W4390090299",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W4390090299",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W4390754450",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W4390754450",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W4391219067",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W4391219067",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W4391853808",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4391853808",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4391853808",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W4396723768",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W4396723768",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W4396906933",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4396906933",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W4396977868",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W4396977868",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1021/acs.chemrev.4c00055",
+      "rel": "cites",
+      "dst": "openalex:W4399786080",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4399786080",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W4403925918",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4403925918",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W4407236000",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4407236000",
+      "rel": "cites",
+      "dst": "doi:10.1021/acs.chemrev.4c00055",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W4409086391",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4409086391",
+      "rel": "cites",
+      "dst": "doi:10.1021/acs.chemrev.4c00055",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W4409502949",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4409502949",
+      "rel": "cites",
+      "dst": "doi:10.1021/acs.chemrev.4c00055",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "doi:10.1098/rsos.250646",
+      "rel": "cites",
+      "dst": "openalex:W4410549543",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410549543",
+      "rel": "cites",
+      "dst": "doi:10.1021/acs.chemrev.4c00055",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4414849058",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4414849058",
+      "rel": "cites",
+      "dst": "arxiv:2412.21154",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411161961",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411161961",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405628342",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405628342",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405355275",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405355275",
+      "rel": "cites",
+      "dst": "arxiv:2404.07738",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405355275",
+      "rel": "cites",
+      "dst": "arxiv:2408.10689",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405355275",
+      "rel": "cites",
+      "dst": "arxiv:2405.02957",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405355275",
+      "rel": "cites",
+      "dst": "arxiv:2311.10537",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405459204",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405459204",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4414260950",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4414260950",
+      "rel": "cites",
+      "dst": "arxiv:2404.07738",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4414260950",
+      "rel": "cites",
+      "dst": "arxiv:2410.18792",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4402507667",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4402507667",
+      "rel": "cites",
+      "dst": "arxiv:2407.01603",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4402507667",
+      "rel": "cites",
+      "dst": "doi:10.1021/acs.chemrev.4c00055",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4402507667",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4414099476",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4414099476",
+      "rel": "cites",
+      "dst": "arxiv:2503.08979",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410775828",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410775828",
+      "rel": "cites",
+      "dst": "arxiv:2504.08066",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410775828",
+      "rel": "cites",
+      "dst": "doi:10.1021/acs.chemrev.4c00055",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4409025678",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4409025678",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7122487524",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7122487524",
+      "rel": "cites",
+      "dst": "arxiv:2404.07738",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7122487524",
+      "rel": "cites",
+      "dst": "arxiv:2405.17631",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7122487524",
+      "rel": "cites",
+      "dst": "arxiv:2504.08066",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7122487524",
+      "rel": "cites",
+      "dst": "arxiv:2503.10970",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4413306021",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4413306021",
+      "rel": "cites",
+      "dst": "doi:10.1021/acs.chemrev.4c00055",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7127338657",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7127338657",
+      "rel": "cites",
+      "dst": "doi:10.1021/acs.chemrev.4c00055",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7131288999",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7131288999",
+      "rel": "cites",
+      "dst": "arxiv:2504.08066",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7131288999",
+      "rel": "cites",
+      "dst": "arxiv:2509.23426",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7131288999",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401702120",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401702120",
+      "rel": "cites",
+      "dst": "arxiv:2305.14259",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401702120",
+      "rel": "cites",
+      "dst": "arxiv:2407.01603",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401702120",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401702120",
+      "rel": "cites",
+      "dst": "arxiv:2402.01680",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401702120",
+      "rel": "cites",
+      "dst": "arxiv:2408.02479",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401702120",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4408417845",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4408417845",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411039580",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411039580",
+      "rel": "cites",
+      "dst": "arxiv:2307.07522",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411039580",
+      "rel": "cites",
+      "dst": "arxiv:2404.07738",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411039580",
+      "rel": "cites",
+      "dst": "arxiv:2406.10252",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411039580",
+      "rel": "cites",
+      "dst": "arxiv:2307.08423",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4412024857",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4412024857",
+      "rel": "cites",
+      "dst": "doi:10.1021/acs.chemrev.4c00055",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4412024857",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4414100590",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4414100590",
+      "rel": "cites",
+      "dst": "arxiv:2402.01680",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4412655177",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4412655177",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4412655177",
+      "rel": "cites",
+      "dst": "arxiv:2410.18792",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4415443294",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4415443294",
+      "rel": "cites",
+      "dst": "arxiv:2504.08066",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4415965425",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4415965425",
+      "rel": "cites",
+      "dst": "arxiv:2402.01680",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4404283941",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4404283941",
+      "rel": "cites",
+      "dst": "arxiv:2310.02170",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4404283941",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4404283941",
+      "rel": "cites",
+      "dst": "arxiv:2308.07201",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4404283941",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4408224138",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4408224138",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410833419",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410833419",
+      "rel": "cites",
+      "dst": "arxiv:2405.17631",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410477085",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410477085",
+      "rel": "cites",
+      "dst": "arxiv:2504.08066",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410477085",
+      "rel": "cites",
+      "dst": "arxiv:2503.08979",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410477085",
+      "rel": "cites",
+      "dst": "arxiv:2412.21154",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4408020906",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4408020906",
+      "rel": "cites",
+      "dst": "arxiv:2309.02726",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7118690722",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7118690722",
+      "rel": "cites",
+      "dst": "arxiv:2404.07738",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7118690722",
+      "rel": "cites",
+      "dst": "arxiv:2305.14259",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7118690722",
+      "rel": "cites",
+      "dst": "arxiv:2504.08066",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7118690722",
+      "rel": "cites",
+      "dst": "arxiv:2503.08979",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7118690722",
+      "rel": "cites",
+      "dst": "arxiv:2412.21154",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7140324928",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7140324928",
+      "rel": "cites",
+      "dst": "arxiv:2308.03688",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7140324928",
+      "rel": "cites",
+      "dst": "arxiv:2504.08066",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7140324928",
+      "rel": "cites",
+      "dst": "arxiv:2502.05151",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7140324928",
+      "rel": "cites",
+      "dst": "arxiv:2503.24047",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7141642849",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7141642849",
+      "rel": "cites",
+      "dst": "arxiv:2405.17631",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7141642849",
+      "rel": "cites",
+      "dst": "arxiv:2503.10970",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7160988562",
+      "rel": "cites",
+      "dst": "arxiv:2408.06292",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7160988562",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7160988562",
+      "rel": "cites",
+      "dst": "arxiv:2308.03688",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7160988562",
+      "rel": "cites",
+      "dst": "arxiv:2504.08066",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7160988562",
+      "rel": "cites",
+      "dst": "arxiv:2505.16938",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7160988562",
+      "rel": "cites",
+      "dst": "arxiv:2509.23426",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4406800520",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4406800520",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4406800520",
+      "rel": "cites",
+      "dst": "arxiv:2308.03688",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4406800520",
+      "rel": "cites",
+      "dst": "arxiv:2308.07201",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4406800520",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4406800520",
+      "rel": "cites",
+      "dst": "arxiv:2311.10537",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4387393188",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4387393188",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4387078269",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4387078269",
+      "rel": "cites",
+      "dst": "arxiv:2201.05624",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4389407755",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4389407755",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4407922851",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4407922851",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4399205591",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4399205591",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4406903024",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4406903024",
+      "rel": "cites",
+      "dst": "arxiv:2308.03688",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4406903024",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4389523833",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4389523833",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4389523833",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4387507766",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4387507766",
+      "rel": "cites",
+      "dst": "arxiv:2305.14259",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4387507766",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4389518977",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4389518977",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4387406013",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4387406013",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4396767228",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4396767228",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7125789118",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7125789118",
+      "rel": "cites",
+      "dst": "doi:10.1098/rsos.250646",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4406157726",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4406157726",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4367278217",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4367278217",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4389519864",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4389519864",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4389519864",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4386563364",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4386563364",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4388732400",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4388732400",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4388718403",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4388718403",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4387508266",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4387508266",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4382536579",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4382536579",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4393353341",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4393353341",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7161786165",
+      "rel": "cites",
+      "dst": "arxiv:2304.05332",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7161786165",
+      "rel": "cites",
+      "dst": "arxiv:2503.24047",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7161786165",
+      "rel": "cites",
+      "dst": "arxiv:2406.10833",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4391855109",
+      "rel": "cites",
+      "dst": "arxiv:2310.02170",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4391855109",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4387034804",
+      "rel": "cites",
+      "dst": "arxiv:2310.02170",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4387034804",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4416137592",
+      "rel": "cites",
+      "dst": "arxiv:2310.02170",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4416137592",
+      "rel": "cites",
+      "dst": "arxiv:2408.10689",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4416137592",
+      "rel": "cites",
+      "dst": "arxiv:2409.18924",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4416137592",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4416137592",
+      "rel": "cites",
+      "dst": "arxiv:2402.01680",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4416137592",
+      "rel": "cites",
+      "dst": "arxiv:2311.10537",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401719266",
+      "rel": "cites",
+      "dst": "arxiv:2310.02170",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401719266",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401719266",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4413232935",
+      "rel": "cites",
+      "dst": "arxiv:2310.02170",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4413232935",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4413232935",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4414261328",
+      "rel": "cites",
+      "dst": "arxiv:2310.02170",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4414261328",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405488295",
+      "rel": "cites",
+      "dst": "arxiv:2310.02170",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405488295",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4400016510",
+      "rel": "cites",
+      "dst": "arxiv:2310.02170",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4400016510",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4408247476",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4408247476",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4408247476",
+      "rel": "cites",
+      "dst": "arxiv:2402.01680",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4408247476",
+      "rel": "cites",
+      "dst": "doi:10.1021/acs.chemrev.4c00055",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4413427262",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4413427262",
+      "rel": "cites",
+      "dst": "arxiv:2308.03688",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4402713326",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4402713326",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4391862446",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4391862446",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4397004462",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4397004462",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4397004462",
+      "rel": "cites",
+      "dst": "arxiv:2402.01680",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4408411093",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4408411093",
+      "rel": "cites",
+      "dst": "arxiv:2401.16107",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4408411093",
+      "rel": "cites",
+      "dst": "arxiv:2308.07201",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4408411093",
+      "rel": "cites",
+      "dst": "arxiv:2406.03712",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4396918564",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4396918564",
+      "rel": "cites",
+      "dst": "arxiv:2308.03688",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4396918564",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401352024",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401352024",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4403424906",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4403424906",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4413243547",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4413243547",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4404336302",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4404336302",
+      "rel": "cites",
+      "dst": "arxiv:2308.07201",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4408301312",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4408301312",
+      "rel": "cites",
+      "dst": "arxiv:2405.02957",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4408301312",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4409228901",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4409228901",
+      "rel": "cites",
+      "dst": "arxiv:2405.02957",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4403866530",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4403866530",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405582672",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405582672",
+      "rel": "cites",
+      "dst": "arxiv:2407.08940",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4406236141",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4406236141",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4406236141",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4412602986",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4412602986",
+      "rel": "cites",
+      "dst": "arxiv:2408.02479",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401119582",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401119582",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4402655055",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4402655055",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4406884898",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4406884898",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7119479065",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7119479065",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7119479065",
+      "rel": "cites",
+      "dst": "arxiv:2410.18792",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7128043854",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7128043854",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7128043854",
+      "rel": "cites",
+      "dst": "arxiv:2305.14259",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7128043854",
+      "rel": "cites",
+      "dst": "arxiv:2504.08066",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7128043854",
+      "rel": "cites",
+      "dst": "doi:10.1021/acs.chemrev.4c00055",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7128043854",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4404013544",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4404013544",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401644503",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401644503",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401644503",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401132497",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401132497",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4407608081",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4407608081",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401547487",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401547487",
+      "rel": "cites",
+      "dst": "arxiv:2407.01603",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4242282425",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4242282425",
+      "rel": "cites",
+      "dst": "arxiv:2308.07201",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4242282425",
+      "rel": "cites",
+      "dst": "arxiv:2402.01680",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4390154668",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4390154668",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4398161918",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4398161918",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4409641305",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4409641305",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4413453485",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4413453485",
+      "rel": "cites",
+      "dst": "arxiv:2308.03688",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4414594016",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4414594016",
+      "rel": "cites",
+      "dst": "arxiv:2405.02957",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4417117131",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4417117131",
+      "rel": "cites",
+      "dst": "arxiv:2401.14656",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4417285575",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4417285575",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7125866004",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7125866004",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7125866004",
+      "rel": "cites",
+      "dst": "arxiv:2402.01680",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7131083166",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7131083166",
+      "rel": "cites",
+      "dst": "arxiv:2403.03101",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7134125098",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7134125098",
+      "rel": "cites",
+      "dst": "arxiv:2308.03688",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7151910642",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7151910642",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7151910642",
+      "rel": "cites",
+      "dst": "arxiv:2308.07201",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7152364666",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7152364666",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7152364666",
+      "rel": "cites",
+      "dst": "arxiv:2308.07201",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7161945243",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7161945243",
+      "rel": "cites",
+      "dst": "arxiv:2308.03688",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7163341066",
+      "rel": "cites",
+      "dst": "arxiv:2308.08155",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7163341066",
+      "rel": "cites",
+      "dst": "arxiv:2503.10970",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4399790320",
+      "rel": "cites",
+      "dst": "arxiv:2403.03101",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4399790320",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405185373",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405185373",
+      "rel": "cites",
+      "dst": "arxiv:2305.14259",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405185373",
+      "rel": "cites",
+      "dst": "arxiv:2308.07201",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405185373",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405185373",
+      "rel": "cites",
+      "dst": "arxiv:2401.14656",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405185373",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405616956",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405616956",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4399205331",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4399205331",
+      "rel": "cites",
+      "dst": "arxiv:2308.07201",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4404355908",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4404355908",
+      "rel": "cites",
+      "dst": "arxiv:2308.07201",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4404409655",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4404409655",
+      "rel": "cites",
+      "dst": "arxiv:2308.07201",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4412930131",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4412930131",
+      "rel": "cites",
+      "dst": "arxiv:2308.07201",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4389764468",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4389764468",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4389764468",
+      "rel": "cites",
+      "dst": "arxiv:2307.08423",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4389764468",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405432725",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405432725",
+      "rel": "cites",
+      "dst": "arxiv:2308.07201",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405432725",
+      "rel": "cites",
+      "dst": "arxiv:2402.01680",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4413725215",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4413725215",
+      "rel": "cites",
+      "dst": "arxiv:2308.07201",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4413725215",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4413725215",
+      "rel": "cites",
+      "dst": "arxiv:2402.01680",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4403433659",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4403433659",
+      "rel": "cites",
+      "dst": "arxiv:2311.10537",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405845335",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405845335",
+      "rel": "cites",
+      "dst": "arxiv:2308.07201",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405845335",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7125646697",
+      "rel": "cites",
+      "dst": "arxiv:2305.14325",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7125646697",
+      "rel": "cites",
+      "dst": "arxiv:2308.03688",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4409736143",
+      "rel": "cites",
+      "dst": "arxiv:2404.07738",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4409736143",
+      "rel": "cites",
+      "dst": "arxiv:2305.14259",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411057454",
+      "rel": "cites",
+      "dst": "arxiv:2404.07738",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411057454",
+      "rel": "cites",
+      "dst": "arxiv:2305.14259",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411057454",
+      "rel": "cites",
+      "dst": "arxiv:2405.16205",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411057454",
+      "rel": "cites",
+      "dst": "arxiv:2410.18792",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411057454",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4406458040",
+      "rel": "cites",
+      "dst": "arxiv:2404.07738",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4406458040",
+      "rel": "cites",
+      "dst": "arxiv:2305.14259",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4399146196",
+      "rel": "cites",
+      "dst": "arxiv:2404.07738",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4399146196",
+      "rel": "cites",
+      "dst": "arxiv:2311.10537",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7133700978",
+      "rel": "cites",
+      "dst": "arxiv:2401.16107",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7133700978",
+      "rel": "cites",
+      "dst": "arxiv:2405.02957",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7133700978",
+      "rel": "cites",
+      "dst": "arxiv:2406.13890",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7133700978",
+      "rel": "cites",
+      "dst": "arxiv:2407.08811",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4413180152",
+      "rel": "cites",
+      "dst": "arxiv:2410.12532",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4413180152",
+      "rel": "cites",
+      "dst": "arxiv:2408.02479",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4412203333",
+      "rel": "cites",
+      "dst": "arxiv:2405.02957",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4412203333",
+      "rel": "cites",
+      "dst": "arxiv:2408.12496",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410176137",
+      "rel": "cites",
+      "dst": "arxiv:2405.02957",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410176137",
+      "rel": "cites",
+      "dst": "arxiv:2406.13890",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4414571785",
+      "rel": "cites",
+      "dst": "arxiv:2405.02957",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4414571785",
+      "rel": "cites",
+      "dst": "arxiv:2405.17631",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4414571785",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4414554088",
+      "rel": "cites",
+      "dst": "arxiv:2405.02957",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4414554088",
+      "rel": "cites",
+      "dst": "arxiv:2311.10537",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7135030448",
+      "rel": "cites",
+      "dst": "arxiv:2405.02957",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7135030448",
+      "rel": "cites",
+      "dst": "arxiv:2503.10970",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4413638854",
+      "rel": "cites",
+      "dst": "arxiv:2405.02957",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4413638854",
+      "rel": "cites",
+      "dst": "arxiv:2402.01680",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4412954363",
+      "rel": "cites",
+      "dst": "arxiv:2405.17631",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4412954363",
+      "rel": "cites",
+      "dst": "arxiv:2412.21154",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4412683160",
+      "rel": "cites",
+      "dst": "arxiv:2405.17631",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4412683160",
+      "rel": "cites",
+      "dst": "arxiv:2405.16205",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4412683160",
+      "rel": "cites",
+      "dst": "arxiv:2308.03688",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7131698947",
+      "rel": "cites",
+      "dst": "arxiv:2405.17631",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7131698947",
+      "rel": "cites",
+      "dst": "arxiv:2407.03381",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411182071",
+      "rel": "cites",
+      "dst": "arxiv:2405.17631",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411182071",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411182071",
+      "rel": "cites",
+      "dst": "arxiv:2402.01680",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410422038",
+      "rel": "cites",
+      "dst": "arxiv:2407.08940",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410422038",
+      "rel": "cites",
+      "dst": "arxiv:2412.21154",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4402796844",
+      "rel": "cites",
+      "dst": "arxiv:2407.08940",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4402796844",
+      "rel": "cites",
+      "dst": "arxiv:2406.03712",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4407406911",
+      "rel": "cites",
+      "dst": "arxiv:2408.13378",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4407406911",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410513777",
+      "rel": "cites",
+      "dst": "arxiv:2408.01869",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410513777",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4415689736",
+      "rel": "cites",
+      "dst": "arxiv:2407.01603",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4415689736",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4399364360",
+      "rel": "cites",
+      "dst": "arxiv:2308.03688",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4399364360",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4415070954",
+      "rel": "cites",
+      "dst": "arxiv:2308.03688",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4415070954",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4403289843",
+      "rel": "cites",
+      "dst": "arxiv:2308.03688",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4403289843",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411575899",
+      "rel": "cites",
+      "dst": "arxiv:2308.03688",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411575899",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411575899",
+      "rel": "cites",
+      "dst": "doi:10.1021/acs.chemrev.4c00055",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411575899",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4391925834",
+      "rel": "cites",
+      "dst": "arxiv:2308.03688",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4391925834",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410641171",
+      "rel": "cites",
+      "dst": "arxiv:2308.03688",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410641171",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4400141361",
+      "rel": "cites",
+      "dst": "arxiv:2308.03688",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4400141361",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401201613",
+      "rel": "cites",
+      "dst": "arxiv:2308.03688",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401201613",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401201613",
+      "rel": "cites",
+      "dst": "arxiv:2402.01680",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401201613",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4387963755",
+      "rel": "cites",
+      "dst": "arxiv:2308.03688",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4387963755",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7147435254",
+      "rel": "cites",
+      "dst": "arxiv:2308.03688",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7147435254",
+      "rel": "cites",
+      "dst": "arxiv:2402.01680",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4407755370",
+      "rel": "cites",
+      "dst": "arxiv:2308.07201",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4407755370",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4414475428",
+      "rel": "cites",
+      "dst": "arxiv:2308.07201",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4414475428",
+      "rel": "cites",
+      "dst": "doi:10.1021/acs.chemrev.4c00055",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4407405968",
+      "rel": "cites",
+      "dst": "arxiv:2308.07201",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4407405968",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4402429489",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4402429489",
+      "rel": "cites",
+      "dst": "arxiv:2402.01680",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4402959784",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4402959784",
+      "rel": "cites",
+      "dst": "arxiv:2402.01680",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4412899734",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4412899734",
+      "rel": "cites",
+      "dst": "arxiv:2408.02479",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401737904",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401737904",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405366282",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405366282",
+      "rel": "cites",
+      "dst": "arxiv:2408.02479",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4404317680",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4404317680",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4400680326",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4400680326",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4399323548",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4399323548",
+      "rel": "cites",
+      "dst": "arxiv:2402.01680",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4416178376",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4416178376",
+      "rel": "cites",
+      "dst": "arxiv:2402.01680",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405930778",
+      "rel": "cites",
+      "dst": "arxiv:2309.07864",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4405930778",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410742653",
+      "rel": "cites",
+      "dst": "arxiv:2402.01680",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410742653",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410719341",
+      "rel": "cites",
+      "dst": "arxiv:2402.01680",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410719341",
+      "rel": "cites",
+      "dst": "arxiv:2309.02726",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4416354678",
+      "rel": "cites",
+      "dst": "arxiv:2402.01680",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4416354678",
+      "rel": "cites",
+      "dst": "arxiv:2503.08979",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4416354678",
+      "rel": "cites",
+      "dst": "doi:10.1021/acs.chemrev.4c00055",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4409240168",
+      "rel": "cites",
+      "dst": "arxiv:2403.15673",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4409240168",
+      "rel": "cites",
+      "dst": "arxiv:2401.14656",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7139101859",
+      "rel": "cites",
+      "dst": "arxiv:2504.08066",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7139101859",
+      "rel": "cites",
+      "dst": "arxiv:2503.08979",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7136080341",
+      "rel": "cites",
+      "dst": "arxiv:2504.08066",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7136080341",
+      "rel": "cites",
+      "dst": "arxiv:2503.24047",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401010920",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4401010920",
+      "rel": "cites",
+      "dst": "arxiv:2307.08423",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4409801681",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4409801681",
+      "rel": "cites",
+      "dst": "arxiv:2401.14656",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4409801681",
+      "rel": "cites",
+      "dst": "doi:10.1021/acs.chemrev.4c00055",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4403909032",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4403909032",
+      "rel": "cites",
+      "dst": "arxiv:2401.14656",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410288281",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4410288281",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4389519899",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4389519899",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4400370609",
+      "rel": "cites",
+      "dst": "arxiv:2304.05376",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4400370609",
+      "rel": "cites",
+      "dst": "arxiv:2401.14656",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W3185585276",
+      "rel": "cites",
+      "dst": "arxiv:1806.07366",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W3185585276",
+      "rel": "cites",
+      "dst": "arxiv:1711.10561",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W2903660960",
+      "rel": "cites",
+      "dst": "arxiv:1806.07366",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W2903660960",
+      "rel": "cites",
+      "dst": "arxiv:1711.10561",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W2887383111",
+      "rel": "cites",
+      "dst": "arxiv:1806.07366",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W2887383111",
+      "rel": "cites",
+      "dst": "arxiv:1711.10561",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W3004006062",
+      "rel": "cites",
+      "dst": "arxiv:1806.07366",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W3004006062",
+      "rel": "cites",
+      "dst": "arxiv:1711.10561",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W3204169784",
+      "rel": "cites",
+      "dst": "arxiv:1806.07366",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W3204169784",
+      "rel": "cites",
+      "dst": "arxiv:1711.10561",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W3019560754",
+      "rel": "cites",
+      "dst": "arxiv:1711.10561",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W3019560754",
+      "rel": "cites",
+      "dst": "doi:10.1073/pnas.1912789117",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4408339746",
+      "rel": "cites",
+      "dst": "arxiv:1711.10561",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4408339746",
+      "rel": "cites",
+      "dst": "arxiv:2408.16806",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4402100280",
+      "rel": "cites",
+      "dst": "arxiv:1711.10561",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4402100280",
+      "rel": "cites",
+      "dst": "arxiv:2201.05624",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4389518724",
+      "rel": "cites",
+      "dst": "arxiv:2307.08423",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4389518724",
+      "rel": "cites",
+      "dst": "arxiv:2211.09085",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7147036522",
+      "rel": "cites",
+      "dst": "arxiv:2307.08423",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7147036522",
+      "rel": "cites",
+      "dst": "arxiv:2411.14499",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7133326240",
+      "rel": "cites",
+      "dst": "arxiv:2505.13259",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7133326240",
+      "rel": "cites",
+      "dst": "doi:10.1098/rsos.250646",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7154888128",
+      "rel": "cites",
+      "dst": "arxiv:2508.14111",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7154888128",
+      "rel": "cites",
+      "dst": "arxiv:2503.08979",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7160654892",
+      "rel": "cites",
+      "dst": "arxiv:2503.24047",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7160654892",
+      "rel": "cites",
+      "dst": "arxiv:2401.14656",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411571587",
+      "rel": "cites",
+      "dst": "arxiv:2406.10833",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411571587",
+      "rel": "cites",
+      "dst": "arxiv:2401.14656",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411932316",
+      "rel": "cites",
+      "dst": "arxiv:2401.14656",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4411932316",
+      "rel": "cites",
+      "dst": "doi:10.1021/acs.chemrev.4c00055",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4416806893",
+      "rel": "cites",
+      "dst": "doi:10.1021/acs.chemrev.4c00055",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W4416806893",
+      "rel": "cites",
+      "dst": "doi:10.1098/rsos.250646",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7135182795",
+      "rel": "cites",
+      "dst": "doi:10.1021/acs.chemrev.4c00055",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "openalex:W7135182795",
+      "rel": "cites",
+      "dst": "doi:10.1098/rsos.250646",
       "primary": false,
       "provenance": null
     }
