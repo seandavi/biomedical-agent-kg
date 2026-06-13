@@ -41,20 +41,30 @@ _EMPTY_FACETS = {"exposes": [], "architecture": [], "domains": [], "evaluated_on
 
 # Entry-type classification (SPEC §12.1 — "NOT a regex"). Fixed -> cache target.
 CLASSIFY_SYSTEM_PROMPT = (
-    "Classify one entry from a curated list of biomedical AI systems. Reply with ONLY a "
-    'JSON object {"kind": ..., "name": ...}. "kind" is one of: "agent" (a named '
-    "LLM-based agent or system one could run, build on, or call), \"benchmark\" (a named "
-    "evaluation dataset or benchmark), \"paper\" (a survey, vision, or method paper that "
-    "is not itself a runnable system), \"other\". \"name\" is the system or benchmark's "
-    "short proper name (usually the text before a colon in the title), or null for "
-    "paper/other. A name like 'FooBench' is usually a benchmark, not an agent.\n"
-    "DOMAIN GATE: label \"agent\" or \"benchmark\" ONLY if the system's PRIMARY "
-    "application is biomedicine, bioinformatics, healthcare, clinical medicine, or "
-    "life-science research (biology, genomics, drugs, disease, cells, proteins). These "
-    "are \"other\", even if they are agents: general-purpose agent frameworks or "
-    "libraries (CAMEL, AutoGen, LangChain, MetaGPT); general scientific-discovery or "
-    "research-automation agents not specific to biology/medicine; and agents for "
-    "unrelated domains (materials, pure chemistry, finance, robotics, software)."
+    "Classify one entry from curated lists of AI-for-science systems. Reply with ONLY a "
+    'JSON object {"kind": ..., "name": ...}.\n'
+    'An "agent" is an LLM-BASED AGENTIC SYSTEM: its defining feature is using a large '
+    "language model to reason, plan, and act — calling tools, running multi-step "
+    "workflows, or orchestrating sub-agents — to accomplish tasks. \"benchmark\" is a "
+    "named evaluation dataset/benchmark for such systems. \"paper\" is a survey, vision, "
+    "or method paper that is not a runnable system. Everything else is \"other\".\n"
+    "CRITICAL — these are NOT agents, label them \"other\" even though they are AI and "
+    "biomedical: foundation or pretrained models (AlphaFold, ESM, ESMFold, DNABERT, scGPT, "
+    "Geneformer, Evo, Enformer, Boltz, RFdiffusion, ProteinMPNN, ...); ML methods or model "
+    "architectures; software tools, libraries, packages, pipelines, or viewers (Cellpose, "
+    "napari, MONAI, scvi-tools, QuPath, nnU-Net, DeepLabCut, ...); structure-prediction, "
+    "docking, segmentation, or design models; datasets (including names with a size "
+    "suffix like -1.6M or -500K); collections of SKILL.md / capability \"skills\" files "
+    "(skill sets or skill bundles, which are tool environments, not agents); and "
+    "general-purpose agent frameworks (CAMEL, AutoGen, LangChain). A thing is an "
+    "\"agent\" ONLY if it is driven by LLM autonomous reasoning/action, not by model "
+    "weights, a dataset, a skill bundle, or a fixed tool API.\n"
+    "DOMAIN GATE: label \"agent\"/\"benchmark\" ONLY if the PRIMARY application is human "
+    "biomedicine, bioinformatics, healthcare, clinical medicine, or molecular/cell/genomic "
+    "life-science research. Exclude ecology, biodiversity, agriculture, plants, materials, "
+    "chemistry-only, physics, finance, robotics, and general software.\n"
+    "\"name\" is the system's short proper name (text before a colon), or null. A name "
+    "like 'FooBench' is usually a benchmark."
 )
 
 # Prose tier (SPEC §3.1). Fixed -> cache target. Wikilink discipline per SPEC §3.2.
