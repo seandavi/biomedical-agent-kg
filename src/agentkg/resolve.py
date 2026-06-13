@@ -148,7 +148,13 @@ def fetch_context(url: str, kind: str, cid: str) -> dict:
         ab = _abstract_from_work(work) if work else None
         if ab:
             out["abstract"] = ab
-    cache.put("context", url, out)
+    # Only cache a HIT. An empty result is usually a transient fetch failure (e.g. the
+    # GitHub 60/hr unauth rate limit) — caching it would make the gap permanent. Retry
+    # next run instead; set GITHUB_TOKEN to lift the limit and fill READMEs.
+    if out:
+        cache.put("context", url, out)
+    else:
+        logger.debug(f"no grounding text for {url} (kind={kind}) — will retry next run")
     return out
 
 
@@ -175,3 +181,59 @@ def openalex(cid: str) -> dict:
         "cited_by_count": work.get("cited_by_count"),
         "referenced_works": work.get("referenced_works", []),
     }
+
+
+def _wid(openalex_id: str) -> str:
+    """Bare OpenAlex work id (W...) from a full id URL."""
+    return openalex_id.rstrip("/").split("/")[-1]
+
+
+def _meta(work: dict) -> dict:
+    return {"id": work.get("id"), "title": work.get("title"),
+            "year": work.get("publication_year"),
+            "cited_by_count": work.get("cited_by_count")}
+
+
+def citers(openalex_id: str, cap: int = 200) -> list[dict]:
+    """Incoming citations: works that CITE openalex_id (one page, capped). Returns
+    [{id,title,year,cited_by_count}]. Cached by work id. Powers cocitation mechanism C."""
+    wid = _wid(openalex_id)
+    hit = cache.get("citers", wid)
+    if hit is not None:
+        return hit
+    mailto = os.environ.get("OPENALEX_MAILTO", "")
+    url = (f"https://api.openalex.org/works?filter=cites:{wid}"
+           f"&select=id,title,publication_year,cited_by_count&per-page={min(cap, 200)}"
+           + (f"&mailto={mailto}" if mailto else ""))
+    raw = _get(url)
+    if not raw:
+        return []  # transient — don't cache
+    try:
+        results = json.loads(raw).get("results", [])
+    except json.JSONDecodeError:
+        return []
+    out = [_meta(w) for w in results]
+    cache.put("citers", wid, out)
+    return out
+
+
+def work_meta(openalex_id: str) -> dict:
+    """Title/year/cited_by_count for an external work id (for cocitation nodes whose
+    metadata didn't arrive via the citers fetch, i.e. mechanism B). Cached."""
+    wid = _wid(openalex_id)
+    hit = cache.get("workmeta", wid)
+    if hit is not None:
+        return hit
+    mailto = os.environ.get("OPENALEX_MAILTO", "")
+    url = (f"https://api.openalex.org/works/{wid}"
+           f"?select=id,title,publication_year,cited_by_count"
+           + (f"&mailto={mailto}" if mailto else ""))
+    raw = _get(url)
+    if not raw:
+        return {}
+    try:
+        out = _meta(json.loads(raw))
+    except json.JSONDecodeError:
+        return {}
+    cache.put("workmeta", wid, out)
+    return out
