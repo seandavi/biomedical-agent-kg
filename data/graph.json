@@ -7,8 +7,7 @@
       "one_liner": "ResearchAgent: Iterative Research Idea Generation over Scientific Literature with Large Language Models",
       "exposes": [],
       "architecture": [
-        "multi_agent",
-        "rag"
+        "multi_agent"
       ]
     },
     {
@@ -18,21 +17,23 @@
       "venue": null
     },
     {
-      "id": "domain:literature",
-      "type": "domain",
-      "name": "literature"
-    },
-    {
       "id": "domain:scientific_discovery",
       "type": "domain",
       "name": "scientific_discovery"
+    },
+    {
+      "id": "database:pubmed",
+      "type": "database",
+      "name": "pubmed"
     },
     {
       "id": "agent:scimon",
       "type": "agent",
       "name": "SciMon",
       "one_liner": "SciMon: Scientific Inspiration Machines Optimized for Novelty",
-      "exposes": [],
+      "exposes": [
+        "library"
+      ],
       "architecture": [
         "rag"
       ]
@@ -67,6 +68,11 @@
       "name": "hypothesis_gen"
     },
     {
+      "id": "domain:literature",
+      "type": "domain",
+      "name": "literature"
+    },
+    {
       "id": "agent:genesis",
       "type": "agent",
       "name": "Genesis",
@@ -81,16 +87,6 @@
       "type": "paper",
       "title": "Genesis: Towards the Automation of Systems Biology Research",
       "venue": null
-    },
-    {
-      "id": "domain:drug_discovery",
-      "type": "domain",
-      "name": "drug_discovery"
-    },
-    {
-      "id": "domain:genomics_db",
-      "type": "domain",
-      "name": "genomics_db"
     },
     {
       "id": "agent:mdagents",
@@ -118,7 +114,9 @@
       "type": "agent",
       "name": "Multi-Specialist Agent Consultation",
       "one_liner": "Beyond Direct Diagnosis: LLM-based Multi-Specialist Agent Consultation for Automatic Diagnosis",
-      "exposes": [],
+      "exposes": [
+        "library"
+      ],
       "architecture": [
         "multi_agent"
       ]
@@ -134,7 +132,9 @@
       "type": "agent",
       "name": "MedAide",
       "one_liner": "MedAide: Towards an Omni Medical Aide via Specialized LLM-based Multi-Agent Collaboration",
-      "exposes": [],
+      "exposes": [
+        "web_ui"
+      ],
       "architecture": [
         "multi_agent",
         "rag"
@@ -204,7 +204,9 @@
       "type": "agent",
       "name": "Agent Hospital",
       "one_liner": "Agent Hospital: A Simulacrum of Hospital with Evolvable Medical Agents",
-      "exposes": [],
+      "exposes": [
+        "web_ui"
+      ],
       "architecture": [
         "multi_agent",
         "self_evolving"
@@ -226,11 +228,9 @@
       "type": "agent",
       "name": "ClinicalLab",
       "one_liner": "ClinicalLab: Aligning Agents for Multi-Departmental Clinical Diagnostics in the Real World",
-      "exposes": [
-        "library"
-      ],
+      "exposes": [],
       "architecture": [
-        "multi_agent"
+        "single_agent"
       ]
     },
     {
@@ -249,7 +249,9 @@
       "type": "agent",
       "name": "AIPatient",
       "one_liner": "AIPatient: Simulating Patients with EHRs and LLM Powered Agentic Workflow",
-      "exposes": [],
+      "exposes": [
+        "web_ui"
+      ],
       "architecture": [
         "multi_agent",
         "rag"
@@ -278,11 +280,6 @@
       "venue": null
     },
     {
-      "id": "domain:medical_imaging",
-      "type": "domain",
-      "name": "medical_imaging"
-    },
-    {
       "id": "agent:cxr-agent",
       "type": "agent",
       "name": "CXR-Agent",
@@ -299,11 +296,18 @@
       "venue": null
     },
     {
+      "id": "domain:medical_imaging",
+      "type": "domain",
+      "name": "medical_imaging"
+    },
+    {
       "id": "agent:openlens-ai",
       "type": "agent",
       "name": "OpenLens AI",
       "one_liner": "OpenLens AI: Fully Autonomous Research Agent for Health Infomatics",
-      "exposes": [],
+      "exposes": [
+        "web_ui"
+      ],
       "architecture": [
         "multi_agent"
       ]
@@ -321,12 +325,10 @@
       "one_liner": "BioDiscoveryAgent: An AI Agent for Designing Genetic Perturbation Experiments",
       "exposes": [
         "cli",
-        "library",
-        "skills"
+        "library"
       ],
       "architecture": [
-        "multi_agent",
-        "tool_registry"
+        "multi_agent"
       ]
     },
     {
@@ -345,9 +347,7 @@
       "type": "agent",
       "name": "GeneAgent",
       "one_liner": "GeneAgent: Self-verification Language Agent for Gene Set Knowledge Discovery using Domain Databases",
-      "exposes": [
-        "skills"
-      ],
+      "exposes": [],
       "architecture": [
         "single_agent"
       ]
@@ -404,8 +404,7 @@
         "library"
       ],
       "architecture": [
-        "multi_agent",
-        "rag"
+        "multi_agent"
       ]
     },
     {
@@ -413,6 +412,11 @@
       "type": "paper",
       "title": "DrugAgent: Explainable Drug Repurposing Agent with Large Language Model-based Reasoning",
       "venue": null
+    },
+    {
+      "id": "domain:drug_discovery",
+      "type": "domain",
+      "name": "drug_discovery"
     },
     {
       "id": "agent:malade",
@@ -434,21 +438,13 @@
       "venue": null
     },
     {
-      "id": "benchmark:omop",
-      "type": "benchmark",
-      "name": "OMOP"
-    },
-    {
       "id": "agent:chatmol-copilot",
       "type": "agent",
       "name": "ChatMol Copilot",
       "one_liner": "ChatMol Copilot: An Agent for Molecular Modeling and Computation Powered by LLMs",
-      "exposes": [
-        "web_ui"
-      ],
+      "exposes": [],
       "architecture": [
-        "multi_agent",
-        "tool_registry"
+        "single_agent"
       ]
     },
     {
@@ -468,9 +464,7 @@
       "name": "Apex Metabolic AI Lab",
       "one_liner": "Apex Metabolic AI Lab",
       "exposes": [],
-      "architecture": [
-        "single_agent"
-      ]
+      "architecture": []
     },
     {
       "id": "url:https://www.apexbody.site/p/apex-body-composition-lab.html",
@@ -483,8 +477,12 @@
       "type": "agent",
       "name": "PaSa",
       "one_liner": "PaSa (ByteDance)",
-      "exposes": [],
-      "architecture": []
+      "exposes": [
+        "web_ui"
+      ],
+      "architecture": [
+        "multi_agent"
+      ]
     },
     {
       "id": "https://github.com/bytedance/pasa",
@@ -500,6 +498,16 @@
       "type": "org",
       "name": "bytedance",
       "ror": null
+    },
+    {
+      "id": "benchmark:autoscholarquery",
+      "type": "benchmark",
+      "name": "AutoScholarQuery"
+    },
+    {
+      "id": "benchmark:realscholarquery",
+      "type": "benchmark",
+      "name": "RealScholarQuery"
     },
     {
       "id": "agent:researchcodeagent",
@@ -566,9 +574,9 @@
       "name": "OpenScholar",
       "one_liner": "OpenScholar",
       "exposes": [
-        "api",
         "cli",
-        "library"
+        "library",
+        "web_ui"
       ],
       "architecture": [
         "rag"
@@ -600,7 +608,7 @@
       "name": "Valsci",
       "one_liner": "Valsci",
       "exposes": [
-        "library",
+        "api",
         "web_ui"
       ],
       "architecture": [
@@ -634,8 +642,7 @@
         "web_ui"
       ],
       "architecture": [
-        "multi_agent",
-        "tool_registry"
+        "multi_agent"
       ]
     },
     {
@@ -659,14 +666,11 @@
       "name": "llm-for-zotero",
       "one_liner": "llm-for-zotero",
       "exposes": [
-        "api",
         "skills",
         "web_ui"
       ],
       "architecture": [
-        "multi_agent",
-        "rag",
-        "tool_registry"
+        "multi_agent"
       ]
     },
     {
@@ -693,6 +697,7 @@
         "notebook"
       ],
       "architecture": [
+        "multi_agent",
         "self_evolving"
       ]
     },
@@ -811,8 +816,7 @@
         "library"
       ],
       "architecture": [
-        "multi_agent",
-        "rag"
+        "multi_agent"
       ]
     },
     {
@@ -842,12 +846,11 @@
       "one_liner": "AutoResearchClaw",
       "exposes": [
         "cli",
-        "skills"
+        "web_ui"
       ],
       "architecture": [
         "multi_agent",
-        "self_evolving",
-        "tool_registry"
+        "self_evolving"
       ]
     },
     {
@@ -871,6 +874,11 @@
       "name": "ARC-Bench"
     },
     {
+      "id": "toolenv:openclaw",
+      "type": "toolenv",
+      "name": "OpenClaw"
+    },
+    {
       "id": "agent:scienceclaw",
       "type": "agent",
       "name": "ScienceClaw",
@@ -879,8 +887,7 @@
         "skills"
       ],
       "architecture": [
-        "self_evolving",
-        "tool_registry"
+        "self_evolving"
       ]
     },
     {
@@ -904,7 +911,6 @@
       "name": "AI-Researcher",
       "one_liner": "AI-Researcher",
       "exposes": [
-        "cli",
         "web_ui"
       ],
       "architecture": [
@@ -953,12 +959,11 @@
       "name": "CodeScientist",
       "one_liner": "CodeScientist (AllenAI)",
       "exposes": [
-        "library",
+        "api",
         "web_ui"
       ],
       "architecture": [
-        "multi_agent",
-        "tool_registry"
+        "multi_agent"
       ]
     },
     {
@@ -983,12 +988,10 @@
       "one_liner": "InternAgent",
       "exposes": [
         "cli",
-        "library",
         "web_ui"
       ],
       "architecture": [
-        "multi_agent",
-        "rag"
+        "multi_agent"
       ]
     },
     {
@@ -1037,12 +1040,10 @@
       "name": "AutoScientists",
       "one_liner": "AutoScientists (Harvard MIMS, arXiv 2026)",
       "exposes": [
-        "cli",
-        "library"
+        "cli"
       ],
       "architecture": [
-        "multi_agent",
-        "self_evolving"
+        "multi_agent"
       ]
     },
     {
@@ -1069,6 +1070,11 @@
       "id": "benchmark:proteingym",
       "type": "benchmark",
       "name": "ProteinGym"
+    },
+    {
+      "id": "toolenv:tooluniverse",
+      "type": "toolenv",
+      "name": "ToolUniverse"
     },
     {
       "id": "agent:tooluniverse",
@@ -1107,7 +1113,6 @@
       "name": "Robin",
       "one_liner": "Robin",
       "exposes": [
-        "library",
         "notebook"
       ],
       "architecture": [
@@ -1133,7 +1138,7 @@
         "notebook"
       ],
       "architecture": [
-        "single_agent"
+        "multi_agent"
       ]
     },
     {
@@ -1144,16 +1149,6 @@
       "last_commit": "2026-06-05T22:13:09Z",
       "language": "Python",
       "license": "Apache-2.0"
-    },
-    {
-      "id": "benchmark:gsm8k",
-      "type": "benchmark",
-      "name": "GSM8K"
-    },
-    {
-      "id": "benchmark:hotpotqa",
-      "type": "benchmark",
-      "name": "HotpotQA"
     },
     {
       "id": "benchmark:lab-bench",
@@ -1241,7 +1236,7 @@
       ],
       "architecture": [
         "multi_agent",
-        "tool_registry"
+        "rag"
       ]
     },
     {
@@ -1332,9 +1327,7 @@
         "web_ui"
       ],
       "architecture": [
-        "multi_agent",
-        "rag",
-        "self_evolving"
+        "multi_agent"
       ]
     },
     {
@@ -1363,13 +1356,12 @@
       "name": "Science-Star",
       "one_liner": "Science-Star (USTC AI4Science, 2025)",
       "exposes": [
-        "cli",
+        "library",
         "web_ui"
       ],
       "architecture": [
         "multi_agent",
-        "rag",
-        "tool_registry"
+        "rag"
       ]
     },
     {
@@ -1433,8 +1425,8 @@
         "web_ui"
       ],
       "architecture": [
-        "multi_agent",
-        "rag"
+        "rag",
+        "single_agent"
       ]
     },
     {
@@ -1455,8 +1447,7 @@
         "api"
       ],
       "architecture": [
-        "multi_agent",
-        "rag"
+        "multi_agent"
       ]
     },
     {
@@ -1484,13 +1475,8 @@
       "type": "agent",
       "name": "SRAgent",
       "one_liner": "SRAgent",
-      "exposes": [
-        "cli",
-        "library"
-      ],
-      "architecture": [
-        "multi_agent"
-      ]
+      "exposes": [],
+      "architecture": []
     },
     {
       "id": "https://github.com/ArcInstitute/SRAgent",
@@ -1516,8 +1502,7 @@
         "web_ui"
       ],
       "architecture": [
-        "multi_agent",
-        "tool_registry"
+        "multi_agent"
       ]
     },
     {
@@ -1541,12 +1526,10 @@
       "name": "Camyla",
       "one_liner": "Camyla",
       "exposes": [
-        "cli",
-        "library"
+        "cli"
       ],
       "architecture": [
-        "multi_agent",
-        "rag"
+        "multi_agent"
       ]
     },
     {
@@ -1601,6 +1584,7 @@
       "one_liner": "TxAgent",
       "exposes": [
         "library",
+        "skills",
         "web_ui"
       ],
       "architecture": [
@@ -1713,7 +1697,6 @@
       "name": "DrugAssist",
       "one_liner": "DrugAssist",
       "exposes": [
-        "cli",
         "web_ui"
       ],
       "architecture": [
@@ -1798,7 +1781,7 @@
         "mcp"
       ],
       "architecture": [
-        "tool_registry"
+        "single_agent"
       ]
     },
     {
@@ -1836,9 +1819,9 @@
       "ror": null
     },
     {
-      "id": "benchmark:kegg",
-      "type": "benchmark",
-      "name": "KEGG"
+      "id": "domain:genomics_db",
+      "type": "domain",
+      "name": "genomics_db"
     },
     {
       "id": "agent:dna-claude-analysis",
@@ -1913,7 +1896,6 @@
       "one_liner": "NVIDIA Biomedical AI-Q Research Agent",
       "exposes": [
         "api",
-        "library",
         "web_ui"
       ],
       "architecture": [
@@ -1948,16 +1930,19 @@
     {
       "src": "agent:researchagent",
       "rel": "targets",
-      "dst": "domain:literature",
+      "dst": "domain:scientific_discovery",
       "primary": false,
       "provenance": null
     },
     {
       "src": "agent:researchagent",
-      "rel": "targets",
-      "dst": "domain:scientific_discovery",
+      "rel": "queries",
+      "dst": "database:pubmed",
       "primary": false,
-      "provenance": null
+      "provenance": {
+        "source": "abstract",
+        "evidence": "augmented not only with relevant publications by connecting information over an academic graph"
+      }
     },
     {
       "src": "agent:scimon",
@@ -2009,6 +1994,16 @@
       "provenance": null
     },
     {
+      "src": "agent:scimon",
+      "rel": "queries",
+      "dst": "database:pubmed",
+      "primary": false,
+      "provenance": {
+        "source": "abstract",
+        "evidence": "retrieval of \"inspirations\" from past scientific papers"
+      }
+    },
+    {
       "src": "agent:genesis",
       "rel": "described_by",
       "dst": "arxiv:2408.10689",
@@ -2018,14 +2013,7 @@
     {
       "src": "agent:genesis",
       "rel": "targets",
-      "dst": "domain:drug_discovery",
-      "primary": false,
-      "provenance": null
-    },
-    {
-      "src": "agent:genesis",
-      "rel": "targets",
-      "dst": "domain:genomics_db",
+      "dst": "domain:scientific_discovery",
       "primary": false,
       "provenance": null
     },
@@ -2134,7 +2122,7 @@
       "primary": false,
       "provenance": {
         "source": "abstract",
-        "evidence": "outperform state-of-the-art medical agent methods on the MedQA benchmark"
+        "evidence": "the evolved doctor agents outperform state-of-the-art medical agent methods on the MedQA benchmark"
       }
     },
     {
@@ -2190,13 +2178,6 @@
       "provenance": null
     },
     {
-      "src": "agent:medco",
-      "rel": "targets",
-      "dst": "domain:medical_imaging",
-      "primary": false,
-      "provenance": null
-    },
-    {
       "src": "agent:cxr-agent",
       "rel": "described_by",
       "dst": "arxiv:2407.08811",
@@ -2234,13 +2215,6 @@
     {
       "src": "agent:biodiscoveryagent",
       "rel": "targets",
-      "dst": "domain:literature",
-      "primary": false,
-      "provenance": null
-    },
-    {
-      "src": "agent:biodiscoveryagent",
-      "rel": "targets",
       "dst": "domain:perturbation",
       "primary": false,
       "provenance": null
@@ -2253,17 +2227,20 @@
       "provenance": null
     },
     {
+      "src": "agent:biodiscoveryagent",
+      "rel": "queries",
+      "dst": "database:pubmed",
+      "primary": false,
+      "provenance": {
+        "source": "abstract",
+        "evidence": "The agent also has access to tools for searching the biomedical literature"
+      }
+    },
+    {
       "src": "agent:geneagent",
       "rel": "described_by",
       "dst": "arxiv:2405.16205",
       "primary": true,
-      "provenance": null
-    },
-    {
-      "src": "agent:geneagent",
-      "rel": "targets",
-      "dst": "domain:genomics_db",
-      "primary": false,
       "provenance": null
     },
     {
@@ -2309,10 +2286,27 @@
       "provenance": null
     },
     {
+      "src": "agent:drugagent",
+      "rel": "queries",
+      "dst": "database:pubmed",
+      "primary": false,
+      "provenance": {
+        "source": "abstract",
+        "evidence": "literature evidence"
+      }
+    },
+    {
       "src": "agent:malade",
       "rel": "described_by",
       "dst": "arxiv:2408.01869",
       "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:malade",
+      "rel": "targets",
+      "dst": "domain:clinical_qa",
+      "primary": false,
       "provenance": null
     },
     {
@@ -2323,27 +2317,10 @@
       "provenance": null
     },
     {
-      "src": "agent:malade",
-      "rel": "evaluated_on",
-      "dst": "benchmark:omop",
-      "primary": false,
-      "provenance": {
-        "source": "abstract",
-        "evidence": "MALADE demonstrates its efficacy with an Area Under ROC Curve of 0.90 against the OMOP Ground Truth table of ADEs."
-      }
-    },
-    {
       "src": "agent:chatmol-copilot",
       "rel": "described_by",
       "dst": "url:https://aclanthology.org/2024.lm-1.6/",
       "primary": true,
-      "provenance": null
-    },
-    {
-      "src": "agent:chatmol-copilot",
-      "rel": "targets",
-      "dst": "domain:drug_discovery",
-      "primary": false,
       "provenance": null
     },
     {
@@ -2382,6 +2359,33 @@
       "provenance": null
     },
     {
+      "src": "agent:pasa",
+      "rel": "targets",
+      "dst": "domain:literature",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:pasa",
+      "rel": "evaluated_on",
+      "dst": "benchmark:autoscholarquery",
+      "primary": false,
+      "provenance": {
+        "source": "readme",
+        "evidence": "We optimize PaSa using reinforcement learning with a synthetic dataset, AutoScholarQuery, which includes 35k fine-grained academic queries"
+      }
+    },
+    {
+      "src": "agent:pasa",
+      "rel": "evaluated_on",
+      "dst": "benchmark:realscholarquery",
+      "primary": false,
+      "provenance": {
+        "source": "readme",
+        "evidence": "Additionally, we develop RealScholarQuery, a benchmark collecting real-world academic queries to assess PaSa performance in more realistic scenarios."
+      }
+    },
+    {
       "src": "agent:researchcodeagent",
       "rel": "described_by",
       "dst": "arxiv:2504.20117",
@@ -2391,7 +2395,7 @@
     {
       "src": "agent:researchcodeagent",
       "rel": "targets",
-      "dst": "domain:scientific_discovery",
+      "dst": "domain:literature",
       "primary": false,
       "provenance": null
     },
@@ -2405,7 +2409,7 @@
     {
       "src": "agent:alhazen",
       "rel": "targets",
-      "dst": "domain:literature",
+      "dst": "domain:scientific_discovery",
       "primary": false,
       "provenance": null
     },
@@ -2459,6 +2463,16 @@
       "provenance": {
         "source": "readme",
         "evidence": "To run evaluations on ScholarQABench, please check the ScholarQABench repository."
+      }
+    },
+    {
+      "src": "agent:openscholar",
+      "rel": "queries",
+      "dst": "database:pubmed",
+      "primary": false,
+      "provenance": {
+        "source": "readme",
+        "evidence": "For SciFact, PubmedQA and QASA, the corresponding task names are claim_full, boolean_question_full and single_qa, respectively."
       }
     },
     {
@@ -2604,13 +2618,6 @@
     {
       "src": "agent:virtual-lab",
       "rel": "targets",
-      "dst": "domain:protein_structure",
-      "primary": false,
-      "provenance": null
-    },
-    {
-      "src": "agent:virtual-lab",
-      "rel": "targets",
       "dst": "domain:scientific_discovery",
       "primary": false,
       "provenance": null
@@ -2660,20 +2667,6 @@
     {
       "src": "agent:kosmos",
       "rel": "targets",
-      "dst": "domain:hypothesis_gen",
-      "primary": false,
-      "provenance": null
-    },
-    {
-      "src": "agent:kosmos",
-      "rel": "targets",
-      "dst": "domain:literature",
-      "primary": false,
-      "provenance": null
-    },
-    {
-      "src": "agent:kosmos",
-      "rel": "targets",
       "dst": "domain:scientific_discovery",
       "primary": false,
       "provenance": null
@@ -2686,6 +2679,16 @@
       "provenance": {
         "source": "readme",
         "evidence": "Discovery Validation | 8-dimension ScholarEval quality framework | Complete"
+      }
+    },
+    {
+      "src": "agent:kosmos",
+      "rel": "queries",
+      "dst": "database:pubmed",
+      "primary": false,
+      "provenance": {
+        "source": "readme",
+        "evidence": "Literature Search | ArXiv, PubMed, Semantic Scholar integration | Complete"
       }
     },
     {
@@ -2705,13 +2708,6 @@
     {
       "src": "agent:autoresearchclaw",
       "rel": "targets",
-      "dst": "domain:literature",
-      "primary": false,
-      "provenance": null
-    },
-    {
-      "src": "agent:autoresearchclaw",
-      "rel": "targets",
       "dst": "domain:scientific_discovery",
       "primary": false,
       "provenance": null
@@ -2724,6 +2720,16 @@
       "provenance": {
         "source": "readme",
         "evidence": "ARC-Bench: a 55-topic open-ended autonomous-research benchmark"
+      }
+    },
+    {
+      "src": "agent:autoresearchclaw",
+      "rel": "built_on",
+      "dst": "toolenv:openclaw",
+      "primary": false,
+      "provenance": {
+        "source": "readme",
+        "evidence": "Just chat with OpenClaw: \"Research X\" \u2192 done."
       }
     },
     {
@@ -2746,6 +2752,26 @@
       "dst": "domain:literature",
       "primary": false,
       "provenance": null
+    },
+    {
+      "src": "agent:scienceclaw",
+      "rel": "queries",
+      "dst": "database:pubmed",
+      "primary": false,
+      "provenance": {
+        "source": "README",
+        "evidence": "ScienceClaw learns that PubMed + Semantic Scholar works best for your queries"
+      }
+    },
+    {
+      "src": "agent:scienceclaw",
+      "rel": "built_on",
+      "dst": "toolenv:openclaw",
+      "primary": false,
+      "provenance": {
+        "source": "README",
+        "evidence": "ScienceClaw is built on the [OpenClaw](https://github.com/openclaw/openclaw) engine"
+      }
     },
     {
       "src": "agent:ai-researcher",
@@ -2774,7 +2800,7 @@
       "dst": "benchmark:scientist-bench",
       "primary": false,
       "provenance": {
-        "source": "list blurb",
+        "source": "List blurb",
         "evidence": "Autonomous pipeline from literature review\u2192hypothesis\u2192algorithm implementation\u2192publication-level writing with Scientist-Bench evaluation"
       }
     },
@@ -2830,20 +2856,6 @@
     {
       "src": "agent:internagent",
       "rel": "targets",
-      "dst": "domain:hypothesis_gen",
-      "primary": false,
-      "provenance": null
-    },
-    {
-      "src": "agent:internagent",
-      "rel": "targets",
-      "dst": "domain:literature",
-      "primary": false,
-      "provenance": null
-    },
-    {
-      "src": "agent:internagent",
-      "rel": "targets",
       "dst": "domain:scientific_discovery",
       "primary": false,
       "provenance": null
@@ -2854,8 +2866,8 @@
       "dst": "benchmark:mle-bench",
       "primary": false,
       "provenance": {
-        "source": "README",
-        "evidence": "InternAgent 1.5 achieves leading performance on scientific reasoning benchmarks including GAIA, HLE, GPQA, and FrontierScience"
+        "source": "List blurb",
+        "evidence": "#1 on MLE-Bench (36.44%)"
       }
     },
     {
@@ -2936,13 +2948,6 @@
     {
       "src": "agent:autoscientists",
       "rel": "targets",
-      "dst": "domain:scientific_discovery",
-      "primary": false,
-      "provenance": null
-    },
-    {
-      "src": "agent:autoscientists",
-      "rel": "targets",
       "dst": "domain:single_cell",
       "primary": false,
       "provenance": null
@@ -2953,7 +2958,7 @@
       "dst": "benchmark:bioml-bench",
       "primary": false,
       "provenance": {
-        "source": "readme",
+        "source": "README",
         "evidence": "BioML-Bench (24 biomedical ML tasks across biomedical imaging, protein engineering, single-cell omics, drug discovery): 74.4% mean leaderboard percentile, +8.33% over the strongest prior AI agent."
       }
     },
@@ -2963,8 +2968,18 @@
       "dst": "benchmark:proteingym",
       "primary": false,
       "provenance": {
-        "source": "readme",
+        "source": "README",
         "evidence": "ProteinGym fitness prediction: +12.5% on the ACE2-Spike binding assay; +6.5% averaged across all 217 assays."
+      }
+    },
+    {
+      "src": "agent:autoscientists",
+      "rel": "built_on",
+      "dst": "toolenv:tooluniverse",
+      "primary": false,
+      "provenance": {
+        "source": "README",
+        "evidence": "https://github.com/mims-harvard/ToolUniverse"
       }
     },
     {
@@ -3001,6 +3016,16 @@
       "dst": "domain:multi_omics",
       "primary": false,
       "provenance": null
+    },
+    {
+      "src": "agent:tooluniverse",
+      "rel": "queries",
+      "dst": "database:pubmed",
+      "primary": false,
+      "provenance": {
+        "source": "readme",
+        "evidence": "Unified search across PubMed, Semantic Scholar, ArXiv, BioRxiv, Europe PMC, and more"
+      }
     },
     {
       "src": "agent:robin",
@@ -3064,26 +3089,6 @@
       "dst": "domain:protein_structure",
       "primary": false,
       "provenance": null
-    },
-    {
-      "src": "agent:aviary",
-      "rel": "evaluated_on",
-      "dst": "benchmark:gsm8k",
-      "primary": false,
-      "provenance": {
-        "source": "readme",
-        "evidence": "pip install 'fhaviary[gsm8k,hotpotqa,labbench,lfrqa,notebook]'"
-      }
-    },
-    {
-      "src": "agent:aviary",
-      "rel": "evaluated_on",
-      "dst": "benchmark:hotpotqa",
-      "primary": false,
-      "provenance": {
-        "source": "readme",
-        "evidence": "pip install 'fhaviary[gsm8k,hotpotqa,labbench,lfrqa,notebook]'"
-      }
     },
     {
       "src": "agent:aviary",
@@ -3275,7 +3280,7 @@
       "dst": "benchmark:deepresearch-bench-ii",
       "primary": false,
       "provenance": {
-        "source": "readme",
+        "source": "README",
         "evidence": "#1 on DeepResearch Bench II"
       }
     },
@@ -3285,7 +3290,7 @@
       "dst": "benchmark:astabench",
       "primary": false,
       "provenance": {
-        "source": "readme",
+        "source": "README",
         "evidence": "#1 on AstaBench Code & Execution"
       }
     },
@@ -3410,13 +3415,6 @@
     {
       "src": "agent:biomni",
       "rel": "targets",
-      "dst": "domain:drug_discovery",
-      "primary": false,
-      "provenance": null
-    },
-    {
-      "src": "agent:biomni",
-      "rel": "targets",
       "dst": "domain:hypothesis_gen",
       "primary": false,
       "provenance": null
@@ -3469,8 +3467,8 @@
       "dst": "benchmark:bixbench",
       "primary": false,
       "provenance": {
-        "source": "README",
-        "evidence": "The BioAgents analysis agent achieves state-of-the-art performance on the BixBench benchmark, outperforming all existing solutions:"
+        "source": "readme",
+        "evidence": "achieves state-of-the-art performance on the BixBench benchmark"
       }
     },
     {
@@ -3488,20 +3486,6 @@
       "provenance": null
     },
     {
-      "src": "agent:sragent",
-      "rel": "targets",
-      "dst": "domain:literature",
-      "primary": false,
-      "provenance": null
-    },
-    {
-      "src": "agent:sragent",
-      "rel": "targets",
-      "dst": "domain:single_cell",
-      "primary": false,
-      "provenance": null
-    },
-    {
       "src": "agent:stagent",
       "rel": "implemented_by",
       "dst": "https://github.com/LiuLab-Bioelectronics-Harvard/STAgent",
@@ -3512,20 +3496,6 @@
       "src": "agent:stagent",
       "rel": "built_by",
       "dst": "org:liulab-bioelectronics-harvard",
-      "primary": false,
-      "provenance": null
-    },
-    {
-      "src": "agent:stagent",
-      "rel": "targets",
-      "dst": "domain:hypothesis_gen",
-      "primary": false,
-      "provenance": null
-    },
-    {
-      "src": "agent:stagent",
-      "rel": "targets",
-      "dst": "domain:literature",
       "primary": false,
       "provenance": null
     },
@@ -3553,13 +3523,6 @@
     {
       "src": "agent:camyla",
       "rel": "targets",
-      "dst": "domain:literature",
-      "primary": false,
-      "provenance": null
-    },
-    {
-      "src": "agent:camyla",
-      "rel": "targets",
       "dst": "domain:medical_imaging",
       "primary": false,
       "provenance": null
@@ -3579,6 +3542,16 @@
       "provenance": {
         "source": "readme",
         "evidence": "CamylaBench: contamination-free benchmark of 31 datasets, built exclusively from 2025 publications"
+      }
+    },
+    {
+      "src": "agent:camyla",
+      "rel": "queries",
+      "dst": "database:pubmed",
+      "primary": false,
+      "provenance": {
+        "source": "readme",
+        "evidence": "Multi-source literature search (ArXiv, OpenAlex, PubMed, Semantic Scholar)"
       }
     },
     {
@@ -3643,7 +3616,7 @@
       "dst": "benchmark:drugpc",
       "primary": false,
       "provenance": {
-        "source": "readme",
+        "source": "README",
         "evidence": "TxAgent outperforms leading LLMs, tool-use models, and reasoning agents across five new benchmarks: DrugPC, BrandPC, GenericPC, TreatmentPC, and DescriptionPC"
       }
     },
@@ -3653,7 +3626,7 @@
       "dst": "benchmark:brandpc",
       "primary": false,
       "provenance": {
-        "source": "readme",
+        "source": "README",
         "evidence": "TxAgent outperforms leading LLMs, tool-use models, and reasoning agents across five new benchmarks: DrugPC, BrandPC, GenericPC, TreatmentPC, and DescriptionPC"
       }
     },
@@ -3663,7 +3636,7 @@
       "dst": "benchmark:genericpc",
       "primary": false,
       "provenance": {
-        "source": "readme",
+        "source": "README",
         "evidence": "TxAgent outperforms leading LLMs, tool-use models, and reasoning agents across five new benchmarks: DrugPC, BrandPC, GenericPC, TreatmentPC, and DescriptionPC"
       }
     },
@@ -3673,7 +3646,7 @@
       "dst": "benchmark:treatmentpc",
       "primary": false,
       "provenance": {
-        "source": "readme",
+        "source": "README",
         "evidence": "TxAgent outperforms leading LLMs, tool-use models, and reasoning agents across five new benchmarks: DrugPC, BrandPC, GenericPC, TreatmentPC, and DescriptionPC"
       }
     },
@@ -3683,8 +3656,18 @@
       "dst": "benchmark:descriptionpc",
       "primary": false,
       "provenance": {
-        "source": "readme",
+        "source": "README",
         "evidence": "TxAgent outperforms leading LLMs, tool-use models, and reasoning agents across five new benchmarks: DrugPC, BrandPC, GenericPC, TreatmentPC, and DescriptionPC"
+      }
+    },
+    {
+      "src": "agent:txagent",
+      "rel": "built_on",
+      "dst": "toolenv:tooluniverse",
+      "primary": false,
+      "provenance": {
+        "source": "README",
+        "evidence": "leverages multi-step reasoning and real-time biomedical knowledge retrieval across a toolbox of 211 tools to analyze drug interactions, contraindications, and patient-specific treatment strategies (https://github.com/mims-harvard/ToolUniverse)"
       }
     },
     {
@@ -3710,19 +3693,12 @@
     },
     {
       "src": "agent:medagents",
-      "rel": "targets",
-      "dst": "domain:literature",
-      "primary": false,
-      "provenance": null
-    },
-    {
-      "src": "agent:medagents",
       "rel": "evaluated_on",
       "dst": "benchmark:medqa",
       "primary": false,
       "provenance": {
         "source": "abstract",
-        "evidence": "MedQA"
+        "evidence": "Experimental results on nine datasets (MedQA, MedMCQA, PubMedQA, and six subtasks from MMLU)"
       }
     },
     {
@@ -3732,7 +3708,7 @@
       "primary": false,
       "provenance": {
         "source": "abstract",
-        "evidence": "MedMCQA"
+        "evidence": "Experimental results on nine datasets (MedQA, MedMCQA, PubMedQA, and six subtasks from MMLU)"
       }
     },
     {
@@ -3742,7 +3718,7 @@
       "primary": false,
       "provenance": {
         "source": "abstract",
-        "evidence": "PubMedQA"
+        "evidence": "Experimental results on nine datasets (MedQA, MedMCQA, PubMedQA, and six subtasks from MMLU)"
       }
     },
     {
@@ -3752,7 +3728,7 @@
       "primary": false,
       "provenance": {
         "source": "abstract",
-        "evidence": "MMLU"
+        "evidence": "Experimental results on nine datasets (MedQA, MedMCQA, PubMedQA, and six subtasks from MMLU)"
       }
     },
     {
@@ -3842,13 +3818,6 @@
     {
       "src": "agent:chatspatial",
       "rel": "targets",
-      "dst": "domain:single_cell",
-      "primary": false,
-      "provenance": null
-    },
-    {
-      "src": "agent:chatspatial",
-      "rel": "targets",
       "dst": "domain:spatial",
       "primary": false,
       "provenance": null
@@ -3873,16 +3842,6 @@
       "dst": "domain:genomics_db",
       "primary": false,
       "provenance": null
-    },
-    {
-      "src": "agent:bioreason",
-      "rel": "evaluated_on",
-      "dst": "benchmark:kegg",
-      "primary": false,
-      "provenance": {
-        "source": "list blurb",
-        "evidence": "98% accuracy on KEGG disease pathway prediction"
-      }
     },
     {
       "src": "agent:dna-claude-analysis",
@@ -3922,7 +3881,7 @@
     {
       "src": "agent:pathchat",
       "rel": "targets",
-      "dst": "domain:medical_imaging",
+      "dst": "domain:clinical_qa",
       "primary": false,
       "provenance": null
     },
@@ -3958,13 +3917,6 @@
       "src": "agent:nvidia-biomedical-ai-q-research-agent",
       "rel": "targets",
       "dst": "domain:drug_discovery",
-      "primary": false,
-      "provenance": null
-    },
-    {
-      "src": "agent:nvidia-biomedical-ai-q-research-agent",
-      "rel": "targets",
-      "dst": "domain:literature",
       "primary": false,
       "provenance": null
     },

@@ -13,17 +13,20 @@ import json
 
 from . import cache
 from .config import Settings
-from .vocab import ARCH, DOMAINS, EXPOSES
+from .vocab import ARCH, DATABASES, DOMAINS, EXPOSES
 
 # Fixed across ALL entries -> the prompt-cache / context-cache target (SPEC §12.1).
 FACET_SYSTEM_PROMPT = (
     "You extract structured facets for biomedical LLM-agent systems from the supplied "
     "text. Reply with ONLY a JSON object, no prose, with keys: "
-    '"exposes", "architecture", "domains" (arrays of strings), and "evaluated_on" '
-    '(array of {"benchmark","evidence","source"}). Use ONLY these controlled values:\n'
+    '"exposes", "architecture", "domains" (arrays of strings); "evaluated_on" '
+    '(array of {"benchmark","evidence","source"}); "queries" (array of '
+    '{"database","evidence","source"}); and "built_on" (array of '
+    '{"toolenv","evidence","source"}). Use ONLY these controlled values:\n'
     f"  exposes: {sorted(EXPOSES)}\n"
     f"  architecture: {sorted(ARCH)}\n"
     f"  domains: {sorted(DOMAINS)}\n"
+    f"  database (for queries): {sorted(DATABASES)}\n"
     "Omit any value you are unsure of (under-claim; honesty over completeness). "
     "Include a domain ONLY if the supplied text explicitly evidences that application "
     "area; never infer a domain from the system name alone. "
@@ -34,10 +37,16 @@ FACET_SYSTEM_PROMPT = (
     "text names several benchmarks, emit one entry per benchmark. If the evaluation "
     "target is an unnamed or ad-hoc dataset described only in prose, OMIT it. Each "
     "entry's 'evidence' MUST be the specific span that names THAT benchmark, not a "
-    "shared summary sentence."
+    "shared summary sentence.\n"
+    "queries: one entry per public database the agent QUERIES, 'database' from the "
+    "controlled list above only (omit any database not on the list); evidence must name "
+    "it. built_on: one entry per named tool environment / tool registry / skill set the "
+    "agent is built on (e.g. 'ToolUniverse', 'Biomni-E1', 'LabClaw'); 'toolenv' is its "
+    "proper name. Both are expensive edges — include ONLY with a naming evidence span."
 )
 
-_EMPTY_FACETS = {"exposes": [], "architecture": [], "domains": [], "evaluated_on": []}
+_EMPTY_FACETS = {"exposes": [], "architecture": [], "domains": [],
+                 "evaluated_on": [], "queries": [], "built_on": []}
 
 # Entry-type classification (SPEC §12.1 — "NOT a regex"). Fixed -> cache target.
 CLASSIFY_SYSTEM_PROMPT = (

@@ -13,7 +13,8 @@ from .config import Settings
 from .log import logger
 from .model import Edge, Graph, slugify
 from .parse import classify_url, crawl, parse_entries
-from .vocab import ARCH, DOMAIN_ALIASES, DOMAINS, EXPOSES, guard_vocab
+from .vocab import (ARCH, DATABASES, DB_ALIASES, DOMAIN_ALIASES, DOMAINS, EXPOSES,
+                    guard_vocab)
 
 
 def build(md: str, review_log: list, backend=None, limit=None, context_sink=None) -> Graph:
@@ -99,6 +100,23 @@ def build(md: str, review_log: list, backend=None, limit=None, context_sink=None
                              name=ev["benchmark"])
             g.add_edge(Edge(aid, "evaluated_on", bid,
                             provenance={"source": ev["source"], "evidence": ev["evidence"]}))
+        # expensive edge: queries -> Database (whitelist-guarded, SPEC §9)
+        for q in f.get("queries", []):
+            kept, _ = guard_vocab([q.get("database", "")], DATABASES, DB_ALIASES)
+            if not kept:  # off-whitelist -> folded away (not its own node), audited
+                review_log.append({"agent": aid, "dropped_db": q.get("database")})
+                continue
+            did = g.add_node("database:" + kept[0], "database", name=kept[0])
+            g.add_edge(Edge(aid, "queries", did,
+                            provenance={"source": q.get("source"), "evidence": q.get("evidence")}))
+        # expensive edge: built_on -> ToolEnv (named tool/skill collections, SPEC §8)
+        for b in f.get("built_on", []):
+            tname = (b.get("toolenv") or "").strip()
+            if not tname:
+                continue
+            tid = g.add_node("toolenv:" + slugify(tname), "toolenv", name=tname)
+            g.add_edge(Edge(aid, "built_on", tid,
+                            provenance={"source": b.get("source"), "evidence": b.get("evidence")}))
         for d in (d1 + d2 + d3):
             review_log.append({"agent": aid, "dropped_or_aliased": d})
 
@@ -120,9 +138,18 @@ def build(md: str, review_log: list, backend=None, limit=None, context_sink=None
     for ed in g.edges:
         degree[ed["src"]] = degree.get(ed["src"], 0) + 1
         degree[ed["dst"]] = degree.get(ed["dst"], 0) + 1
-    pruned = [nid for nid in g.nodes if not degree.get(nid)]
+    # degree-0 -> prune (any type). Shared resources (Database/ToolEnv) need >=2 agents
+    # to earn a node (SPEC §9 / §1.4 friction-driven); below that they are folded away.
+    shared = {"database", "toolenv"}
+    pruned = [nid for nid, n in g.nodes.items()
+              if not degree.get(nid)
+              or (n["type"] in shared and degree.get(nid, 0) < 2)]
+    pruned_set = set(pruned)
     for nid in pruned:
         del g.nodes[nid]
+    # drop edges that referenced a pruned shared-resource node (orphan papers have none)
+    g.edges[:] = [e for e in g.edges
+                  if e["src"] not in pruned_set and e["dst"] not in pruned_set]
     review_log.extend({"pruned_orphan": nid} for nid in pruned)
     cites_n = sum(1 for ed in g.edges if ed["rel"] == "cites")
     logger.info(f"built {agents_done} agents, {len(g.nodes)} nodes, {len(g.edges)} "
