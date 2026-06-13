@@ -11,10 +11,16 @@ export const LAYOUT = {
   animate: true,
   animationDuration: 600,
   randomize: true,
-  nodeRepulsion: 8000,
-  idealEdgeLength: 90,
-  nodeSeparation: 80,
-  padding: 40,
+  // Tuned for ~235 nodes: stronger repulsion + longer edges spread the dense
+  // center; gravity keeps loosely-connected components from drifting off-screen.
+  nodeRepulsion: 14000,
+  idealEdgeLength: 120,
+  nodeSeparation: 110,
+  gravity: 0.3,
+  gravityRange: 3.0,
+  numIter: 3000,
+  packComponents: true,
+  padding: 50,
 } as const;
 
 function nodeColorSelectors() {
@@ -56,11 +62,11 @@ export function createCy(
           "text-max-width": "110px",
           "text-valign": "bottom",
           "text-margin-y": 4,
-          "text-opacity": 0, // non-agent labels off by default (declutter dense clusters)
+          "text-opacity": 0, // labels off by default; gated by showLabel below
           "text-outline-color": "#0d1117",
           "text-outline-width": 2,
-          width: 24,
-          height: 24,
+          width: "data(size)", // degree-scaled in data.ts (hubs bigger)
+          height: "data(size)",
           "border-width": 2,
           "border-color": "#0d1117",
           "background-opacity": 1,
@@ -68,16 +74,14 @@ export function createCy(
       },
       ...nodeColorSelectors(),
       {
-        // agents are the spine — larger, always labeled
+        // agents are the spine — bold white labels when shown
         selector: 'node[type = "agent"]',
-        style: {
-          width: 42,
-          height: 42,
-          "font-size": 13,
-          "font-weight": "bold",
-          color: "#fff",
-          "text-opacity": 1,
-        },
+        style: { "font-weight": "bold", color: "#fff", "font-size": 12 },
+      },
+      {
+        // only well-connected nodes are labeled by default (declutter ~235-node center)
+        selector: "node[showLabel = 1]",
+        style: { "text-opacity": 1 },
       },
       {
         selector: "edge",
@@ -90,6 +94,12 @@ export function createCy(
         },
       },
       ...edgeColorSelectors(),
+      {
+        // targets (agent→domain) is by far the densest relation; thin + fade it
+        // so the rarer structural edges aren't lost in the hairball.
+        selector: 'edge[rel = "targets"]',
+        style: { width: 1, "line-opacity": 0.4 },
+      },
       {
         // primary (canonical) edges read a touch heavier
         selector: "edge[?primary]",

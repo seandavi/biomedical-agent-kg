@@ -7,7 +7,7 @@ export const TYPE_COLOR: Record<NodeType, string> = {
   repo: "#343a40",
   benchmark: "#9c36b5",
   org: "#2f9e44",
-  domain: "#f08c00",
+  domain: "#fcc419", // gold — kept clearly distinct from agent's red-orange
   toolenv: "#0ca678",
   database: "#3b5bdb",
 };
@@ -36,7 +36,7 @@ export const EDGE_COLOR: Record<EdgeRel, string> = {
   implemented_by: "#3bc9db", // agent → repo
   evaluated_on: "#f783ac", // agent → benchmark
   built_by: "#69db7c", // agent → org
-  targets: "#ffd43b", // agent → domain
+  targets: "#7d8590", // agent → domain (densest rel — neutral so it recedes)
   built_on: "#da77f2", // agent → toolenv
   queries: "#4dabf7", // agent → database
   cites: "#39424d", // paper → paper (muted, dashed, default-off)

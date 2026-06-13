@@ -99,10 +99,10 @@ async function main() {
   cy.on("mouseout", "node", (ev) => {
     const n = ev.target;
     n.removeClass("hovered");
-    // Keep the label only if the node belongs to the current focus: when a focus
-    // is active that's any non-faded node; otherwise it's the always-on agents.
+    // Keep the label only if the node belongs to the current focus (any non-faded
+    // node while a focus is active); otherwise keep the default-labeled hubs.
     const focusActive = cy.elements(".faded").nonempty();
-    const keepLabel = focusActive ? !n.hasClass("faded") : n.data("type") === "agent";
+    const keepLabel = focusActive ? !n.hasClass("faded") : n.data("showLabel") === 1;
     if (!keepLabel) n.removeClass("labeled");
     container.style.cursor = "default";
   });
