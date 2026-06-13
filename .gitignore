@@ -10,3 +10,4 @@ dist/
 _review.json
 graph_sources.json
 fullpass*.log
+deepdive.log

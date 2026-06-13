@@ -6,6 +6,6 @@ exposes: [library, skills, web_ui]
 architecture: [multi_agent, rag, tool_registry]
 ---
 
-TxAgent is an AI agent designed for therapeutic reasoning, developed by [[org:harvard-medical-school]]. It utilizes a multi-agent, rag, and tool-registry architecture to perform multi-step reasoning and real-time biomedical knowledge retrieval. The system exposes a library, skills, and a web_ui to facilitate the analysis of drug interactions, contraindications, and personalized treatment strategies.
+TxAgent is a multi-agent system built by [[org:harvard-medical-school]] designed to provide personalized treatment recommendations through multi-step reasoning and real-time knowledge retrieval. Utilizing a rag architecture and a tool_registry containing 211 specialized tools, the system analyzes drug interactions, contraindications, and patient-specific strategies. It is accessible via a library, a suite of skills, and a web_ui.
 
-The agent is built to address [[domain:clinical_qa]] by synthesizing evidence from diverse biomedical sources and executing structured function calls. Its performance is evaluated on the [[benchmark:drugpc]], [[benchmark:brandpc]], [[benchmark:genericpc]], [[benchmark:treatmentpc]], and [[benchmark:descriptionpc]] benchmarks.
+The system targets applications in [[domain:clinical_qa]] and [[domain:drug_discovery]]. Its performance is validated across five benchmarks: [[benchmark:drugpc]], [[benchmark:brandpc]], [[benchmark:genericpc]], [[benchmark:treatmentpc]], and [[benchmark:descriptionpc]]. By synthesizing evidence from biomedical sources, TxAgent ensures that its therapeutic outputs align with clinical guidelines and real-world evidence.

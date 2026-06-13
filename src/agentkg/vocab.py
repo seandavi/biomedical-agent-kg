@@ -17,6 +17,22 @@ DOMAINS = {
     "scientific_discovery",
 }
 
+# Shared public Database whitelist (SPEC §9). A Database node exists ONLY for these
+# named, public, shared resources that create cross-system edges; anything else an agent
+# queries is folded into a ToolEnv's db_count (or dropped), never its own node.
+DATABASES = {
+    "clinvar", "gnomad", "geo", "sra", "uniprot", "openalex", "pubmed",
+    "clinicaltrials", "gwas_catalog", "cpic", "alphamissense", "civic", "oncokb",
+}
+
+DB_ALIASES = {
+    "gene expression omnibus": "geo",
+    "sequence read archive": "sra",
+    "clinical trials": "clinicaltrials", "clinicaltrials.gov": "clinicaltrials",
+    "gwas catalog": "gwas_catalog", "the gwas catalog": "gwas_catalog",
+    "uniprotkb": "uniprot",
+}
+
 # rules.yml stand-in: alias tables catching CLASSES of extraction noise (SPEC §1.3).
 DOMAIN_ALIASES = {
     "proteome": "proteomics", "proteomic": "proteomics",
