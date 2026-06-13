@@ -134,6 +134,9 @@ export function createCy(
         style: { display: "none" },
       },
     ],
-    layout: LAYOUT as cytoscape.LayoutOptions,
+    // No auto-layout: nodes start preset; main.ts runs the force layout only
+    // after the first filter pass, so the default-off cites overlay (SPEC §2)
+    // doesn't dominate the initial positions.
+    layout: { name: "preset" },
   });
 }

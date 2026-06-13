@@ -49,6 +49,9 @@ async function main() {
 
   const filters = createFilters(cy, graph.nodes);
   filters.apply();
+  // Lay out AFTER the first filter pass so hidden (default-off cites) edges are
+  // excluded from layout and don't dominate the initial positions (SPEC §2).
+  runLayout(cy);
 
   createEdgeLegend(container, graph.edges);
   panel.clear(); // render the styled empty state on first paint

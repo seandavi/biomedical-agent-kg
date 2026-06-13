@@ -27,8 +27,12 @@ function loadManifest(): Promise<Set<string>> {
   if (!manifestLoad) {
     manifestLoad = fetch(`${DATA_BASE}profiles.json`)
       .then((r) => (r.ok ? (r.json() as Promise<string[]>) : []))
-      .catch(() => [])
-      .then((paths) => (manifest = new Set(paths)));
+      .then((paths) => (manifest = new Set(paths)))
+      .catch(() => {
+        // Transient failure: don't cache the miss — let a later selection retry.
+        manifestLoad = null;
+        return new Set<string>();
+      });
   }
   return manifestLoad;
 }
@@ -48,9 +52,11 @@ function renderMarkdown(md: string, resolveLabel: (id: string) => string | null)
       const label = resolveLabel(target);
       const text = (display?.trim() || label || slug).trim();
       if (label !== null) {
-        return `[${text}](#nav:${encodeURIComponent(target)})`;
+        // Emit an HTML anchor (marked passes inline HTML through) rather than
+        // markdown link syntax, so a label containing []() can't break it.
+        return `<a href="#nav:${encodeURIComponent(target)}">${escapeHtml(text)}</a>`;
       }
-      return text; // dangling link -> plain text (the slug, not the raw id)
+      return escapeHtml(text); // dangling link -> plain text (the slug, not the raw id)
     },
   );
   return marked.parse(withLinks, { async: false }) as string;
@@ -194,6 +200,9 @@ export function createPanel(deps: PanelDeps) {
   });
 
   function clear() {
+    // Drop the current id so an in-flight fetchProfile() bails instead of
+    // appending stale prose into the emptied panel (the close button hits this).
+    delete panel.dataset.current;
     panel.classList.add("empty");
     body.innerHTML = `<div class="empty-state">
       <div class="empty-glyph">◍</div>
@@ -224,9 +233,6 @@ export function createPanel(deps: PanelDeps) {
       panel.dataset.current = n.id;
       void show(n);
     },
-    clear() {
-      delete panel.dataset.current;
-      clear();
-    },
+    clear,
   };
 }
