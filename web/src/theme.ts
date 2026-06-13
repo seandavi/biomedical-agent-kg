@@ -23,16 +23,9 @@ export const TYPE_LABEL: Record<NodeType, string> = {
   database: "Database",
 };
 
-export const ALL_TYPES: NodeType[] = [
-  "agent",
-  "paper",
-  "repo",
-  "benchmark",
-  "org",
-  "domain",
-  "toolenv",
-  "database",
-];
+// Derived from the color map (insertion order preserved) so the vocab lives in
+// exactly one place — adding a type means editing TYPE_COLOR/TYPE_LABEL only.
+export const ALL_TYPES = Object.keys(TYPE_COLOR) as NodeType[];
 
 /** cites is the default-OFF overlay (SPEC §2); everything else is the catalog. */
 export const CITES_REL: EdgeRel = "cites";
@@ -60,13 +53,4 @@ export const EDGE_LABEL: Record<EdgeRel, string> = {
   cites: "cites",
 };
 
-export const ALL_RELS: EdgeRel[] = [
-  "described_by",
-  "implemented_by",
-  "evaluated_on",
-  "built_by",
-  "targets",
-  "built_on",
-  "queries",
-  "cites",
-];
+export const ALL_RELS = Object.keys(EDGE_COLOR) as EdgeRel[];

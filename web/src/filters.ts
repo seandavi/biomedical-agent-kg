@@ -3,7 +3,6 @@ import { ALL_TYPES, CITES_REL, TYPE_COLOR, TYPE_LABEL } from "./theme";
 import type { GraphNode, NodeType } from "./types";
 
 interface FacetToken {
-  token: string; // e.g. "exposes:web_ui"
   field: "exposes" | "architecture";
   value: string;
 }
@@ -48,8 +47,7 @@ export function createFilters(cy: Core, nodes: GraphNode[]): FilterState {
   }
 
   // Build facet pool from agent attributes, grouped by kind (exposes / architecture).
-  const selectedFacets = new Set<string>();
-  const FACET_KIND_LABEL = { exposes: "exposes", architecture: "architecture" } as const;
+  const selectedFacets = new Set<FacetToken>(); // membership by object identity
   let anyFacet = false;
 
   for (const field of ["exposes", "architecture"] as const) {
@@ -65,21 +63,21 @@ export function createFilters(cy: Core, nodes: GraphNode[]): FilterState {
     group.className = "facet-group";
     const sub = document.createElement("div");
     sub.className = "facet-sublabel";
-    sub.textContent = FACET_KIND_LABEL[field];
+    sub.textContent = field;
     group.appendChild(sub);
 
     const row = document.createElement("div");
     row.className = "chips";
     for (const value of [...values].sort()) {
-      const ft: FacetToken = { token: `${field}:${value}`, field, value };
+      const ft: FacetToken = { field, value };
       const chip = document.createElement("button");
       chip.type = "button";
       chip.className = "chip facet";
       chip.textContent = ft.value;
       chip.addEventListener("click", () => {
-        if (selectedFacets.has(ft.token)) selectedFacets.delete(ft.token);
-        else selectedFacets.add(ft.token);
-        chip.classList.toggle("active", selectedFacets.has(ft.token));
+        if (selectedFacets.has(ft)) selectedFacets.delete(ft);
+        else selectedFacets.add(ft);
+        chip.classList.toggle("active", selectedFacets.has(ft));
         apply();
       });
       row.appendChild(chip);
@@ -97,11 +95,7 @@ export function createFilters(cy: Core, nodes: GraphNode[]): FilterState {
 
   function agentMatchesFacets(n: GraphNode): boolean {
     if (selectedFacets.size === 0) return true;
-    for (const token of selectedFacets) {
-      const [field, value] = token.split(/:(.+)/) as [
-        "exposes" | "architecture",
-        string,
-      ];
+    for (const { field, value } of selectedFacets) {
       if ((n[field] ?? []).includes(value)) return true; // OR within facets
     }
     return false;

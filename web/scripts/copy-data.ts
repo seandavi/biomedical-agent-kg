@@ -77,13 +77,14 @@ if (artifactsRoot) {
 
 // Emit a manifest of available profiles so the SPA can show prose without the
 // pipeline having to set detail_ref on each node, and without speculative 404s.
-function listMarkdown(dir: string, base = dir): string[] {
+function listMarkdown(dir: string): string[] {
   if (!existsSync(dir)) return [];
   const out: string[] = [];
   for (const ent of readdirSync(dir, { withFileTypes: true })) {
     const full = join(dir, ent.name);
-    if (ent.isDirectory()) out.push(...listMarkdown(full, base));
-    else if (ent.name.endsWith(".md")) out.push(relative(dataDir, full));
+    if (ent.isDirectory()) out.push(...listMarkdown(full));
+    // Forward-slash paths so the manifest matches the SPA's lookups on any OS.
+    else if (ent.name.endsWith(".md")) out.push(relative(dataDir, full).replaceAll("\\", "/"));
   }
   return out;
 }

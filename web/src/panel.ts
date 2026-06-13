@@ -148,7 +148,9 @@ function renderConnections(conns: Connection[]): string {
   const groups = new Map<string, Connection[]>();
   for (const c of conns) {
     const key = `${c.dir}:${c.rel}`;
-    (groups.get(key) ?? groups.set(key, []).get(key)!).push(c);
+    const list = groups.get(key);
+    if (list) list.push(c);
+    else groups.set(key, [c]);
   }
 
   const sections = [...groups.entries()]
