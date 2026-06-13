@@ -25,7 +25,7 @@ class Settings(BaseSettings):
     # prose tier — point at a larger model once judgment matters (SPEC §12.1 tiering)
     profile_model: str = Field("gemini-3.1-flash-lite", validation_alias="KG_PROFILE_MODEL")
     list_path: Path = Field(Path("list.md"), validation_alias="KG_LIST_PATH")
-    out_path: Path = Field(Path("graph.json"), validation_alias="KG_OUT_PATH")
+    out_path: Path = Field(Path("data/graph.json"), validation_alias="KG_OUT_PATH")
     review_path: Path = Field(Path("_review.json"), validation_alias="KG_REVIEW_PATH")
     log_level: str = Field("INFO", validation_alias="KG_LOG_LEVEL")
 

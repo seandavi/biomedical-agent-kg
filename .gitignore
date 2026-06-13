@@ -2,7 +2,7 @@
 .venv/
 __pycache__/
 *.pyc
-graph.json
+/graph.json
 .uv/
 dist/
 *.egg-info/

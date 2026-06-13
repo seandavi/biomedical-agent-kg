@@ -53,10 +53,10 @@ def _prompt(node: dict, nbrs, context: dict) -> str:
 
 
 def generate(graph, ctx: dict, backend, review_log: list, limit=None,
-             outdir="agents") -> list[str]:
+             outdir="data/agents") -> list[str]:
     """Draft profiles for up to `limit` agents; write <outdir>/<slug>.md. Returns paths."""
     out = pathlib.Path(outdir)
-    out.mkdir(exist_ok=True)
+    out.mkdir(parents=True, exist_ok=True)
     valid = set(graph.nodes)
     agents = [n for n in graph.nodes.values() if n["type"] == "agent"]
     written = []
