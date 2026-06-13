@@ -8,8 +8,9 @@ A **Biomedical Agent Knowledge Graph** pipeline — a generated catalog of LLM-b
 biomedical/bioinformatics agent systems and the entities worth traversing between them
 (papers, repos, benchmarks, orgs, domains, tool collections, databases). The pipeline is
 the `agentkg` uv package (`src/agentkg/`); `SPEC.md` is the design source of truth (draft
-v0.4) — read it before changing the data model, vocab, or pipeline. `list.md` is the
-awesome-list crawl input; `sample_graph.json` is an older example output.
+v0.4) — read it before changing the data model, vocab, or pipeline. `list.md` is a small
+hand-authored crawl input for iteration; the real corpus is the five SPEC §11 awesome-lists
+fetched via `--sources` (`sources.py`). `sample_graph.json` is an older example output.
 
 ## Running
 
@@ -17,20 +18,24 @@ uv-managed (Python provisioned by uv, ≥3.11). Entry point `agentkg`:
 
 ```bash
 uv sync                                # install deps + create .venv
-uv run agentkg run                     # mock backend (offline) -> graph.json
+uv run agentkg run                     # mock backend (fully offline) -> graph.json
 uv run agentkg run -b vertex           # live Gemini extraction (needs ADC, see .env)
-uv run agentkg run -b vertex -n 2      # iterate on first N agents only (token-mindful)
+uv run agentkg run -b vertex -n 2      # first N agents only (-n bounds classify spend too)
+uv run agentkg run -b vertex -p 5      # also draft prose profiles for first N agents
+uv run agentkg run -b vertex --sources # crawl the five SPEC §11 lists (~634 entries)
+uv run agentkg run --log-level DEBUG   # loguru level (or KG_LOG_LEVEL)
 uv run agentkg config                  # print resolved settings
 ```
 
 Config is layered `.env` > process env > defaults via pydantic-settings (`config.py`):
 `KG_*` for app settings, standard `GOOGLE_*` for Vertex (shared with gcloud/ADC). Live
 runs use Vertex AI on project `bioc-u24`; Gemini 3.x needs `GOOGLE_CLOUD_LOCATION=global`
-(regional endpoints 404). No test suite or linter yet.
+(regional endpoints 404 — see the memory note). No test suite or linter yet.
 
-`.cache/` holds the iteration token-saver: fetched README/abstracts keyed by url, and
-facet outputs keyed by `model+prompt+payload`. Re-running an unchanged prompt costs 0
-tokens; editing `FACET_SYSTEM_PROMPT` auto-busts. Delete `.cache/` to force a rebuild.
+`.cache/` holds the iteration token-saver — namespaces: `classify`, `facets`, `profiles`
+(model output keyed by `model+prompt+payload`), `context`/`openalex`/`repo`/`listmd`
+(fetched text keyed by url). Re-running an unchanged prompt costs 0 tokens; editing a
+system prompt auto-busts its keys. Delete `.cache/` to force a full rebuild.
 
 ## Core invariant — fix the generator, never the record
 
@@ -60,41 +65,50 @@ are multi-valued **closed-vocab attributes**, NOT edges.
 
 ### Pipeline = staged, model-tiered, determinism-bounded
 
-`crawl → parse → resolve → extract facets → expensive edges → rules+vocab guard → emit`.
-Stages are tiered by model need (SPEC §12.1): plain fetch/parse and cheap edges use **no
-model**; entry-type classification and facet extraction use a **small** model; prose
-drafting and expensive edges (`evaluated_on`/`built_on`/`queries`, which carry
-`provenance`) use a **large** model.
+`crawl → parse → classify → resolve(ground) → extract facets → guard/merge/reconcile →
+cites → prune → emit` (+ optional `draft profiles`). Module map: `sources`/`parse`
+(crawl + entry parsing, no model), `backends` (the model stage), `resolve` (grounding +
+OpenAlex/GitHub fetches, no model), `vocab` (closed vocabs + guard), `model` (Graph/Edge),
+`pipeline` (assembly), `profiles` (prose), `config`/`log`/`cache` (infra).
 
-**The backend seam (`backends.py`):** the model-touched stage sits behind one swappable
-interface — `backend.extract_facets(entry) -> candidate dict`. `MockBackend` (default,
-offline, keyed off known systems) and `GeminiBackend` (Vertex AI / AI Studio via
-`google-genai`) return the **same shape**; vendor is a config line (`Settings.backend`),
-not architecture. The fixed `FACET_SYSTEM_PROMPT` holds the vocab — the cache target.
+Stages are tiered by model need (SPEC §12.1): fetch/parse and cheap edges use **no model**;
+**classify** and **facet extraction** use a small model (`Settings.gemini_model`); **prose
+drafting** uses the prose tier (`Settings.profile_model`). Expensive edges
+(`evaluated_on`/`built_on`/`queries`) carry `{source, evidence}` provenance.
+
+**The backend seam (`backends.py`):** the model-touched stages sit behind one swappable
+interface — `classify(entry)`, `extract_facets(entry)`, `draft_profile(prompt)`.
+`MockBackend` (default, fully offline, regex classify + table facets) and `GeminiBackend`
+(Vertex AI / AI Studio via `google-genai`) return the **same shapes**; vendor is a config
+line (`Settings.backend`), not architecture. Each stage's fixed system prompt
+(`CLASSIFY_/FACET_/PROFILE_SYSTEM_PROMPT`) is the cache target. `classify` carries a
+**biomedical domain gate** — general agent frameworks (CAMEL, AutoGen) → `other`.
 
 **Determinism boundary:** the backend produces *candidates*; `guard_vocab` + the pipeline
-reconcile rules canonicalize them deterministically before serialization. The resolve
-stage (`resolve.py`) grounds extraction in real text (arXiv/OpenAlex abstracts, GitHub
-READMEs) so facets aren't guessed from titles; failures are non-fatal (empty → the model
-under-claims). `resolve.openalex` orgs are the **last remaining mock** in the hot path.
+reconcile rules canonicalize deterministically before serialization. The resolve stage
+grounds extraction in real text (arXiv/OpenAlex abstracts, GitHub READMEs) so facets
+aren't guessed from titles; failures are non-fatal (empty → the model under-claims). All
+network resolve (OpenAlex orgs/cites, README, repo health) is gated on an `online` flag so
+the **mock backend stays fully offline** — there are no mocks left in the live hot path.
 
-**Recurring agents** (a system appears as both a paper and a repo entry) are merged, not
-clobbered: `Graph.add_edge` dedups identical `(src, rel, dst)`, and `build` unions the
-multi-valued facets across entries (SPEC §11 dedup discipline).
+**Recurring agents** (a system as both paper and repo, or across lists) are merged, not
+clobbered: `Graph.add_edge` dedups identical `(src, rel, dst)`, `build` unions multi-valued
+facets, and a class rule makes `multi_agent` dominate `single_agent` (SPEC §11/§13).
 
-Classifying entry type is **not a regex** — a known limitation is `*Bench` names
-false-positiving as agents (`parse.looks_like_agent`); production does this with the LLM.
+**Classify is the LLM stage**, not a regex (`parse.looks_like_agent` survives only as the
+mock's offline fallback). **Prune:** after assembly, degree-0 nodes are dropped — unlinked
+survey papers and benchmarks no catalog agent evaluates (SPEC §1: nodes are traversed
+*through*); they return the moment an edge connects them.
 
 ### Output shape
 
-`graph.json` = `{nodes: [...], edges: [...]}`; per-node markdown profiles
-(`<type>/<slug>.md`: YAML frontmatter + LLM-drafted prose with typed `[[type:slug]]`
-wikilinks) are progressive enhancement — the graph is self-sufficient without them.
-Frontend is a static Cytoscape.js/sigma.js SPA on Cloudflare Pages (no backend);
-a scheduled GitHub Action re-crawls → re-extracts → regenerates → redeploys.
-
-A `_review` log captures low-confidence/vocab-failed extraction. It is **not a human
-work queue** — it signals where the *prompt* needs work.
+`graph.json` = `{nodes, edges}`; `agents/<slug>.md` profiles (YAML frontmatter + LLM prose
+with validated `[[type:slug]]` wikilinks — unresolved links logged) are progressive
+enhancement, version-controlled per SPEC §3.1. `_review.json` captures drops / reconciles /
+pruned orphans / bad wikilinks — **not a work queue**, it signals where a *prompt* needs
+work. `built_by` and `cites` are correct but sparse on arXiv-preprint inputs (OpenAlex has
+no preprint affiliations/references) — they populate on published DOIs. Frontend SPA is a
+**separate effort** (another worktree); this package only emits the static artifacts.
 
 ## Conventions
 
