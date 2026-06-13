@@ -33,11 +33,16 @@ const PROFILE_DIRS = [
   "database",
 ];
 
-/** Walk up from `start` until a directory contains `graph.json`. */
+/**
+ * Walk up from `start` looking for graph.json, returning the directory that
+ * directly contains it. The pipeline emits to a `data/` subdir, so at each
+ * ancestor we check both `<dir>/graph.json` and `<dir>/data/graph.json`.
+ */
 function findArtifactsRoot(start: string): string | null {
   let dir = start;
   for (let i = 0; i < 8; i++) {
     if (existsSync(join(dir, "graph.json"))) return dir;
+    if (existsSync(join(dir, "data", "graph.json"))) return join(dir, "data");
     const parent = dirname(dir);
     if (parent === dir) break;
     dir = parent;
