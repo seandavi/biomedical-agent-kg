@@ -10,6 +10,7 @@ import json
 import os
 import re
 import urllib.error
+import urllib.parse
 import urllib.request
 
 from . import cache
@@ -237,3 +238,85 @@ def work_meta(openalex_id: str) -> dict:
         return {}
     cache.put("workmeta", wid, out)
     return out
+
+
+def work_abstract(wid: str) -> tuple[str | None, str | None]:
+    """(title, abstract) for an OpenAlex work id — grounds a promoted/harvested agent."""
+    mailto = os.environ.get("OPENALEX_MAILTO", "")
+    raw = _get(f"https://api.openalex.org/works/{wid}"
+               f"?select=title,abstract_inverted_index"
+               + (f"&mailto={mailto}" if mailto else ""))
+    if not raw:
+        return None, None
+    try:
+        w = json.loads(raw)
+    except json.JSONDecodeError:
+        return None, None
+    return w.get("title"), _abstract_from_work(w)
+
+
+def work_refs(wid: str) -> list[str]:
+    """referenced_works ids for a work (for survey harvesting). Cached."""
+    hit = cache.get("workrefs", wid)
+    if hit is not None:
+        return hit
+    mailto = os.environ.get("OPENALEX_MAILTO", "")
+    raw = _get(f"https://api.openalex.org/works/{wid}?select=referenced_works"
+               + (f"&mailto={mailto}" if mailto else ""))
+    if not raw:
+        return []
+    try:
+        refs = json.loads(raw).get("referenced_works", [])
+    except json.JSONDecodeError:
+        return []
+    cache.put("workrefs", wid, refs)
+    return refs
+
+
+def works_titles(ids: list[str]) -> dict:
+    """Batch {work_id: title} for up to 50 ids (to pre-filter survey refs by title)."""
+    out: dict = {}
+    for i in range(0, len(ids), 50):
+        chunk = [_wid(x) for x in ids[i:i + 50]]
+        mailto = os.environ.get("OPENALEX_MAILTO", "")
+        raw = _get("https://api.openalex.org/works?per-page=50&select=id,title"
+                   f"&filter=openalex_id:{'|'.join(chunk)}"
+                   + (f"&mailto={mailto}" if mailto else ""))
+        if not raw:
+            continue
+        try:
+            for w in json.loads(raw).get("results", []):
+                out[_wid(w.get("id", ""))] = w.get("title")
+        except json.JSONDecodeError:
+            pass
+    return out
+
+
+def _name_slug(s: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "", (s or "").lower())
+
+
+def find_repo(name: str) -> str | None:
+    """Best-effort GitHub repo for a promoted agent: search by name, accept only a result
+    whose repo name slug-matches the agent name (avoids false matches). Needs a token."""
+    target = _name_slug(name)
+    if not target or len(target) < 3:
+        return None
+    hit = cache.get("repofind", target)
+    if hit is not None:
+        return hit or None  # cached "" means searched, no match
+    headers = {"Accept": "application/vnd.github+json"}
+    if os.environ.get("GITHUB_TOKEN"):
+        headers["Authorization"] = f"Bearer {os.environ['GITHUB_TOKEN']}"
+    raw = _get(f"https://api.github.com/search/repositories?per_page=5&sort=stars"
+               f"&q={urllib.parse.quote(name)}+in:name", headers)
+    if not raw:
+        return None
+    try:
+        items = json.loads(raw).get("items", [])
+    except json.JSONDecodeError:
+        return None
+    match = next((it.get("html_url") for it in items
+                  if _name_slug(it.get("name", "")) == target), None)
+    cache.put("repofind", target, match or "")
+    return match

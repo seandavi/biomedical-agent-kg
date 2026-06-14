@@ -3,7 +3,15 @@ deduped downstream on canonical join keys (DOI / repo URL). READMEs are cached b
 """
 from __future__ import annotations
 
+import re
+
 from . import cache, resolve
+
+
+def _short(url: str) -> str:
+    m = re.search(r"github\.com/([^/]+/[^/#?]+)", url)
+    return m.group(1) if m else url
+
 
 SOURCES = [
     "https://github.com/zhoujieli/Awesome-LLM-Agents-Scientific-Discovery",
@@ -23,5 +31,6 @@ def crawl_sources(urls=None) -> str:
             md = resolve.fetch_readme(url) or ""
             cache.put("listmd", url, md)
         if md:
-            parts.append(f"\n## SOURCE: {url}\n\n{md}\n")
+            # marker the parser captures as each entry's provenance source list
+            parts.append(f"\n<!--KGSOURCE {_short(url)}-->\n\n{md}\n")
     return "\n".join(parts)

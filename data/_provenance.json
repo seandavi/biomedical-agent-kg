@@ -1,0 +1,16 @@
+{
+  "generated": "2026-06-13",
+  "openalex_access_date": "2026-06-13",
+  "params": {
+    "cocite_min": 2,
+    "discover_rounds": 1,
+    "discover_cap": null
+  },
+  "total_agents": 111,
+  "agents_by_provenance": {
+    "awesome_list:round0": 69,
+    "cocitation:round1": 1,
+    "survey_harvest:round1": 41
+  },
+  "discovered_this_run": 42
+}
