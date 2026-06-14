@@ -68,6 +68,15 @@ if (!graph || !existsSync(graph)) {
   console.log(`[copy-data] ${graph} -> public/data/graph.json`);
 }
 
+// run-level provenance manifest (optional; powers the About panel's stats)
+if (artifactsRoot) {
+  const prov = join(artifactsRoot, "_provenance.json");
+  if (existsSync(prov)) {
+    cpSync(prov, join(dataDir, "_provenance.json"));
+    console.log("[copy-data] _provenance.json -> public/data/_provenance.json");
+  }
+}
+
 let profileCount = 0;
 if (artifactsRoot) {
   for (const type of PROFILE_DIRS) {

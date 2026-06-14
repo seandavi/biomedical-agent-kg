@@ -1,0 +1,23 @@
+CC0 1.0 Universal (CC0 1.0) — Public Domain Dedication
+
+The generated catalog in this directory — graph.json and the agents/*.md
+profiles produced by the agentkg pipeline — is dedicated to the public domain.
+
+To the extent possible under law, Sean Davis has waived all copyright and
+related or neighboring rights to this dataset. You can copy, modify,
+distribute, and use the data, even for commercial purposes, all without asking
+permission.
+
+Full legal text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+Summary:         https://creativecommons.org/publicdomain/zero/1.0/
+
+NO WARRANTY. The data is provided "as is", without warranty of any kind.
+
+Note on derivation and scope:
+- This dataset is assembled from public bibliographic metadata (OpenAlex),
+  preprint metadata (arXiv), and public repository metadata (GitHub), plus
+  five public "awesome-list" indexes (see the README acknowledgements).
+- The CC0 dedication applies to THIS catalog (the selection, structure,
+  facets, edges, and generated prose). It does NOT relicense the underlying
+  papers, source code, READMEs, or databases, which remain governed by their
+  own licenses and terms.

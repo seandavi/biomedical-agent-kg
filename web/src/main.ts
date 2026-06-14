@@ -1,4 +1,5 @@
 import "./style.css";
+import { initAbout } from "./about";
 import { createCy, runLayout } from "./cy";
 import { loadGraph, toElements } from "./data";
 import { createFilters } from "./filters";
@@ -17,6 +18,8 @@ async function main() {
     container.innerHTML = `<div class="load-error">Could not load the graph.<br><code>${String(err)}</code><br>Run <code>uv run agentkg run</code> then <code>bun run sync-data</code>.</div>`;
     return;
   }
+
+  void initAbout(graph);
 
   const { elements, nodeById } = toElements(graph);
   const cy = createCy(container, elements);

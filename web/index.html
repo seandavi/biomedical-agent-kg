@@ -39,6 +39,12 @@
         </section>
 
         <footer id="stats"></footer>
+        <nav class="sidebar-links">
+          <button id="about-btn" type="button" class="link-btn">About</button>
+          <a href="https://github.com/seandavi/biomedical-agent-kg" target="_blank" rel="noreferrer">GitHub</a>
+          <span class="built-by">Built by
+            <a href="https://github.com/seandavi" target="_blank" rel="noreferrer">Sean Davis</a></span>
+        </nav>
       </aside>
 
       <main id="graph"></main>
@@ -49,6 +55,13 @@
           <p class="panel-hint">Click a node to inspect it.</p>
         </div>
       </section>
+
+      <div id="about" class="modal-overlay" role="dialog" aria-modal="true" aria-label="About" hidden>
+        <div class="modal">
+          <button id="about-close" type="button" class="modal-close" aria-label="Close">×</button>
+          <div id="about-body"></div>
+        </div>
+      </div>
     </div>
 
     <script type="module" src="/src/main.ts"></script>
