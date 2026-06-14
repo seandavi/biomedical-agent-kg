@@ -91,6 +91,17 @@ uv run agentkg run -b vertex --sources -p 5   # crawl real lists, draft 5 profil
 cd web && bun install && bun run dev    # mirrors data/ in, serves on :5173
 ```
 
+**Deploy** (Cloudflare Workers + Static Assets — config in `web/wrangler.jsonc`):
+
+```bash
+cd web && wrangler login    # one-time browser auth
+bun run deploy              # builds dist/ and deploys (assets-only Worker)
+```
+
+A custom domain is one step in the Cloudflare dashboard (Workers → this Worker →
+Domains & Routes); since the project's DNS is on Cloudflare the record + cert are
+created automatically.
+
 ## Repository layout
 
 ```

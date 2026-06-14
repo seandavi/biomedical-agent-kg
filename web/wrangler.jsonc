@@ -1,0 +1,12 @@
+{
+  // Cloudflare Workers + Static Assets — serves the built SPA (dist/) with no
+  // Worker script (assets-only). Deploy with `bun run deploy` (builds first).
+  // Docs: https://developers.cloudflare.com/workers/static-assets/
+  "name": "biomedical-agent-kg",
+  "compatibility_date": "2026-06-13",
+  "assets": {
+    "directory": "./dist",
+    // single page app: serve index.html for unknown paths (no 404 on refresh)
+    "not_found_handling": "single-page-application"
+  }
+}
