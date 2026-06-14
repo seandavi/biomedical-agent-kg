@@ -1,5 +1,6 @@
 import "./style.css";
 import { initAbout } from "./about";
+import { initAnalytics, track } from "./analytics";
 import { createCy, runLayout } from "./cy";
 import { loadGraph, toElements } from "./data";
 import { createFilters } from "./filters";
@@ -9,6 +10,7 @@ import type { GraphNode } from "./types";
 import { nodeLabel } from "./types";
 
 async function main() {
+  initAnalytics();
   const container = document.getElementById("graph")!;
 
   let graph;
@@ -47,7 +49,7 @@ async function main() {
       return n ? nodeLabel(n) : null;
     },
     getConnections: (id) => connIndex.get(id) ?? [],
-    onNavigate: (id) => selectNode(id, { recenter: true }),
+    onNavigate: (id) => selectNode(id, { recenter: true, via: "panel" }),
   });
 
   const filters = createFilters(cy, graph.nodes);
@@ -76,17 +78,19 @@ async function main() {
     node.connectedEdges().addClass("neighbor");
   }
 
-  function selectNode(id: string, opts: { recenter?: boolean } = {}) {
+  function selectNode(id: string, opts: { recenter?: boolean; via?: string } = {}) {
     const node = cy.getElementById(id);
     if (node.empty()) return;
     focus(id);
-    panel.show(node.data("node") as GraphNode);
+    const data = node.data("node") as GraphNode;
+    panel.show(data);
+    track("select_node", { node_type: data.type, node_id: id, via: opts.via ?? "graph" });
     if (opts.recenter) {
       cy.animate({ center: { eles: node }, zoom: Math.max(cy.zoom(), 1) }, { duration: 350 });
     }
   }
 
-  cy.on("tap", "node", (ev) => selectNode(ev.target.id()));
+  cy.on("tap", "node", (ev) => selectNode(ev.target.id(), { via: "graph" }));
   cy.on("tap", (ev) => {
     if (ev.target === cy) {
       clearFocus();
@@ -112,6 +116,7 @@ async function main() {
 
   document.getElementById("fit-btn")!.addEventListener("click", () => {
     runLayout(cy);
+    track("reset_view");
   });
 
   // narrow-screen sidebar drawer

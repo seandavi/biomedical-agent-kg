@@ -1,4 +1,5 @@
 import type { Core, NodeSingular } from "cytoscape";
+import { track } from "./analytics";
 import { runLayout } from "./cy";
 import { ALL_TYPES, CITES_REL, TYPE_COLOR, TYPE_LABEL } from "./theme";
 import type { GraphNode, NodeType } from "./types";
@@ -42,6 +43,7 @@ export function createFilters(cy: Core, nodes: GraphNode[]): FilterState {
       if (enabledTypes.has(type)) enabledTypes.delete(type);
       else enabledTypes.add(type);
       chip.classList.toggle("active", enabledTypes.has(type));
+      track("filter_type", { value: type, active: enabledTypes.has(type) });
       apply();
     });
     typeBox.appendChild(chip);
@@ -79,6 +81,7 @@ export function createFilters(cy: Core, nodes: GraphNode[]): FilterState {
         if (selectedFacets.has(ft)) selectedFacets.delete(ft);
         else selectedFacets.add(ft);
         chip.classList.toggle("active", selectedFacets.has(ft));
+        track("filter_facet", { field: ft.field, value: ft.value, active: selectedFacets.has(ft) });
         apply();
       });
       row.appendChild(chip);
@@ -92,11 +95,18 @@ export function createFilters(cy: Core, nodes: GraphNode[]): FilterState {
   }
 
   searchInput.addEventListener("input", () => apply());
+  // 'search' fires on Enter / clear (type=search) — log the intentional query, not
+  // every keystroke. Only the term length + presence, to keep it low-cardinality.
+  searchInput.addEventListener("search", () => {
+    const q = searchInput.value.trim();
+    if (q) track("search", { search_term: q.slice(0, 60), length: q.length });
+  });
   // Toggling cites reveals/hides the ~280 citation-only nodes, so relayout to
   // give them positions (they were excluded from the catalog layout).
   citesToggle.addEventListener("change", () => {
     apply();
     runLayout(cy);
+    track("cites_overlay", { on: citesToggle.checked });
   });
 
   function agentMatchesFacets(n: GraphNode): boolean {

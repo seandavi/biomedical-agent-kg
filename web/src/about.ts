@@ -1,5 +1,6 @@
 /** About modal: live catalog stats (from the graph + data/_provenance.json), a short
  * methods summary, acknowledgements, and links. Full methods live in the README. */
+import { track } from "./analytics";
 import type { Graph } from "./types";
 
 const REPO = "https://github.com/seandavi/biomedical-agent-kg";
@@ -91,7 +92,10 @@ export async function initAbout(graph: Graph): Promise<void> {
     </div>
   `;
 
-  const open = () => overlay.removeAttribute("hidden");
+  const open = () => {
+    overlay.removeAttribute("hidden");
+    track("about_open");
+  };
   const close = () => overlay.setAttribute("hidden", "");
   openBtn.addEventListener("click", open);
   closeBtn.addEventListener("click", close);
