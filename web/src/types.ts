@@ -21,6 +21,19 @@ export type EdgeRel =
   | "queries"
   | "cites";
 
+/** How a node entered the catalog (ADR 0003). Agents carry this; round/method
+ * distinguishes curated-seed from citation-discovered. */
+export interface Provenance {
+  method: "awesome_list" | "cocitation" | "survey_harvest";
+  round: number; // 0 = curated seed; 1+ = discovery round
+  openalex_id?: string;
+  evidence?: {
+    lists?: string[]; // awesome_list
+    cites_catalog?: string[]; // cocitation: agent ids the paper cited
+    from_survey?: string; // survey_harvest: the survey paper id
+  };
+}
+
 /** Every node has id + type; the rest are type-dependent and optional. */
 export interface GraphNode {
   id: string;
@@ -39,6 +52,11 @@ export interface GraphNode {
   stars?: number;
   language?: string;
   license?: string;
+  year?: number;
+  cited_by_count?: number;
+  in_catalog?: boolean; // external cocitation paper when false (ADR 0003)
+  // how this node entered the catalog (ADR 0003)
+  provenance?: Provenance;
   // progressive-enhancement profile pointer (SPEC §3.1)
   detail_ref?: string;
   [key: string]: unknown;

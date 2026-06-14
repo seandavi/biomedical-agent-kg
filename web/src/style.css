@@ -219,6 +219,18 @@ html, body { margin: 0; height: 100%; color: var(--text); background: var(--bg);
   color: var(--dim); font-weight: 600; margin-bottom: 9px;
 }
 
+/* provenance (ADR 0003: how the agent entered the catalog) */
+.provenance { margin-top: 16px; border-top: 1px solid var(--border); padding-top: 14px; }
+.prov-row { font-size: 12px; line-height: 1.6; color: var(--muted); }
+.prov-badge {
+  display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 7px;
+  border-radius: 10px; margin-right: 7px; text-transform: uppercase;
+  letter-spacing: 0.04em; background: var(--border); color: var(--dim);
+}
+.prov-badge[data-round="0"] { background: #2b3a2b; color: #8ce99a; }
+.prov-badge:not([data-round="0"]) { background: #3a2f1f; color: #ffd8a8; }
+.prov-detail a { color: var(--accent); }
+
 /* connections (traversable edges) */
 .connections { margin-top: 20px; border-top: 1px solid var(--border); padding-top: 16px; }
 .conn-group { margin-bottom: 14px; }

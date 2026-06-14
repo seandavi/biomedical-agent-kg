@@ -111,8 +111,44 @@ function escapeHtml(s: string): string {
   );
 }
 
+const METHOD_LABEL: Record<string, string> = {
+  awesome_list: "curated list",
+  cocitation: "co-citation",
+  survey_harvest: "survey harvest",
+};
+
+/** A clickable link to a node if it resolves, else escaped plain text. */
+function navOrText(id: string, resolveLabel: (id: string) => string | null): string {
+  const label = resolveLabel(id);
+  if (label === null) return escapeHtml(id.slice(id.indexOf(":") + 1));
+  return `<a href="#nav:${encodeURIComponent(id)}">${escapeHtml(label)}</a>`;
+}
+
+/** Provenance (ADR 0003): how this agent entered the catalog — seed list vs
+ * citation discovery, with the evidence made traversable. */
+function provenanceBlock(n: GraphNode, resolveLabel: (id: string) => string | null): string {
+  const p = n.provenance;
+  if (!p) return "";
+  const ev = p.evidence ?? {};
+  let detail = "";
+  if (p.method === "awesome_list" && ev.lists?.length) {
+    detail = `from ${ev.lists.map((l) => escapeHtml(l)).join(", ")}`;
+  } else if (p.method === "cocitation" && ev.cites_catalog?.length) {
+    detail = `cites ${ev.cites_catalog.map((id) => navOrText(id, resolveLabel)).join(", ")}`;
+  } else if (p.method === "survey_harvest" && ev.from_survey) {
+    detail = `via survey ${navOrText(ev.from_survey, resolveLabel)}`;
+  }
+  const oa = p.openalex_id
+    ? ` · <a class="ext-link" href="${escapeHtml(p.openalex_id)}" target="_blank" rel="noreferrer">OpenAlex</a>`
+    : "";
+  const badge = p.round > 0 ? `discovered · ${METHOD_LABEL[p.method] ?? p.method}` : "curated seed";
+  return `<div class="provenance"><div class="section-label">Provenance</div>
+    <div class="prov-row"><span class="prov-badge" data-round="${p.round}">${escapeHtml(badge)}</span>
+    <span class="prov-detail">${detail}${oa}</span></div></div>`;
+}
+
 /** Structured summary shown above the prose (or alone, when no profile exists). */
-function structuredHeader(n: GraphNode): string {
+function structuredHeader(n: GraphNode, resolveLabel: (id: string) => string | null): string {
   const color = TYPE_COLOR[n.type] ?? "#666";
   const rows: string[] = [];
 
@@ -138,6 +174,7 @@ function structuredHeader(n: GraphNode): string {
     <code class="node-id">${escapeHtml(n.id)}</code>
     ${rows.join("\n")}
     ${link}
+    ${provenanceBlock(n, resolveLabel)}
   `;
 }
 
@@ -215,7 +252,8 @@ export function createPanel(deps: PanelDeps) {
 
   async function show(n: GraphNode) {
     panel.classList.remove("empty");
-    body.innerHTML = structuredHeader(n) + renderConnections(deps.getConnections(n.id));
+    body.innerHTML =
+      structuredHeader(n, deps.resolveWikilink) + renderConnections(deps.getConnections(n.id));
 
     const md = await fetchProfile(n);
     // Bail if a different node was selected while we awaited.
