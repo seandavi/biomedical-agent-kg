@@ -6,6 +6,6 @@ exposes: [cli, library]
 architecture: [multi_agent]
 ---
 
-The AI Scientist is an end-to-end multi_agent system built by [[org:sakanaai]] designed to automate the full research lifecycle. By iteratively formulating hypotheses, executing experiments, and authoring manuscripts, the system targets [[domain:scientific_discovery]] with the goal of accelerating breakthroughs and enhancing research productivity.
+The AI Scientist, built by [[org:sakanaai]], is a multi_agent framework designed to automate the end-to-end research process. By leveraging frontier large language models, the system generates novel research ideas, executes experiments, visualizes results, and drafts full scientific papers, including a simulated peer-review evaluation.
 
-The system is available as a cli and library, featuring a progressive agentic tree-search methodology and a Vision-Language Model feedback loop for figure refinement. It has demonstrated its capabilities by producing peer-review-accepted workshop papers without human-authored code templates, marking a significant milestone in autonomous research.
+This system targets [[domain:scientific_discovery]] by enabling autonomous research across various machine learning subfields. It is accessible via a cli and library, providing an open-source platform for iterative, open-ended scientific inquiry.

@@ -17,6 +17,47 @@ from .vocab import (ARCH, DATABASES, DB_ALIASES, DOMAIN_ALIASES, DOMAINS, EXPOSE
                     guard_vocab)
 
 
+def apply_facets(g: Graph, aid: str, f: dict, review_log: list) -> None:
+    """Guard + attach extracted facets/edges to an existing agent node. Shared by build()
+    and discovery so promoted agents get identical treatment. Unions multi-valued facets."""
+    exp, d1 = guard_vocab(f["exposes"], EXPOSES)
+    arch, d2 = guard_vocab(f["architecture"], ARCH)
+    dom, d3 = guard_vocab(f["domains"], DOMAINS, DOMAIN_ALIASES)
+    node = g.nodes[aid]
+    node["exposes"] = sorted(set(node.get("exposes", [])) | set(exp))
+    arch_set = set(node.get("architecture", [])) | set(arch)
+    # rules.yml-style class rule: multi_agent dominates single_agent when sources disagree.
+    if {"single_agent", "multi_agent"} <= arch_set:
+        arch_set.discard("single_agent")
+        review_log.append({"agent": aid, "rule": "single_agent dominated by multi_agent"})
+    node["architecture"] = sorted(arch_set)
+    for dn in dom:
+        did = g.add_node("domain:" + dn, "domain", name=dn)
+        g.add_edge(Edge(aid, "targets", did))
+    for ev in f["evaluated_on"]:
+        bid = g.add_node("benchmark:" + slugify(ev["benchmark"]), "benchmark",
+                         name=ev["benchmark"])
+        g.add_edge(Edge(aid, "evaluated_on", bid,
+                        provenance={"source": ev["source"], "evidence": ev["evidence"]}))
+    for q in f.get("queries", []):  # queries -> Database (whitelist-guarded, SPEC §9)
+        kept, _ = guard_vocab([q.get("database", "")], DATABASES, DB_ALIASES)
+        if not kept:
+            review_log.append({"agent": aid, "dropped_db": q.get("database")})
+            continue
+        did = g.add_node("database:" + kept[0], "database", name=kept[0])
+        g.add_edge(Edge(aid, "queries", did,
+                        provenance={"source": q.get("source"), "evidence": q.get("evidence")}))
+    for b in f.get("built_on", []):  # built_on -> ToolEnv (SPEC §8)
+        tname = (b.get("toolenv") or "").strip()
+        if not tname:
+            continue
+        tid = g.add_node("toolenv:" + slugify(tname), "toolenv", name=tname)
+        g.add_edge(Edge(aid, "built_on", tid,
+                        provenance={"source": b.get("source"), "evidence": b.get("evidence")}))
+    for d in (d1 + d2 + d3):
+        review_log.append({"agent": aid, "dropped_or_aliased": d})
+
+
 def build(md: str, review_log: list, backend=None, limit=None, context_sink=None,
           cocite_min=2) -> Graph:
     backend = backend or MockBackend()
@@ -47,6 +88,11 @@ def build(md: str, review_log: list, backend=None, limit=None, context_sink=None
 
         aid = "agent:" + slugify(name)
         g.add_node(aid, "agent", name=name, one_liner=e["title"])
+        # seed provenance (ADR 0003): which curated list(s) this agent came from
+        prov = g.nodes[aid].setdefault(
+            "provenance", {"method": "awesome_list", "round": 0, "evidence": {"lists": []}})
+        if e.get("source") and e["source"] not in prov["evidence"]["lists"]:
+            prov["evidence"]["lists"].append(e["source"])
 
         # ground the model in real text (skip for offline mock runs)
         if online:
@@ -78,49 +124,8 @@ def build(md: str, review_log: list, backend=None, limit=None, context_sink=None
                 g.add_edge(Edge(aid, "built_by", oid))
                 g.add_edge(Edge(rid, "owned_by", oid))  # tie the repo to its GitHub org
 
-        # --- facets + expensive edge (backend-swappable) ---
-        f = backend.extract_facets(e)
-        exp, d1 = guard_vocab(f["exposes"], EXPOSES)
-        arch, d2 = guard_vocab(f["architecture"], ARCH)
-        dom, d3 = guard_vocab(f["domains"], DOMAINS, DOMAIN_ALIASES)
-        # An agent may recur (paper + repo entries): UNION multi-valued facets across
-        # entries instead of letting the last extraction clobber the first.
-        node = g.nodes[aid]
-        node["exposes"] = sorted(set(node.get("exposes", [])) | set(exp))
-        arch_set = set(node.get("architecture", [])) | set(arch)
-        # rules.yml-style class rule: single_agent / multi_agent are mutually exclusive;
-        # when sources disagree, the more specific multi_agent dominates.
-        if {"single_agent", "multi_agent"} <= arch_set:
-            arch_set.discard("single_agent")
-            review_log.append({"agent": aid, "rule": "single_agent dominated by multi_agent"})
-        node["architecture"] = sorted(arch_set)
-        for dn in dom:
-            did = g.add_node("domain:" + dn, "domain", name=dn)
-            g.add_edge(Edge(aid, "targets", did))
-        for ev in f["evaluated_on"]:
-            bid = g.add_node("benchmark:" + slugify(ev["benchmark"]), "benchmark",
-                             name=ev["benchmark"])
-            g.add_edge(Edge(aid, "evaluated_on", bid,
-                            provenance={"source": ev["source"], "evidence": ev["evidence"]}))
-        # expensive edge: queries -> Database (whitelist-guarded, SPEC §9)
-        for q in f.get("queries", []):
-            kept, _ = guard_vocab([q.get("database", "")], DATABASES, DB_ALIASES)
-            if not kept:  # off-whitelist -> folded away (not its own node), audited
-                review_log.append({"agent": aid, "dropped_db": q.get("database")})
-                continue
-            did = g.add_node("database:" + kept[0], "database", name=kept[0])
-            g.add_edge(Edge(aid, "queries", did,
-                            provenance={"source": q.get("source"), "evidence": q.get("evidence")}))
-        # expensive edge: built_on -> ToolEnv (named tool/skill collections, SPEC §8)
-        for b in f.get("built_on", []):
-            tname = (b.get("toolenv") or "").strip()
-            if not tname:
-                continue
-            tid = g.add_node("toolenv:" + slugify(tname), "toolenv", name=tname)
-            g.add_edge(Edge(aid, "built_on", tid,
-                            provenance={"source": b.get("source"), "evidence": b.get("evidence")}))
-        for d in (d1 + d2 + d3):
-            review_log.append({"agent": aid, "dropped_or_aliased": d})
+        # --- facets + expensive edges (backend-swappable; shared with discovery) ---
+        apply_facets(g, aid, backend.extract_facets(e), review_log)
 
     # citation layer (SPEC §6.2): internal cites + cocitation externals that connect
     # >=2 catalog papers (in_catalog=False). Default-off overlay is a rendering concern.
@@ -175,11 +180,47 @@ def run(settings: Settings, backend=None, limit=None, n_profiles=0,
     logger.info(f"crawled {len(md)} chars; building (backend={backend.name}, limit={limit})")
     g = build(md, review, backend, limit=limit, context_sink=ctx,
               cocite_min=settings.cocite_min)
-    out = {"nodes": list(g.nodes.values()), "edges": g.edges}
+    # citation-based agent discovery (ADR 0003) — promote external citers/survey refs
+    discovered: list = []
+    online = getattr(backend, "name", None) != "mock"
+    if online and use_sources and settings.discover_rounds:
+        from . import discover as discovery
+        for rnd in range(settings.discover_rounds):
+            new = discovery.discover(g, backend, review, apply_facets, ctx=ctx,
+                                     min_links=settings.cocite_min, cap=settings.discover_cap)
+            discovered += new
+            if not new:
+                break  # converged
     settings.out_path.parent.mkdir(parents=True, exist_ok=True)
-    settings.out_path.write_text(json.dumps(out, indent=2))
+    settings.out_path.write_text(
+        json.dumps({"nodes": list(g.nodes.values()), "edges": g.edges}, indent=2))
     settings.review_path.write_text(json.dumps(review, indent=2))
+    _write_provenance(g, settings, discovered)
     written: list = []
     if n_profiles:
         written = profiles.generate(g, ctx, backend, review, limit=n_profiles)
     return g, review, written
+
+
+def _write_provenance(g: Graph, settings: Settings, discovered: list) -> None:
+    """Run-level reproducibility manifest (ADR 0003): how the catalog was assembled."""
+    import collections
+    import datetime
+    counts = collections.Counter()
+    for n in g.nodes.values():
+        if n["type"] == "agent":
+            p = n.get("provenance", {})
+            counts[f"{p.get('method', 'unknown')}:round{p.get('round', 0)}"] += 1
+    today = datetime.date.today().isoformat()
+    manifest = {
+        "generated": today,
+        "openalex_access_date": today,  # the corpus moves — snapshot date for reproduction
+        "params": {"cocite_min": settings.cocite_min,
+                   "discover_rounds": settings.discover_rounds,
+                   "discover_cap": settings.discover_cap},
+        "total_agents": sum(counts.values()),
+        "agents_by_provenance": dict(sorted(counts.items())),
+        "discovered_this_run": len(discovered),
+    }
+    settings.out_path.parent.joinpath("_provenance.json").write_text(
+        json.dumps(manifest, indent=2))

@@ -2,10 +2,10 @@
 slug: multi-specialist-agent-consultation
 name: Multi-Specialist Agent Consultation
 type: agent
-exposes: [library]
+exposes: [library, web_ui]
 architecture: [multi_agent]
 ---
 
-The Agent-derived Multi-Specialist Consultation (AMSC) framework is a multi_agent system designed to automate medical diagnosis by simulating the collaborative process between general practitioners and domain-specific specialists. By adaptively fusing probability distributions from tuning-free LLM-based agents, the system models real-world clinical workflows to generate accurate diagnostic outcomes.
+The Agent-derived Multi-Specialist Consultation (AMSC) framework is a multi_agent system designed to simulate real-world clinical diagnostic processes. By employing tuning-free LLM-based agents as medical practitioners, the system adaptively fuses probability distributions across potential diseases to generate diagnoses based on patient symptom descriptions.
 
-This library focuses on improving efficiency in [[domain:clinical_qa]] by reducing the need for extensive parameter updates and training time. Beyond direct diagnosis, the framework explores the role of implicit symptoms to enhance the practical utility and performance of automated healthcare consultations.
+This approach targets [[domain:clinical_qa]] by modeling collaborative consultations between general practitioners and domain-specific specialists. The system is accessible via a library and web_ui, offering an efficient alternative to traditional models by reducing the need for extensive parameter updating and training time.

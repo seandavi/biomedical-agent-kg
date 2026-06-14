@@ -31,6 +31,9 @@ class Settings(BaseSettings):
     # min catalog papers an external paper must connect to earn a cocitation node
     # (SPEC §6.2 friction). 2 = inclusive; raise to trim tangential connectors.
     cocite_min: int = Field(2, validation_alias="KG_COCITE_MIN")
+    # citation-based agent discovery (ADR 0003). rounds=0 disables; cap bounds candidates.
+    discover_rounds: int = Field(0, validation_alias="KG_DISCOVER_ROUNDS")
+    discover_cap: int | None = Field(None, validation_alias="KG_DISCOVER_CAP")
 
     # --- Google Cloud (shared with gcloud / ADC) ---
     project: str | None = Field(None, validation_alias="GOOGLE_CLOUD_PROJECT")

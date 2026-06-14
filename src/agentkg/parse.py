@@ -41,9 +41,16 @@ def classify_url(url: str) -> tuple[str, str]:
     return "paper", "url:" + url  # fallback canonical
 
 
+SOURCE_RE = re.compile(r"^<!--KGSOURCE (.+?)-->\s*$")
+
+
 def parse_entries(md: str):
-    section = subsection = None
+    section = subsection = source = None
     for line in md.splitlines():
+        sm = SOURCE_RE.match(line)
+        if sm:  # provenance marker emitted by sources.crawl_sources
+            source = sm.group(1)
+            continue
         h = HDR_RE.match(line)
         if h:
             txt = h.group(2).strip()
@@ -62,7 +69,7 @@ def parse_entries(md: str):
         desc = LINK_RE.sub(" ", m.group("body")).strip(" -—:·|*\t")
         yield {
             "title": title, "url": lm.group("url"), "desc": desc or None,
-            "authors": None, "venue": None,
+            "authors": None, "venue": None, "source": source,
             "section": section, "subsection": subsection,
         }
 

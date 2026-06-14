@@ -3,9 +3,9 @@ slug: bioagents
 name: BioAgents
 type: agent
 exposes: [api]
-architecture: [multi_agent]
+architecture: [multi_agent, rag]
 ---
 
-BioAgents is a multi_agent framework built by [[org:bio-xyz]] designed to support biological and scientific research. The system utilizes a modular architecture to perform specialized tasks, including file parsing, research planning, and data analysis. It is evaluated on [[benchmark:bixbench]], where it demonstrates state-of-the-art performance in open-answer and multiple-choice research tasks.
+BioAgents is a multi-agent system designed to streamline complex bioinformatics workflows through a combination of small language models and retrieval augmented generation. Built by [[org:bio-xyz]], the system is optimized for local operation and personalization using proprietary data, providing nuanced guidance for tasks that typically require specialized expertise.
 
-The system exposes an api to facilitate general research inquiries and iterative, hypothesis-driven investigations. Through its specialized agents, BioAgents targets [[domain:literature]] for semantic search and synthesis, as well as [[domain:scientific_discovery]] through automated data analysis and research workflows.
+The system targets applications across [[domain:literature]], [[domain:scientific_discovery]], and [[domain:genomics_db]]. It is evaluated on [[benchmark:bixbench]] and exposes its functionality via an api, enabling users to perform conceptual genomics tasks with performance comparable to human experts.

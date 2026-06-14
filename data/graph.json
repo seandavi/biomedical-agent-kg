@@ -47,6 +47,15 @@
       "type": "agent",
       "name": "ResearchAgent",
       "one_liner": "ResearchAgent: Iterative Research Idea Generation over Scientific Literature with Large Language Models",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "zhoujieli/Awesome-LLM-Agents-Scientific-Discovery"
+          ]
+        }
+      },
       "exposes": [],
       "architecture": [
         "multi_agent"
@@ -73,6 +82,15 @@
       "type": "agent",
       "name": "SciMon",
       "one_liner": "SciMon: Scientific Inspiration Machines Optimized for Novelty",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "zhoujieli/Awesome-LLM-Agents-Scientific-Discovery"
+          ]
+        }
+      },
       "exposes": [
         "library"
       ],
@@ -125,6 +143,15 @@
       "type": "agent",
       "name": "Genesis",
       "one_liner": "Genesis: Towards the Automation of Systems Biology Research",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "zhoujieli/Awesome-LLM-Agents-Scientific-Discovery"
+          ]
+        }
+      },
       "exposes": [],
       "architecture": [
         "multi_agent"
@@ -141,6 +168,15 @@
       "type": "agent",
       "name": "MDAgents",
       "one_liner": "MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "zhoujieli/Awesome-LLM-Agents-Scientific-Discovery"
+          ]
+        }
+      },
       "exposes": [],
       "architecture": [
         "multi_agent"
@@ -162,8 +198,18 @@
       "type": "agent",
       "name": "Multi-Specialist Agent Consultation",
       "one_liner": "Beyond Direct Diagnosis: LLM-based Multi-Specialist Agent Consultation for Automatic Diagnosis",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "zhoujieli/Awesome-LLM-Agents-Scientific-Discovery"
+          ]
+        }
+      },
       "exposes": [
-        "library"
+        "library",
+        "web_ui"
       ],
       "architecture": [
         "multi_agent"
@@ -180,6 +226,15 @@
       "type": "agent",
       "name": "MedAide",
       "one_liner": "MedAide: Towards an Omni Medical Aide via Specialized LLM-based Multi-Agent Collaboration",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "zhoujieli/Awesome-LLM-Agents-Scientific-Discovery"
+          ]
+        }
+      },
       "exposes": [
         "web_ui"
       ],
@@ -199,6 +254,15 @@
       "type": "agent",
       "name": "Large Language Models as Agents in the Clinic",
       "one_liner": "Large Language Models as Agents in the Clinic",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "zhoujieli/Awesome-LLM-Agents-Scientific-Discovery"
+          ]
+        }
+      },
       "exposes": [],
       "architecture": [
         "multi_agent"
@@ -215,7 +279,17 @@
       "type": "agent",
       "name": "MAGDA",
       "one_liner": "MAGDA: Multi-Agent Guideline-Driven Diagnostic Assistance",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "zhoujieli/Awesome-LLM-Agents-Scientific-Discovery"
+          ]
+        }
+      },
       "exposes": [
+        "api",
         "web_ui"
       ],
       "architecture": [
@@ -233,7 +307,17 @@
       "type": "agent",
       "name": "ColaCare",
       "one_liner": "ColaCare: Enhancing Electronic Health Record Modeling through Large Language Model-Driven Multi-Agent Collaboration",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "zhoujieli/Awesome-LLM-Agents-Scientific-Discovery"
+          ]
+        }
+      },
       "exposes": [
+        "cli",
         "web_ui"
       ],
       "architecture": [
@@ -252,7 +336,17 @@
       "type": "agent",
       "name": "Agent Hospital",
       "one_liner": "Agent Hospital: A Simulacrum of Hospital with Evolvable Medical Agents",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "zhoujieli/Awesome-LLM-Agents-Scientific-Discovery"
+          ]
+        }
+      },
       "exposes": [
+        "cli",
         "web_ui"
       ],
       "architecture": [
@@ -276,6 +370,15 @@
       "type": "agent",
       "name": "ClinicalLab",
       "one_liner": "ClinicalLab: Aligning Agents for Multi-Departmental Clinical Diagnostics in the Real World",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "zhoujieli/Awesome-LLM-Agents-Scientific-Discovery"
+          ]
+        }
+      },
       "exposes": [],
       "architecture": [
         "single_agent"
@@ -297,6 +400,15 @@
       "type": "agent",
       "name": "AIPatient",
       "one_liner": "AIPatient: Simulating Patients with EHRs and LLM Powered Agentic Workflow",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "zhoujieli/Awesome-LLM-Agents-Scientific-Discovery"
+          ]
+        }
+      },
       "exposes": [
         "web_ui"
       ],
@@ -316,7 +428,18 @@
       "type": "agent",
       "name": "Medco",
       "one_liner": "Medco: Medical education copilots based on a multi-agent framework",
-      "exposes": [],
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "zhoujieli/Awesome-LLM-Agents-Scientific-Discovery"
+          ]
+        }
+      },
+      "exposes": [
+        "web_ui"
+      ],
       "architecture": [
         "multi_agent"
       ]
@@ -332,9 +455,24 @@
       "type": "agent",
       "name": "CXR-Agent",
       "one_liner": "CXR-Agent: Vision-language models for chest X-ray interpretation with uncertainty aware radiology reporting",
-      "exposes": [],
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "zhoujieli/Awesome-LLM-Agents-Scientific-Discovery"
+          ]
+        }
+      },
+      "exposes": [
+        "cli",
+        "mcp",
+        "web_ui"
+      ],
       "architecture": [
-        "multi_agent"
+        "multi_agent",
+        "rag",
+        "tool_registry"
       ]
     },
     {
@@ -353,6 +491,15 @@
       "type": "agent",
       "name": "OpenLens AI",
       "one_liner": "OpenLens AI: Fully Autonomous Research Agent for Health Infomatics",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "zhoujieli/Awesome-LLM-Agents-Scientific-Discovery"
+          ]
+        }
+      },
       "exposes": [
         "web_ui"
       ],
@@ -371,6 +518,16 @@
       "type": "agent",
       "name": "BioDiscoveryAgent",
       "one_liner": "BioDiscoveryAgent: An AI Agent for Designing Genetic Perturbation Experiments",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "zhoujieli/Awesome-LLM-Agents-Scientific-Discovery",
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "cli",
         "library"
@@ -395,7 +552,20 @@
       "type": "agent",
       "name": "GeneAgent",
       "one_liner": "GeneAgent: Self-verification Language Agent for Gene Set Knowledge Discovery using Domain Databases",
-      "exposes": [],
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "zhoujieli/Awesome-LLM-Agents-Scientific-Discovery"
+          ]
+        }
+      },
+      "exposes": [
+        "cli",
+        "notebook",
+        "web_ui"
+      ],
       "architecture": [
         "single_agent"
       ]
@@ -417,6 +587,15 @@
       "type": "agent",
       "name": "BIA",
       "one_liner": "BIA: BioInformatics Agent - Unleashing the Power of Large Language Models to Reshape Bioinformatics Workflow",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "zhoujieli/Awesome-LLM-Agents-Scientific-Discovery"
+          ]
+        }
+      },
       "exposes": [],
       "architecture": []
     },
@@ -431,8 +610,18 @@
       "type": "agent",
       "name": "CellAgent",
       "one_liner": "CellAgent: An LLM-driven Multi-Agent Framework for Automated Single-cell Data Analysis",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "zhoujieli/Awesome-LLM-Agents-Scientific-Discovery"
+          ]
+        }
+      },
       "exposes": [
-        "library"
+        "library",
+        "web_ui"
       ],
       "architecture": [
         "multi_agent"
@@ -460,6 +649,15 @@
       "type": "agent",
       "name": "DrugAgent",
       "one_liner": "DrugAgent: Explainable Drug Repurposing Agent with Large Language Model-based Reasoning",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "zhoujieli/Awesome-LLM-Agents-Scientific-Discovery"
+          ]
+        }
+      },
       "exposes": [
         "library"
       ],
@@ -483,6 +681,15 @@
       "type": "agent",
       "name": "Malade",
       "one_liner": "Malade: Orchestration of LLM-powered agents with retrieval augmented generation for pharmacovigilance",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "zhoujieli/Awesome-LLM-Agents-Scientific-Discovery"
+          ]
+        }
+      },
       "exposes": [
         "library"
       ],
@@ -502,6 +709,15 @@
       "type": "agent",
       "name": "ChatMol Copilot",
       "one_liner": "ChatMol Copilot: An Agent for Molecular Modeling and Computation Powered by LLMs",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "zhoujieli/Awesome-LLM-Agents-Scientific-Discovery"
+          ]
+        }
+      },
       "exposes": [],
       "architecture": [
         "single_agent"
@@ -577,6 +793,15 @@
       "type": "agent",
       "name": "Apex Metabolic AI Lab",
       "one_liner": "Apex Metabolic AI Lab",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "AgenticHealthAI/Awesome-AI-Agents-for-Healthcare"
+          ]
+        }
+      },
       "exposes": [],
       "architecture": []
     },
@@ -591,6 +816,15 @@
       "type": "agent",
       "name": "PaSa",
       "one_liner": "PaSa (ByteDance)",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "web_ui"
       ],
@@ -628,6 +862,15 @@
       "type": "agent",
       "name": "ResearchCodeAgent",
       "one_liner": "ResearchCodeAgent",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [],
       "architecture": [
         "multi_agent"
@@ -644,6 +887,15 @@
       "type": "agent",
       "name": "Alhazen",
       "one_liner": "Alhazen",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [],
       "architecture": []
     },
@@ -658,6 +910,15 @@
       "type": "agent",
       "name": "PaperQA2",
       "one_liner": "PaperQA2",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "cli",
         "library"
@@ -687,6 +948,15 @@
       "type": "agent",
       "name": "OpenScholar",
       "one_liner": "OpenScholar",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "cli",
         "library",
@@ -721,6 +991,15 @@
       "type": "agent",
       "name": "Valsci",
       "one_liner": "Valsci",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "api",
         "web_ui"
@@ -749,6 +1028,15 @@
       "type": "agent",
       "name": "OpenBioMed",
       "one_liner": "OpenBioMed",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "api",
         "notebook",
@@ -784,6 +1072,15 @@
       "type": "agent",
       "name": "llm-for-zotero",
       "one_liner": "llm-for-zotero",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "skills",
         "web_ui"
@@ -812,6 +1109,15 @@
       "type": "agent",
       "name": "FunSearch",
       "one_liner": "FunSearch (DeepMind, Nature 2023)",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "notebook"
       ],
@@ -840,6 +1146,15 @@
       "type": "agent",
       "name": "OpenEvolve",
       "one_liner": "OpenEvolve",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "cli",
         "library"
@@ -868,6 +1183,15 @@
       "type": "agent",
       "name": "Virtual Lab",
       "one_liner": "Virtual Lab (Stanford Zou Group, Nature 2025)",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "library",
         "notebook"
@@ -896,6 +1220,15 @@
       "type": "agent",
       "name": "The AI Scientist",
       "one_liner": "The AI Scientist (SakanaAI)",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "cli",
         "library"
@@ -930,6 +1263,15 @@
       "type": "agent",
       "name": "Kosmos",
       "one_liner": "Kosmos",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "cli",
         "library"
@@ -963,6 +1305,15 @@
       "type": "agent",
       "name": "AutoResearchClaw",
       "one_liner": "AutoResearchClaw",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "cli",
         "web_ui"
@@ -1002,6 +1353,15 @@
       "type": "agent",
       "name": "ScienceClaw",
       "one_liner": "ScienceClaw",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "skills"
       ],
@@ -1029,6 +1389,15 @@
       "type": "agent",
       "name": "AI-Researcher",
       "one_liner": "AI-Researcher",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "web_ui"
       ],
@@ -1061,7 +1430,19 @@
       "type": "agent",
       "name": "Agent Laboratory",
       "one_liner": "Agent Laboratory",
-      "exposes": [],
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
+      "exposes": [
+        "cli",
+        "library"
+      ],
       "architecture": [
         "multi_agent"
       ]
@@ -1077,6 +1458,15 @@
       "type": "agent",
       "name": "CodeScientist",
       "one_liner": "CodeScientist (AllenAI)",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "api",
         "web_ui"
@@ -1105,12 +1495,23 @@
       "type": "agent",
       "name": "InternAgent",
       "one_liner": "InternAgent",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
+        "api",
         "cli",
         "web_ui"
       ],
       "architecture": [
-        "multi_agent"
+        "multi_agent",
+        "rag"
       ]
     },
     {
@@ -1158,6 +1559,15 @@
       "type": "agent",
       "name": "AutoScientists",
       "one_liner": "AutoScientists (Harvard MIMS, arXiv 2026)",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "cli"
       ],
@@ -1200,6 +1610,15 @@
       "type": "agent",
       "name": "ToolUniverse",
       "one_liner": "ToolUniverse",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "api",
         "cli",
@@ -1231,8 +1650,18 @@
       "type": "agent",
       "name": "Robin",
       "one_liner": "Robin",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
-        "notebook"
+        "notebook",
+        "web_ui"
       ],
       "architecture": [
         "multi_agent"
@@ -1252,6 +1681,15 @@
       "type": "agent",
       "name": "Aviary",
       "one_liner": "Aviary",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "library",
         "notebook"
@@ -1279,6 +1717,15 @@
       "type": "agent",
       "name": "Curie",
       "one_liner": "Curie",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "library"
       ],
@@ -1311,6 +1758,15 @@
       "type": "agent",
       "name": "POPPER",
       "one_liner": "POPPER",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "library",
         "notebook"
@@ -1349,6 +1805,15 @@
       "type": "agent",
       "name": "UniScientist",
       "one_liner": "UniScientist",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "cli",
         "library"
@@ -1403,6 +1868,15 @@
       "type": "agent",
       "name": "EvoScientist",
       "one_liner": "EvoScientist",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "cli",
         "mcp",
@@ -1439,6 +1913,15 @@
       "type": "agent",
       "name": "PantheonOS",
       "one_liner": "PantheonOS (Stanford, 2025)",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "api",
         "cli",
@@ -1474,6 +1957,15 @@
       "type": "agent",
       "name": "Science-Star",
       "one_liner": "Science-Star (USTC AI4Science, 2025)",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "library",
         "web_ui"
@@ -1503,6 +1995,15 @@
       "type": "agent",
       "name": "LLM-Peer-Review",
       "one_liner": "LLM-Peer-Review",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "web_ui"
       ],
@@ -1539,6 +2040,15 @@
       "type": "agent",
       "name": "Biomni",
       "one_liner": "Biomni",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "library",
         "web_ui"
@@ -1562,11 +2072,21 @@
       "type": "agent",
       "name": "BioAgents",
       "one_liner": "BioAgents",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "api"
       ],
       "architecture": [
-        "multi_agent"
+        "multi_agent",
+        "rag"
       ]
     },
     {
@@ -1594,6 +2114,15 @@
       "type": "agent",
       "name": "SRAgent",
       "one_liner": "SRAgent",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [],
       "architecture": []
     },
@@ -1617,6 +2146,15 @@
       "type": "agent",
       "name": "STAgent",
       "one_liner": "STAgent",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "web_ui"
       ],
@@ -1644,6 +2182,15 @@
       "type": "agent",
       "name": "Camyla",
       "one_liner": "Camyla",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "cli"
       ],
@@ -1676,6 +2223,15 @@
       "type": "agent",
       "name": "MOOSE",
       "one_liner": "MOOSE",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "cli"
       ],
@@ -1709,6 +2265,15 @@
       "type": "agent",
       "name": "TxAgent",
       "one_liner": "TxAgent",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "library",
         "skills",
@@ -1861,6 +2426,15 @@
       "type": "agent",
       "name": "MedAgents",
       "one_liner": "MedAgents: Large Language Models as Collaborators for Zero-shot Medical Reasoning",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "cli",
         "library"
@@ -1919,6 +2493,15 @@
       "type": "agent",
       "name": "DrugAssist",
       "one_liner": "DrugAssist",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "web_ui"
       ],
@@ -1946,6 +2529,15 @@
       "type": "agent",
       "name": "CellWhisperer",
       "one_liner": "CellWhisperer (Nature Biotechnology 2025)",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "api",
         "cli",
@@ -1975,6 +2567,15 @@
       "type": "agent",
       "name": "mLLMCelltype",
       "one_liner": "mLLMCelltype",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "api",
         "library",
@@ -2010,6 +2611,15 @@
       "type": "agent",
       "name": "ChatSpatial",
       "one_liner": "ChatSpatial",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "mcp"
       ],
@@ -2031,6 +2641,15 @@
       "type": "agent",
       "name": "BioReason",
       "one_liner": "BioReason (NeurIPS 2025)",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "library"
       ],
@@ -2058,6 +2677,15 @@
       "type": "agent",
       "name": "DNA Claude Analysis",
       "one_liner": "DNA Claude Analysis",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "cli",
         "web_ui"
@@ -2091,6 +2719,15 @@
       "type": "agent",
       "name": "PathChat",
       "one_liner": "PathChat (Nature Medicine 2024)",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "web_ui"
       ],
@@ -2129,6 +2766,15 @@
       "type": "agent",
       "name": "NVIDIA Biomedical AI-Q Research Agent",
       "one_liner": "NVIDIA Biomedical AI-Q Research Agent",
+      "provenance": {
+        "method": "awesome_list",
+        "round": 0,
+        "evidence": {
+          "lists": [
+            "ai-boost/awesome-ai-for-science"
+          ]
+        }
+      },
       "exposes": [
         "api",
         "web_ui"
@@ -2173,7 +2819,7 @@
       "title": "Autonomous chemical research with large language models",
       "year": 2023,
       "cited_by_count": 796,
-      "in_catalog": false
+      "in_catalog": true
     },
     {
       "id": "openalex:W299440670",
@@ -2757,7 +3403,7 @@
       "title": "DORA AI Scientist: Multi-agent Virtual Research Team for Scientific Exploration Discovery and Automated Report Generation",
       "year": 2025,
       "cited_by_count": 3,
-      "in_catalog": false
+      "in_catalog": true
     },
     {
       "id": "openalex:W4410833419",
@@ -3509,7 +4155,7 @@
       "title": "IdeaSynth: Iterative Research Idea Development Through Evolving and Composing Idea Facets with Literature-Grounded Feedback",
       "year": 2025,
       "cited_by_count": 12,
-      "in_catalog": false
+      "in_catalog": true
     },
     {
       "id": "openalex:W4411057454",
@@ -4086,6 +4732,1702 @@
       "year": 2026,
       "cited_by_count": 2,
       "in_catalog": false
+    },
+    {
+      "id": "openalex:W4402952666",
+      "type": "paper",
+      "title": "The AI Scientist: Towards Fully Automated Open-Ended Scientific Discovery",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:coscientist",
+      "type": "agent",
+      "name": "Coscientist",
+      "one_liner": "Autonomous chemical research with large language models",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4389991792",
+        "evidence": {
+          "from_survey": "openalex:W4405355275"
+        }
+      },
+      "exposes": [
+        "library"
+      ],
+      "architecture": [
+        "multi_agent"
+      ]
+    },
+    {
+      "id": "https://github.com/gomesgroup/coscientist",
+      "type": "repo",
+      "url": "https://github.com/gomesgroup/coscientist",
+      "stars": 206,
+      "last_commit": "2025-08-11T18:19:13Z",
+      "language": "Python",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "org:gomesgroup",
+      "type": "org",
+      "name": "gomesgroup",
+      "ror": null
+    },
+    {
+      "id": "openalex:W4396718668",
+      "type": "paper",
+      "title": "Agent Hospital: A Simulacrum of Hospital with Evolvable Medical Agents",
+      "in_catalog": true
+    },
+    {
+      "id": "https://github.com/wisdom-pan/Agent_Hospital",
+      "type": "repo",
+      "url": "https://github.com/wisdom-pan/Agent_Hospital",
+      "stars": 54,
+      "last_commit": "2024-09-26T12:23:03Z",
+      "language": "Python",
+      "license": "MIT"
+    },
+    {
+      "id": "org:wisdom-pan",
+      "type": "org",
+      "name": "wisdom-pan",
+      "ror": null
+    },
+    {
+      "id": "openalex:W4396819619",
+      "type": "paper",
+      "title": "CRISPR-GPT for Agentic Automation of Gene-editing Experiments",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:crispr-gpt",
+      "type": "agent",
+      "name": "CRISPR-GPT",
+      "one_liner": "CRISPR-GPT for Agentic Automation of Gene-editing Experiments",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4396819619",
+        "evidence": {
+          "from_survey": "openalex:W4405355275"
+        }
+      },
+      "exposes": [
+        "web_ui"
+      ],
+      "architecture": [
+        "multi_agent",
+        "rag"
+      ]
+    },
+    {
+      "id": "openalex:W4399151368",
+      "type": "paper",
+      "title": "BioDiscoveryAgent: An AI Agent for Designing Genetic Perturbation Experiments",
+      "in_catalog": true
+    },
+    {
+      "id": "openalex:W4406231153",
+      "type": "paper",
+      "title": "Agent Laboratory: Using LLM Agents as Research Assistants",
+      "in_catalog": true
+    },
+    {
+      "id": "https://github.com/SamuelSchmidgall/AgentLaboratory",
+      "type": "repo",
+      "url": "https://github.com/SamuelSchmidgall/AgentLaboratory",
+      "stars": 5685,
+      "last_commit": "2025-08-20T21:46:43Z",
+      "language": "Python",
+      "license": "MIT"
+    },
+    {
+      "id": "org:samuelschmidgall",
+      "type": "org",
+      "name": "SamuelSchmidgall",
+      "ror": null
+    },
+    {
+      "id": "openalex:W4407571388",
+      "type": "paper",
+      "title": "PathFinder: A Multi-Modal Multi-Agent System for Medical Diagnostic Decision-Making Applied to Histopathology",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:pathfinder",
+      "type": "agent",
+      "name": "PathFinder",
+      "one_liner": "PathFinder: A Multi-Modal Multi-Agent System for Medical Diagnostic Decision-Making Applied to Histopathology",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4407571388",
+        "evidence": {
+          "from_survey": "openalex:W7122487524"
+        }
+      },
+      "exposes": [
+        "library"
+      ],
+      "architecture": [
+        "multi_agent"
+      ]
+    },
+    {
+      "id": "https://github.com/servo/pathfinder",
+      "type": "repo",
+      "url": "https://github.com/servo/pathfinder",
+      "stars": 3888,
+      "last_commit": "2026-04-23T11:40:36Z",
+      "language": "Rust",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "org:servo",
+      "type": "org",
+      "name": "servo",
+      "ror": null
+    },
+    {
+      "id": "openalex:W4409201831",
+      "type": "paper",
+      "title": "SpatialAgent: An autonomous AI agent for spatial biology",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:spatialagent",
+      "type": "agent",
+      "name": "SpatialAgent",
+      "one_liner": "SpatialAgent: An autonomous AI agent for spatial biology",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4409201831",
+        "evidence": {
+          "from_survey": "openalex:W7122487524"
+        }
+      },
+      "exposes": [
+        "library",
+        "notebook"
+      ],
+      "architecture": [
+        "single_agent",
+        "tool_registry"
+      ]
+    },
+    {
+      "id": "https://github.com/Genentech/SpatialAgent",
+      "type": "repo",
+      "url": "https://github.com/Genentech/SpatialAgent",
+      "stars": 188,
+      "last_commit": "2026-05-04T10:39:03Z",
+      "language": "Python",
+      "license": "MIT"
+    },
+    {
+      "id": "org:genentech",
+      "type": "org",
+      "name": "Genentech",
+      "ror": null
+    },
+    {
+      "id": "openalex:W4411005431",
+      "type": "paper",
+      "title": "Biomni: A General-Purpose Biomedical AI Agent",
+      "in_catalog": true
+    },
+    {
+      "id": "toolenv:biomni-e1",
+      "type": "toolenv",
+      "name": "Biomni-E1"
+    },
+    {
+      "id": "openalex:W4414827381",
+      "type": "paper",
+      "title": "The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:the-ai-scientist-v2",
+      "type": "agent",
+      "name": "The AI Scientist-v2",
+      "one_liner": "The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4414827381",
+        "evidence": {
+          "from_survey": "openalex:W7122487524"
+        }
+      },
+      "exposes": [
+        "cli"
+      ],
+      "architecture": [
+        "multi_agent"
+      ]
+    },
+    {
+      "id": "openalex:W4416530753",
+      "type": "paper",
+      "title": "TxGemma: Efficient and Agentic LLMs for Therapeutics",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:txgemma",
+      "type": "agent",
+      "name": "TxGemma",
+      "one_liner": "TxGemma: Efficient and Agentic LLMs for Therapeutics",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4416530753",
+        "evidence": {
+          "from_survey": "openalex:W7122487524"
+        }
+      },
+      "exposes": [
+        "web_ui"
+      ],
+      "architecture": [
+        "multi_agent"
+      ]
+    },
+    {
+      "id": "benchmark:humanity-s-last-exam",
+      "type": "benchmark",
+      "name": "Humanity's Last Exam"
+    },
+    {
+      "id": "benchmark:chembench-preference",
+      "type": "benchmark",
+      "name": "ChemBench-Preference"
+    },
+    {
+      "id": "benchmark:chembench-mini",
+      "type": "benchmark",
+      "name": "ChemBench-Mini"
+    },
+    {
+      "id": "openalex:W4417060272",
+      "type": "paper",
+      "title": "TxAgent: An AI Agent for Therapeutic Reasoning Across a Universe of Tools",
+      "in_catalog": true
+    },
+    {
+      "id": "openalex:W4327672390",
+      "type": "paper",
+      "title": "MGA: Medical generalist agent through text-guided knowledge transformation",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:mga",
+      "type": "agent",
+      "name": "MGA",
+      "one_liner": "MGA: Medical generalist agent through text-guided knowledge transformation",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4327672390",
+        "evidence": {
+          "from_survey": "openalex:W7133700978"
+        }
+      },
+      "exposes": [
+        "library"
+      ],
+      "architecture": [
+        "single_agent"
+      ]
+    },
+    {
+      "id": "openalex:W4385965601",
+      "type": "paper",
+      "title": "DiagGPT: An LLM-based and Multi-agent Dialogue System with Automatic Topic Management for Flexible Task-Oriented Dialogue",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:diaggpt",
+      "type": "agent",
+      "name": "DiagGPT",
+      "one_liner": "DiagGPT: An LLM-based and Multi-agent Dialogue System with Automatic Topic Management for Flexible Task-Oriented Dialogue",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4385965601",
+        "evidence": {
+          "from_survey": "openalex:W7133700978"
+        }
+      },
+      "exposes": [
+        "cli"
+      ],
+      "architecture": [
+        "multi_agent"
+      ]
+    },
+    {
+      "id": "https://github.com/zzlang-c/DiagGPT",
+      "type": "repo",
+      "url": "https://github.com/zzlang-c/DiagGPT",
+      "stars": 53,
+      "last_commit": "2024-04-13T07:35:36Z",
+      "language": "Python",
+      "license": "MIT"
+    },
+    {
+      "id": "org:zzlang-c",
+      "type": "org",
+      "name": "zzlang-c",
+      "ror": null
+    },
+    {
+      "id": "openalex:W4391376774",
+      "type": "paper",
+      "title": "Beyond Direct Diagnosis: LLM-based Multi-Specialist Agent Consultation for Automatic Diagnosis",
+      "in_catalog": true
+    },
+    {
+      "id": "openalex:W4400667291",
+      "type": "paper",
+      "title": "CXR-Agent: Vision-language models for chest X-ray interpretation with uncertainty aware radiology reporting",
+      "in_catalog": true
+    },
+    {
+      "id": "https://github.com/Gowthamaan-Aerobiosys/cxr_agent",
+      "type": "repo",
+      "url": "https://github.com/Gowthamaan-Aerobiosys/cxr_agent",
+      "stars": 1,
+      "last_commit": "2026-01-31T20:12:07Z",
+      "language": "Python",
+      "license": null
+    },
+    {
+      "id": "org:gowthamaan-aerobiosys",
+      "type": "org",
+      "name": "Gowthamaan-Aerobiosys",
+      "ror": null
+    },
+    {
+      "id": "openalex:W4403075667",
+      "type": "paper",
+      "title": "MAGDA: Multi-agent Guideline-Driven Diagnostic Assistance",
+      "in_catalog": true
+    },
+    {
+      "id": "https://github.com/magda-io/magda",
+      "type": "repo",
+      "url": "https://github.com/magda-io/magda",
+      "stars": 601,
+      "last_commit": "2026-05-20T10:54:20Z",
+      "language": "JavaScript",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "org:magda-io",
+      "type": "org",
+      "name": "magda-io",
+      "ror": null
+    },
+    {
+      "id": "openalex:W4403578766",
+      "type": "paper",
+      "title": "IMAS: A Comprehensive Agentic Approach to Rural Healthcare Delivery",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:imas",
+      "type": "agent",
+      "name": "IMAS",
+      "one_liner": "IMAS: A Comprehensive Agentic Approach to Rural Healthcare Delivery",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4403578766",
+        "evidence": {
+          "from_survey": "openalex:W7133700978"
+        }
+      },
+      "exposes": [
+        "web_ui"
+      ],
+      "architecture": [
+        "multi_agent"
+      ]
+    },
+    {
+      "id": "openalex:W4403854189",
+      "type": "paper",
+      "title": "Zodiac: A Cardiologist-Level LLM Framework for Multi-Agent Diagnostics",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:zodiac",
+      "type": "agent",
+      "name": "Zodiac",
+      "one_liner": "Zodiac: A Cardiologist-Level LLM Framework for Multi-Agent Diagnostics",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4403854189",
+        "evidence": {
+          "from_survey": "openalex:W7133700978"
+        }
+      },
+      "exposes": [
+        "cli",
+        "library"
+      ],
+      "architecture": [
+        "multi_agent"
+      ]
+    },
+    {
+      "id": "https://github.com/gnosisguild/zodiac",
+      "type": "repo",
+      "url": "https://github.com/gnosisguild/zodiac",
+      "stars": 480,
+      "last_commit": "2025-10-15T14:05:16Z",
+      "language": "TypeScript",
+      "license": "LGPL-3.0"
+    },
+    {
+      "id": "org:gnosisguild",
+      "type": "org",
+      "name": "gnosisguild",
+      "ror": null
+    },
+    {
+      "id": "openalex:W4404781082",
+      "type": "paper",
+      "title": "MMedAgent: Learning to Use Medical Tools with Multi-modal Agent",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:mmedagent",
+      "type": "agent",
+      "name": "MMedAgent",
+      "one_liner": "MMedAgent: Learning to Use Medical Tools with Multi-modal Agent",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4404781082",
+        "evidence": {
+          "from_survey": "openalex:W7133700978"
+        }
+      },
+      "exposes": [
+        "library",
+        "web_ui"
+      ],
+      "architecture": [
+        "multi_agent",
+        "rag",
+        "tool_registry"
+      ]
+    },
+    {
+      "id": "https://github.com/Wangyixinxin/MMedAgent",
+      "type": "repo",
+      "url": "https://github.com/Wangyixinxin/MMedAgent",
+      "stars": 257,
+      "last_commit": "2026-03-18T07:16:08Z",
+      "language": "Python",
+      "license": null
+    },
+    {
+      "id": "org:wangyixinxin",
+      "type": "org",
+      "name": "Wangyixinxin",
+      "ror": null
+    },
+    {
+      "id": "openalex:W4405427526",
+      "type": "paper",
+      "title": "ClinicalAgent: Clinical Trial Multi-Agent System with Large Language Model-based Reasoning",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:clinicalagent",
+      "type": "agent",
+      "name": "ClinicalAgent",
+      "one_liner": "ClinicalAgent: Clinical Trial Multi-Agent System with Large Language Model-based Reasoning",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4405427526",
+        "evidence": {
+          "from_survey": "openalex:W7133700978"
+        }
+      },
+      "exposes": [
+        "api",
+        "web_ui"
+      ],
+      "architecture": [
+        "multi_agent",
+        "rag"
+      ]
+    },
+    {
+      "id": "https://github.com/jithubaiju55/ClinicalAgent",
+      "type": "repo",
+      "url": "https://github.com/jithubaiju55/ClinicalAgent",
+      "stars": 1,
+      "last_commit": "2026-04-05T07:08:50Z",
+      "language": "Python",
+      "license": null
+    },
+    {
+      "id": "org:jithubaiju55",
+      "type": "org",
+      "name": "jithubaiju55",
+      "ror": null
+    },
+    {
+      "id": "toolenv:langgraph",
+      "type": "toolenv",
+      "name": "LangGraph"
+    },
+    {
+      "id": "openalex:W4408511971",
+      "type": "paper",
+      "title": "Almanac Copilot: Towards Autonomous Electronic Health Record Navigation",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:almanac-copilot",
+      "type": "agent",
+      "name": "Almanac Copilot",
+      "one_liner": "Almanac Copilot: Towards Autonomous Electronic Health Record Navigation",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4408511971",
+        "evidence": {
+          "from_survey": "openalex:W7133700978"
+        }
+      },
+      "exposes": [
+        "web_ui"
+      ],
+      "architecture": [
+        "single_agent"
+      ]
+    },
+    {
+      "id": "openalex:W4409657397",
+      "type": "paper",
+      "title": "ColaCare: Enhancing Electronic Health Record Modeling through Large Language Model-Driven Multi-Agent Collaboration",
+      "in_catalog": true
+    },
+    {
+      "id": "https://github.com/PKU-AICare/ColaCare",
+      "type": "repo",
+      "url": "https://github.com/PKU-AICare/ColaCare",
+      "stars": 33,
+      "last_commit": "2025-10-11T09:22:31Z",
+      "language": "Python",
+      "license": null
+    },
+    {
+      "id": "org:pku-aicare",
+      "type": "org",
+      "name": "PKU-AICare",
+      "ror": null
+    },
+    {
+      "id": "openalex:W4414304057",
+      "type": "paper",
+      "title": "MedAide: Information fusion and anatomy of medical intents via LLM-based agent collaboration",
+      "in_catalog": true
+    },
+    {
+      "id": "https://github.com/ydk122024/MedAIDE",
+      "type": "repo",
+      "url": "https://github.com/ydk122024/MedAIDE",
+      "stars": 4,
+      "last_commit": "2025-07-03T12:38:48Z",
+      "language": null,
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "org:ydk122024",
+      "type": "org",
+      "name": "ydk122024",
+      "ror": null
+    },
+    {
+      "id": "openalex:W4403618417",
+      "type": "paper",
+      "title": "SciAgents: Automating scientific discovery through multi-agent intelligent graph reasoning",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:sciagents",
+      "type": "agent",
+      "name": "SciAgents",
+      "one_liner": "SciAgents: Automating scientific discovery through multi-agent intelligent graph reasoning",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4403618417",
+        "evidence": {
+          "from_survey": "openalex:W7118690722"
+        }
+      },
+      "exposes": [
+        "library",
+        "notebook"
+      ],
+      "architecture": [
+        "multi_agent"
+      ]
+    },
+    {
+      "id": "https://github.com/openags/SciAgents",
+      "type": "repo",
+      "url": "https://github.com/openags/SciAgents",
+      "stars": 4,
+      "last_commit": "2025-05-31T11:10:59Z",
+      "language": "Python",
+      "license": "MIT"
+    },
+    {
+      "id": "org:openags",
+      "type": "org",
+      "name": "openags",
+      "ror": null
+    },
+    {
+      "id": "toolenv:camel",
+      "type": "toolenv",
+      "name": "CAMEL"
+    },
+    {
+      "id": "openalex:W4416043407",
+      "type": "paper",
+      "title": "Towards an AI co-scientist",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:ai-co-scientist",
+      "type": "agent",
+      "name": "AI co-scientist",
+      "one_liner": "Towards an AI co-scientist",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4416043407",
+        "evidence": {
+          "from_survey": "openalex:W7118690722"
+        }
+      },
+      "exposes": [
+        "library"
+      ],
+      "architecture": [
+        "multi_agent",
+        "self_evolving"
+      ]
+    },
+    {
+      "id": "https://github.com/The-Swarm-Corporation/AI-CoScientist",
+      "type": "repo",
+      "url": "https://github.com/The-Swarm-Corporation/AI-CoScientist",
+      "stars": 111,
+      "last_commit": "2025-10-27T13:11:31Z",
+      "language": "Python",
+      "license": "MIT"
+    },
+    {
+      "id": "org:the-swarm-corporation",
+      "type": "org",
+      "name": "The-Swarm-Corporation",
+      "ror": null
+    },
+    {
+      "id": "openalex:W4417287919",
+      "type": "paper",
+      "title": "Robin: A multi-agent system for automating scientific discovery",
+      "in_catalog": true
+    },
+    {
+      "id": "https://github.com/apurvsinghgautam/robin",
+      "type": "repo",
+      "url": "https://github.com/apurvsinghgautam/robin",
+      "stars": 5465,
+      "last_commit": "2026-06-02T22:30:18Z",
+      "language": "Python",
+      "license": "MIT"
+    },
+    {
+      "id": "org:apurvsinghgautam",
+      "type": "org",
+      "name": "apurvsinghgautam",
+      "ror": null
+    },
+    {
+      "id": "openalex:W4396622252",
+      "type": "paper",
+      "title": "ChatNT: A Multimodal Conversational Agent for DNA, RNA and Protein Tasks",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:chatnt",
+      "type": "agent",
+      "name": "ChatNT",
+      "one_liner": "ChatNT: A Multimodal Conversational Agent for DNA, RNA and Protein Tasks",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4396622252",
+        "evidence": {
+          "from_survey": "openalex:W4416137592"
+        }
+      },
+      "exposes": [
+        "web_ui"
+      ],
+      "architecture": [
+        "single_agent"
+      ]
+    },
+    {
+      "id": "https://github.com/RuiSiang/chatNT",
+      "type": "repo",
+      "url": "https://github.com/RuiSiang/chatNT",
+      "stars": 43,
+      "last_commit": "2021-01-08T06:42:51Z",
+      "language": "C++",
+      "license": "MIT"
+    },
+    {
+      "id": "org:ruisiang",
+      "type": "org",
+      "name": "RuiSiang",
+      "ror": null
+    },
+    {
+      "id": "benchmark:nucleotide-transformer",
+      "type": "benchmark",
+      "name": "Nucleotide Transformer"
+    },
+    {
+      "id": "openalex:W4396914123",
+      "type": "paper",
+      "title": "Almanac Copilot: Towards Autonomous Electronic Health Record Navigation",
+      "in_catalog": true
+    },
+    {
+      "id": "openalex:W4398203645",
+      "type": "paper",
+      "title": "BioInformatics Agent (BIA): Unleashing the Power of Large Language Models to Reshape Bioinformatics Workflow",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:bioinformatics-agent",
+      "type": "agent",
+      "name": "BioInformatics Agent",
+      "one_liner": "BioInformatics Agent (BIA): Unleashing the Power of Large Language Models to Reshape Bioinformatics Workflow",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4398203645",
+        "evidence": {
+          "from_survey": "openalex:W4416137592"
+        }
+      },
+      "exposes": [
+        "cli",
+        "library",
+        "web_ui"
+      ],
+      "architecture": [
+        "multi_agent",
+        "tool_registry"
+      ]
+    },
+    {
+      "id": "https://github.com/vin-bio/bioinformatics-agent",
+      "type": "repo",
+      "url": "https://github.com/vin-bio/bioinformatics-agent",
+      "stars": 1,
+      "last_commit": "2025-07-01T18:25:21Z",
+      "language": "Python",
+      "license": "MIT"
+    },
+    {
+      "id": "org:vin-bio",
+      "type": "org",
+      "name": "vin-bio",
+      "ror": null
+    },
+    {
+      "id": "domain:proteomics",
+      "type": "domain",
+      "name": "proteomics"
+    },
+    {
+      "id": "openalex:W4399029231",
+      "type": "paper",
+      "title": "\"I Like Sunnie More Than I Expected!\": Exploring User Expectation and Perception of an Anthropomorphic LLM-based Conversational Agent for Well-Being Support",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:sunnie",
+      "type": "agent",
+      "name": "Sunnie",
+      "one_liner": "\"I Like Sunnie More Than I Expected!\": Exploring User Expectation and Perception of an Anthropomorphic LLM-based Conversational Agent for Well-Being Support",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4399029231",
+        "evidence": {
+          "from_survey": "openalex:W4416137592"
+        }
+      },
+      "exposes": [
+        "web_ui"
+      ],
+      "architecture": [
+        "single_agent"
+      ]
+    },
+    {
+      "id": "openalex:W4402626956",
+      "type": "paper",
+      "title": "RDguru: A Conversational Intelligent Agent for Rare Diseases",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:rdguru",
+      "type": "agent",
+      "name": "RDguru",
+      "one_liner": "RDguru: A Conversational Intelligent Agent for Rare Diseases",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4402626956",
+        "evidence": {
+          "from_survey": "openalex:W4416137592"
+        }
+      },
+      "exposes": [
+        "web_ui"
+      ],
+      "architecture": [
+        "multi_agent",
+        "rag"
+      ]
+    },
+    {
+      "id": "openalex:W4403099947",
+      "type": "paper",
+      "title": "An AI Agent for Fully Automated Multi\u2010Omic Analyses",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:autoba",
+      "type": "agent",
+      "name": "AutoBA",
+      "one_liner": "An AI Agent for Fully Automated Multi\u2010Omic Analyses",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4403099947",
+        "evidence": {
+          "from_survey": "openalex:W4416137592"
+        }
+      },
+      "exposes": [
+        "library"
+      ],
+      "architecture": [
+        "single_agent"
+      ]
+    },
+    {
+      "id": "openalex:W4403322813",
+      "type": "paper",
+      "title": "KGARevion: An AI Agent for Knowledge-Intensive Biomedical QA",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:kgarevion",
+      "type": "agent",
+      "name": "KGARevion",
+      "one_liner": "KGARevion: An AI Agent for Knowledge-Intensive Biomedical QA",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4403322813",
+        "evidence": {
+          "from_survey": "openalex:W4416137592"
+        }
+      },
+      "exposes": [],
+      "architecture": [
+        "multi_agent",
+        "rag"
+      ]
+    },
+    {
+      "id": "benchmark:afrimed-qa",
+      "type": "benchmark",
+      "name": "AfriMed-QA"
+    },
+    {
+      "id": "openalex:W4405483747",
+      "type": "paper",
+      "title": "ProtChat: An AI Multi-Agent for Automated Protein Analysis Leveraging GPT-4 and Protein Language Model",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:protchat",
+      "type": "agent",
+      "name": "ProtChat",
+      "one_liner": "ProtChat: An AI Multi-Agent for Automated Protein Analysis Leveraging GPT-4 and Protein Language Model",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4405483747",
+        "evidence": {
+          "from_survey": "openalex:W4416137592"
+        }
+      },
+      "exposes": [
+        "web_ui"
+      ],
+      "architecture": [
+        "multi_agent"
+      ]
+    },
+    {
+      "id": "openalex:W4405562084",
+      "type": "paper",
+      "title": "RareAgents: Autonomous Multi-disciplinary Team for Rare Disease Diagnosis and Treatment",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:rareagents",
+      "type": "agent",
+      "name": "RareAgents",
+      "one_liner": "RareAgents: Autonomous Multi-disciplinary Team for Rare Disease Diagnosis and Treatment",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4405562084",
+        "evidence": {
+          "from_survey": "openalex:W4416137592"
+        }
+      },
+      "exposes": [
+        "web_ui"
+      ],
+      "architecture": [
+        "multi_agent"
+      ]
+    },
+    {
+      "id": "openalex:W4406259721",
+      "type": "paper",
+      "title": "TourSynbio: A Multi-Modal Large Model and Agent Framework to Bridge Text and Protein Sequences for Protein Engineering",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:toursynbio",
+      "type": "agent",
+      "name": "TourSynbio",
+      "one_liner": "TourSynbio: A Multi-Modal Large Model and Agent Framework to Bridge Text and Protein Sequences for Protein Engineering",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4406259721",
+        "evidence": {
+          "from_survey": "openalex:W4416137592"
+        }
+      },
+      "exposes": [
+        "web_ui"
+      ],
+      "architecture": [
+        "multi_agent"
+      ]
+    },
+    {
+      "id": "benchmark:proteinlmbench",
+      "type": "benchmark",
+      "name": "ProteinLMBench"
+    },
+    {
+      "id": "openalex:W4406833248",
+      "type": "paper",
+      "title": "BioMaster: Multi-agent System for Automated Bioinformatics Analysis Workflow",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:biomaster",
+      "type": "agent",
+      "name": "BioMaster",
+      "one_liner": "BioMaster: Multi-agent System for Automated Bioinformatics Analysis Workflow",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4406833248",
+        "evidence": {
+          "from_survey": "openalex:W4416137592"
+        }
+      },
+      "exposes": [
+        "library"
+      ],
+      "architecture": [
+        "multi_agent",
+        "rag"
+      ]
+    },
+    {
+      "id": "openalex:W4410706618",
+      "type": "paper",
+      "title": "MEDCO: Medical Education Copilots Based on\u00a0a Multi-agent Framework",
+      "in_catalog": true
+    },
+    {
+      "id": "openalex:W4412143524",
+      "type": "paper",
+      "title": "PromptBio: A Multi-Agent AI Platform for Bioinformatics Data Analysis",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:promptbio",
+      "type": "agent",
+      "name": "PromptBio",
+      "one_liner": "PromptBio: A Multi-Agent AI Platform for Bioinformatics Data Analysis",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4412143524",
+        "evidence": {
+          "from_survey": "openalex:W4416137592"
+        }
+      },
+      "exposes": [
+        "web_ui"
+      ],
+      "architecture": [
+        "multi_agent"
+      ]
+    },
+    {
+      "id": "openalex:W4412692453",
+      "type": "paper",
+      "title": "GeneAgent: self-verification language agent for gene-set analysis using domain databases",
+      "in_catalog": true
+    },
+    {
+      "id": "openalex:W4414484806",
+      "type": "paper",
+      "title": "PRIME: A Multi-Agent Environment for Orchestrating Dynamic Computational Workflows in Protein Engineerings",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:prime",
+      "type": "agent",
+      "name": "PRIME",
+      "one_liner": "PRIME: A Multi-Agent Environment for Orchestrating Dynamic Computational Workflows in Protein Engineerings",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4414484806",
+        "evidence": {
+          "from_survey": "openalex:W4416137592"
+        }
+      },
+      "exposes": [
+        "library"
+      ],
+      "architecture": [
+        "multi_agent"
+      ]
+    },
+    {
+      "id": "openalex:W4391670645",
+      "type": "paper",
+      "title": "ProtAgents: Protein discovery via large language model multi-agent collaborations combining physics and machine learning",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:protagents",
+      "type": "agent",
+      "name": "ProtAgents",
+      "one_liner": "ProtAgents: Protein discovery via large language model multi-agent collaborations combining physics and machine learning",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4391670645",
+        "evidence": {
+          "from_survey": "openalex:W7141642849"
+        }
+      },
+      "exposes": [],
+      "architecture": [
+        "multi_agent"
+      ]
+    },
+    {
+      "id": "openalex:W4396974446",
+      "type": "paper",
+      "title": "CellAgent: LLM-Driven Multi-Agent Framework for Natural Language-Based Single-Cell Analysis",
+      "in_catalog": true
+    },
+    {
+      "id": "toolenv:sc-omni",
+      "type": "toolenv",
+      "name": "sc-Omni"
+    },
+    {
+      "id": "openalex:W4404986804",
+      "type": "paper",
+      "title": "DrugAgent: Automating AI-aided Drug Discovery Programming through LLM Multi-Agent Collaboration",
+      "in_catalog": true
+    },
+    {
+      "id": "openalex:W4407785626",
+      "type": "paper",
+      "title": "LIDDIA: Language-based Intelligent Drug Discovery Agent",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:liddia",
+      "type": "agent",
+      "name": "LIDDIA",
+      "one_liner": "LIDDIA: Language-based Intelligent Drug Discovery Agent",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4407785626",
+        "evidence": {
+          "from_survey": "openalex:W7141642849"
+        }
+      },
+      "exposes": [
+        "library"
+      ],
+      "architecture": [
+        "single_agent"
+      ]
+    },
+    {
+      "id": "openalex:W4411076429",
+      "type": "paper",
+      "title": "CellVoyager: AI CompBio Agent Generates New Insights by Autonomously Analyzing Biological Data",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:cellvoyager",
+      "type": "agent",
+      "name": "CellVoyager",
+      "one_liner": "CellVoyager: AI CompBio Agent Generates New Insights by Autonomously Analyzing Biological Data",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4411076429",
+        "evidence": {
+          "from_survey": "openalex:W7141642849"
+        }
+      },
+      "exposes": [
+        "notebook"
+      ],
+      "architecture": [
+        "single_agent"
+      ]
+    },
+    {
+      "id": "benchmark:cellbench",
+      "type": "benchmark",
+      "name": "CellBench"
+    },
+    {
+      "id": "openalex:W4412759774",
+      "type": "paper",
+      "title": "CRISPR-GPT for agentic automation of gene-editing experiments",
+      "in_catalog": true
+    },
+    {
+      "id": "openalex:W4413127590",
+      "type": "paper",
+      "title": "BioScientist Agent: Designing LLM-Biomedical Agents with KG-Augmented RL Reasoning Modules for Drug Repurposing and Mechanistic of Action Elucidation",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:bioscientist-agent",
+      "type": "agent",
+      "name": "BioScientist Agent",
+      "one_liner": "BioScientist Agent: Designing LLM-Biomedical Agents with KG-Augmented RL Reasoning Modules for Drug Repurposing and Mechanistic of Action Elucidation",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4413127590",
+        "evidence": {
+          "from_survey": "openalex:W7141642849"
+        }
+      },
+      "exposes": [],
+      "architecture": [
+        "multi_agent",
+        "rag"
+      ]
+    },
+    {
+      "id": "openalex:W4415991135",
+      "type": "paper",
+      "title": "BioAgents: Bridging the gap in bioinformatics analysis with multi-agent systems",
+      "in_catalog": true
+    },
+    {
+      "id": "openalex:W4416146224",
+      "type": "paper",
+      "title": "LabOS: The AI-XR Co-Scientist That Sees and Works With Humans",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:labos",
+      "type": "agent",
+      "name": "LabOS",
+      "one_liner": "LabOS: The AI-XR Co-Scientist That Sees and Works With Humans",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4416146224",
+        "evidence": {
+          "from_survey": "openalex:W7141642849"
+        }
+      },
+      "exposes": [
+        "web_ui"
+      ],
+      "architecture": [
+        "multi_agent",
+        "self_evolving"
+      ]
+    },
+    {
+      "id": "openalex:W4416540180",
+      "type": "paper",
+      "title": "Multi agent large language models for biomedical hypothesis generation in drug combination discovery",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:multi-agent-llm-framework",
+      "type": "agent",
+      "name": "Multi-agent LLM framework",
+      "one_liner": "Multi agent large language models for biomedical hypothesis generation in drug combination discovery",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4416540180",
+        "evidence": {
+          "from_survey": "openalex:W7141642849"
+        }
+      },
+      "exposes": [],
+      "architecture": [
+        "multi_agent"
+      ]
+    },
+    {
+      "id": "openalex:W4417088107",
+      "type": "paper",
+      "title": "CASSIA: a multi-agent large language model for automated and interpretable cell annotation",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:cassia",
+      "type": "agent",
+      "name": "CASSIA",
+      "one_liner": "CASSIA: a multi-agent large language model for automated and interpretable cell annotation",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4417088107",
+        "evidence": {
+          "from_survey": "openalex:W7141642849"
+        }
+      },
+      "exposes": [],
+      "architecture": [
+        "multi_agent"
+      ]
+    },
+    {
+      "id": "openalex:W4416035220",
+      "type": "paper",
+      "title": "Agent Laboratory: Using LLM Agents as Research Assistants",
+      "in_catalog": true
+    },
+    {
+      "id": "openalex:W4417439318",
+      "type": "paper",
+      "title": "InternAgent: When Agent Becomes the Scientist -- Building Closed-Loop System from Hypothesis to Verification",
+      "in_catalog": true
+    },
+    {
+      "id": "https://github.com/InternScience/InternAgent",
+      "type": "repo",
+      "url": "https://github.com/InternScience/InternAgent",
+      "stars": 1322,
+      "last_commit": "2026-06-10T08:20:53Z",
+      "language": "Python",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "org:internscience",
+      "type": "org",
+      "name": "InternScience",
+      "ror": null
+    },
+    {
+      "id": "benchmark:mlebench",
+      "type": "benchmark",
+      "name": "MLEBench"
+    },
+    {
+      "id": "toolenv:mlevolve",
+      "type": "toolenv",
+      "name": "MLEvolve"
+    },
+    {
+      "id": "openalex:W4392012805",
+      "type": "paper",
+      "title": "ChemMiner: A Large Language Model Agent System for Chemical Literature Data Mining",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:chemminer",
+      "type": "agent",
+      "name": "ChemMiner",
+      "one_liner": "ChemMiner: A Large Language Model Agent System for Chemical Literature Data Mining",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4392012805",
+        "evidence": {
+          "from_survey": "openalex:W7128043854"
+        }
+      },
+      "exposes": [
+        "library"
+      ],
+      "architecture": [
+        "multi_agent"
+      ]
+    },
+    {
+      "id": "https://github.com/Nikki0526/ChemMiner",
+      "type": "repo",
+      "url": "https://github.com/Nikki0526/ChemMiner",
+      "stars": 3,
+      "last_commit": "2026-02-09T08:43:14Z",
+      "language": "Python",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "org:nikki0526",
+      "type": "org",
+      "name": "Nikki0526",
+      "ror": null
+    },
+    {
+      "id": "openalex:W4405599065",
+      "type": "paper",
+      "title": "SciAgents: Automating Scientific Discovery Through Bioinspired Multi\u2010Agent Intelligent Graph Reasoning",
+      "in_catalog": true
+    },
+    {
+      "id": "openalex:W4406692223",
+      "type": "paper",
+      "title": "Autonomous Microscopy Experiments through Large Language Model Agents",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:autonomous-microscopy-experiments",
+      "type": "agent",
+      "name": "Autonomous Microscopy Experiments",
+      "one_liner": "Autonomous Microscopy Experiments through Large Language Model Agents",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4406692223",
+        "evidence": {
+          "from_survey": "openalex:W7128043854"
+        }
+      },
+      "exposes": [
+        "library"
+      ],
+      "architecture": [
+        "multi_agent"
+      ]
+    },
+    {
+      "id": "benchmark:afmbench",
+      "type": "benchmark",
+      "name": "AFMBench"
+    },
+    {
+      "id": "openalex:W4406890618",
+      "type": "paper",
+      "title": "Language-Based Bayesian Optimization Research Assistant (BORA)",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:bora",
+      "type": "agent",
+      "name": "BORA",
+      "one_liner": "Language-Based Bayesian Optimization Research Assistant (BORA)",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4406890618",
+        "evidence": {
+          "from_survey": "openalex:W7128043854"
+        }
+      },
+      "exposes": [
+        "cli"
+      ],
+      "architecture": [
+        "single_agent"
+      ]
+    },
+    {
+      "id": "https://github.com/Weixiang-Sun/Bora",
+      "type": "repo",
+      "url": "https://github.com/Weixiang-Sun/Bora",
+      "stars": 165,
+      "last_commit": "2024-10-20T10:00:23Z",
+      "language": "Python",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "id": "org:weixiang-sun",
+      "type": "org",
+      "name": "Weixiang-Sun",
+      "ror": null
+    },
+    {
+      "id": "toolenv:open-sora",
+      "type": "toolenv",
+      "name": "Open-Sora"
+    },
+    {
+      "id": "agent:dora-ai-scientist",
+      "type": "agent",
+      "name": "DORA AI Scientist",
+      "one_liner": "DORA AI Scientist: Multi-agent Virtual Research Team for Scientific Exploration Discovery and Automated Report Generation",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4408224138",
+        "evidence": {
+          "from_survey": "openalex:W7128043854"
+        }
+      },
+      "exposes": [
+        "web_ui"
+      ],
+      "architecture": [
+        "multi_agent"
+      ]
+    },
+    {
+      "id": "agent:ideasynth",
+      "type": "agent",
+      "name": "IdeaSynth",
+      "one_liner": "IdeaSynth: Iterative Research Idea Development Through Evolving and Composing Idea Facets with Literature-Grounded Feedback",
+      "provenance": {
+        "method": "cocitation",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4409736143",
+        "evidence": {
+          "cites_catalog": [
+            "agent:researchagent",
+            "agent:scimon"
+          ]
+        }
+      },
+      "exposes": [
+        "api",
+        "web_ui"
+      ],
+      "architecture": [
+        "single_agent"
+      ]
+    },
+    {
+      "id": "https://github.com/abhi3114-glitch/IdeaSynth",
+      "type": "repo",
+      "url": "https://github.com/abhi3114-glitch/IdeaSynth",
+      "stars": 1,
+      "last_commit": "2025-12-04T11:04:21Z",
+      "language": "TypeScript",
+      "license": null
+    },
+    {
+      "id": "org:abhi3114-glitch",
+      "type": "org",
+      "name": "abhi3114-glitch",
+      "ror": null
+    },
+    {
+      "id": "openalex:W4402698695",
+      "type": "paper",
+      "title": "MEDCO: Medical Education Copilots Based on A Multi-Agent Framework",
+      "in_catalog": true
+    },
+    {
+      "id": "openalex:W4406548306",
+      "type": "paper",
+      "title": "SOP-Agent: Empower General Purpose AI Agent with Domain-Specific SOPs",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:sop-agent",
+      "type": "agent",
+      "name": "SOP-Agent",
+      "one_liner": "SOP-Agent: Empower General Purpose AI Agent with Domain-Specific SOPs",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4406548306",
+        "evidence": {
+          "from_survey": "openalex:W4414571785"
+        }
+      },
+      "exposes": [],
+      "architecture": [
+        "single_agent"
+      ]
+    },
+    {
+      "id": "openalex:W4391873151",
+      "type": "paper",
+      "title": "Phenomics Assistant: An Interface for LLM-based Biomedical Knowledge Graph Exploration",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:phenomics-assistant",
+      "type": "agent",
+      "name": "Phenomics Assistant",
+      "one_liner": "Phenomics Assistant: An Interface for LLM-based Biomedical Knowledge Graph Exploration",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4391873151",
+        "evidence": {
+          "from_survey": "openalex:W4412683160"
+        }
+      },
+      "exposes": [
+        "web_ui"
+      ],
+      "architecture": [
+        "rag",
+        "single_agent"
+      ]
+    },
+    {
+      "id": "https://github.com/monarch-initiative/phenomics-assistant",
+      "type": "repo",
+      "url": "https://github.com/monarch-initiative/phenomics-assistant",
+      "stars": 28,
+      "last_commit": "2025-09-17T13:23:04Z",
+      "language": "Python",
+      "license": "MIT"
+    },
+    {
+      "id": "org:monarch-initiative",
+      "type": "org",
+      "name": "monarch-initiative",
+      "ror": null
+    },
+    {
+      "id": "toolenv:agent-smith-ai",
+      "type": "toolenv",
+      "name": "agent-smith-ai"
+    },
+    {
+      "id": "openalex:W4394019136",
+      "type": "paper",
+      "title": "VarChat: the generative AI assistant for the interpretation of human genomic variations",
+      "in_catalog": true
+    },
+    {
+      "id": "agent:varchat",
+      "type": "agent",
+      "name": "VarChat",
+      "one_liner": "VarChat: the generative AI assistant for the interpretation of human genomic variations",
+      "provenance": {
+        "method": "survey_harvest",
+        "round": 1,
+        "openalex_id": "https://openalex.org/W4394019136",
+        "evidence": {
+          "from_survey": "openalex:W4412683160"
+        }
+      },
+      "exposes": [
+        "web_ui"
+      ],
+      "architecture": [
+        "rag"
+      ]
+    },
+    {
+      "id": "https://github.com/Varkentin/Varchat",
+      "type": "repo",
+      "url": "https://github.com/Varkentin/Varchat",
+      "stars": 1,
+      "last_commit": "2020-11-01T06:11:22Z",
+      "language": "C#",
+      "license": null
+    },
+    {
+      "id": "org:varkentin",
+      "type": "org",
+      "name": "Varkentin",
+      "ror": null
+    },
+    {
+      "id": "openalex:W4395703652",
+      "type": "paper",
+      "title": "CRISPR-GPT for Agentic Automation of Gene Editing Experiments",
+      "in_catalog": true
+    },
+    {
+      "id": "openalex:W4399115364",
+      "type": "paper",
+      "title": "GeneAgent: Self-verification Language Agent for Gene Set Knowledge Discovery using Domain Databases",
+      "in_catalog": true
+    },
+    {
+      "id": "https://github.com/ncbi-nlp/GeneAgent",
+      "type": "repo",
+      "url": "https://github.com/ncbi-nlp/GeneAgent",
+      "stars": 113,
+      "last_commit": "2025-12-25T08:39:11Z",
+      "language": "Python",
+      "license": "NOASSERTION"
+    },
+    {
+      "id": "org:ncbi-nlp",
+      "type": "org",
+      "name": "ncbi-nlp",
+      "ror": null
     }
   ],
   "edges": [
@@ -10540,6 +12882,1617 @@
       "src": "openalex:W7135182795",
       "rel": "cites",
       "dst": "doi:10.1098/rsos.250646",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:the-ai-scientist",
+      "rel": "described_by",
+      "dst": "openalex:W4402952666",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:coscientist",
+      "rel": "described_by",
+      "dst": "openalex:W4389991792",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:coscientist",
+      "rel": "implemented_by",
+      "dst": "https://github.com/gomesgroup/coscientist",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:coscientist",
+      "rel": "built_by",
+      "dst": "org:gomesgroup",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/gomesgroup/coscientist",
+      "rel": "owned_by",
+      "dst": "org:gomesgroup",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:coscientist",
+      "rel": "targets",
+      "dst": "domain:scientific_discovery",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:agent-hospital",
+      "rel": "described_by",
+      "dst": "openalex:W4396718668",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:agent-hospital",
+      "rel": "implemented_by",
+      "dst": "https://github.com/wisdom-pan/Agent_Hospital",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:agent-hospital",
+      "rel": "built_by",
+      "dst": "org:wisdom-pan",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/wisdom-pan/Agent_Hospital",
+      "rel": "owned_by",
+      "dst": "org:wisdom-pan",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:crispr-gpt",
+      "rel": "described_by",
+      "dst": "openalex:W4396819619",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:crispr-gpt",
+      "rel": "targets",
+      "dst": "domain:scientific_discovery",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:biodiscoveryagent",
+      "rel": "described_by",
+      "dst": "openalex:W4399151368",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:agent-laboratory",
+      "rel": "described_by",
+      "dst": "openalex:W4406231153",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:agent-laboratory",
+      "rel": "implemented_by",
+      "dst": "https://github.com/SamuelSchmidgall/AgentLaboratory",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:agent-laboratory",
+      "rel": "built_by",
+      "dst": "org:samuelschmidgall",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/SamuelSchmidgall/AgentLaboratory",
+      "rel": "owned_by",
+      "dst": "org:samuelschmidgall",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:pathfinder",
+      "rel": "described_by",
+      "dst": "openalex:W4407571388",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:pathfinder",
+      "rel": "implemented_by",
+      "dst": "https://github.com/servo/pathfinder",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:pathfinder",
+      "rel": "built_by",
+      "dst": "org:servo",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/servo/pathfinder",
+      "rel": "owned_by",
+      "dst": "org:servo",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:pathfinder",
+      "rel": "targets",
+      "dst": "domain:medical_imaging",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:spatialagent",
+      "rel": "described_by",
+      "dst": "openalex:W4409201831",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:spatialagent",
+      "rel": "implemented_by",
+      "dst": "https://github.com/Genentech/SpatialAgent",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:spatialagent",
+      "rel": "built_by",
+      "dst": "org:genentech",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/Genentech/SpatialAgent",
+      "rel": "owned_by",
+      "dst": "org:genentech",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:spatialagent",
+      "rel": "targets",
+      "dst": "domain:hypothesis_gen",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:spatialagent",
+      "rel": "targets",
+      "dst": "domain:literature",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:spatialagent",
+      "rel": "targets",
+      "dst": "domain:single_cell",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:spatialagent",
+      "rel": "targets",
+      "dst": "domain:spatial",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:biomni",
+      "rel": "described_by",
+      "dst": "openalex:W4411005431",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:biomni",
+      "rel": "targets",
+      "dst": "domain:clinical_qa",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:biomni",
+      "rel": "targets",
+      "dst": "domain:drug_discovery",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:biomni",
+      "rel": "targets",
+      "dst": "domain:literature",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:the-ai-scientist-v2",
+      "rel": "described_by",
+      "dst": "openalex:W4414827381",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:the-ai-scientist-v2",
+      "rel": "targets",
+      "dst": "domain:scientific_discovery",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:txgemma",
+      "rel": "described_by",
+      "dst": "openalex:W4416530753",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:txgemma",
+      "rel": "targets",
+      "dst": "domain:scientific_discovery",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:txgemma",
+      "rel": "evaluated_on",
+      "dst": "benchmark:humanity-s-last-exam",
+      "primary": false,
+      "provenance": {
+        "source": "abstract",
+        "evidence": "Agentic-Tx surpasses prior leading models on the Humanity's Last Exam benchmark"
+      }
+    },
+    {
+      "src": "agent:txgemma",
+      "rel": "evaluated_on",
+      "dst": "benchmark:gpqa",
+      "primary": false,
+      "provenance": {
+        "source": "abstract",
+        "evidence": "26.7% over o3-mini (high) on GPQA (Chemistry)"
+      }
+    },
+    {
+      "src": "agent:txgemma",
+      "rel": "evaluated_on",
+      "dst": "benchmark:chembench-preference",
+      "primary": false,
+      "provenance": {
+        "source": "abstract",
+        "evidence": "excels with improvements of 6.3% (ChemBench-Preference)"
+      }
+    },
+    {
+      "src": "agent:txgemma",
+      "rel": "evaluated_on",
+      "dst": "benchmark:chembench-mini",
+      "primary": false,
+      "provenance": {
+        "source": "abstract",
+        "evidence": "2.4% (ChemBench-Mini) over o3-mini (high)"
+      }
+    },
+    {
+      "src": "agent:txagent",
+      "rel": "described_by",
+      "dst": "openalex:W4417060272",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:mga",
+      "rel": "described_by",
+      "dst": "openalex:W4327672390",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:mga",
+      "rel": "targets",
+      "dst": "domain:clinical_qa",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:mga",
+      "rel": "targets",
+      "dst": "domain:medical_imaging",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:diaggpt",
+      "rel": "described_by",
+      "dst": "openalex:W4385965601",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:diaggpt",
+      "rel": "implemented_by",
+      "dst": "https://github.com/zzlang-c/DiagGPT",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:diaggpt",
+      "rel": "built_by",
+      "dst": "org:zzlang-c",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/zzlang-c/DiagGPT",
+      "rel": "owned_by",
+      "dst": "org:zzlang-c",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:diaggpt",
+      "rel": "targets",
+      "dst": "domain:clinical_qa",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:multi-specialist-agent-consultation",
+      "rel": "described_by",
+      "dst": "openalex:W4391376774",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:cxr-agent",
+      "rel": "described_by",
+      "dst": "openalex:W4400667291",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:cxr-agent",
+      "rel": "implemented_by",
+      "dst": "https://github.com/Gowthamaan-Aerobiosys/cxr_agent",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:cxr-agent",
+      "rel": "built_by",
+      "dst": "org:gowthamaan-aerobiosys",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/Gowthamaan-Aerobiosys/cxr_agent",
+      "rel": "owned_by",
+      "dst": "org:gowthamaan-aerobiosys",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:cxr-agent",
+      "rel": "targets",
+      "dst": "domain:clinical_qa",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:magda",
+      "rel": "described_by",
+      "dst": "openalex:W4403075667",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:magda",
+      "rel": "implemented_by",
+      "dst": "https://github.com/magda-io/magda",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:magda",
+      "rel": "built_by",
+      "dst": "org:magda-io",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/magda-io/magda",
+      "rel": "owned_by",
+      "dst": "org:magda-io",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:imas",
+      "rel": "described_by",
+      "dst": "openalex:W4403578766",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:imas",
+      "rel": "targets",
+      "dst": "domain:clinical_qa",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:imas",
+      "rel": "evaluated_on",
+      "dst": "benchmark:medqa",
+      "primary": false,
+      "provenance": {
+        "source": "abstract",
+        "evidence": "Evaluation results using the MedQA, PubMedQA, and JAMA datasets"
+      }
+    },
+    {
+      "src": "agent:imas",
+      "rel": "evaluated_on",
+      "dst": "benchmark:pubmedqa",
+      "primary": false,
+      "provenance": {
+        "source": "abstract",
+        "evidence": "Evaluation results using the MedQA, PubMedQA, and JAMA datasets"
+      }
+    },
+    {
+      "src": "agent:zodiac",
+      "rel": "described_by",
+      "dst": "openalex:W4403854189",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:zodiac",
+      "rel": "implemented_by",
+      "dst": "https://github.com/gnosisguild/zodiac",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:zodiac",
+      "rel": "built_by",
+      "dst": "org:gnosisguild",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/gnosisguild/zodiac",
+      "rel": "owned_by",
+      "dst": "org:gnosisguild",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:zodiac",
+      "rel": "targets",
+      "dst": "domain:clinical_qa",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:mmedagent",
+      "rel": "described_by",
+      "dst": "openalex:W4404781082",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:mmedagent",
+      "rel": "implemented_by",
+      "dst": "https://github.com/Wangyixinxin/MMedAgent",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:mmedagent",
+      "rel": "built_by",
+      "dst": "org:wangyixinxin",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/Wangyixinxin/MMedAgent",
+      "rel": "owned_by",
+      "dst": "org:wangyixinxin",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:mmedagent",
+      "rel": "targets",
+      "dst": "domain:medical_imaging",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:clinicalagent",
+      "rel": "described_by",
+      "dst": "openalex:W4405427526",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:clinicalagent",
+      "rel": "implemented_by",
+      "dst": "https://github.com/jithubaiju55/ClinicalAgent",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:clinicalagent",
+      "rel": "built_by",
+      "dst": "org:jithubaiju55",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/jithubaiju55/ClinicalAgent",
+      "rel": "owned_by",
+      "dst": "org:jithubaiju55",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:clinicalagent",
+      "rel": "targets",
+      "dst": "domain:clinical_qa",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:clinicalagent",
+      "rel": "built_on",
+      "dst": "toolenv:langgraph",
+      "primary": false,
+      "provenance": {
+        "source": "readme",
+        "evidence": "built with LangGraph"
+      }
+    },
+    {
+      "src": "agent:almanac-copilot",
+      "rel": "described_by",
+      "dst": "openalex:W4408511971",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:almanac-copilot",
+      "rel": "targets",
+      "dst": "domain:clinical_qa",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:colacare",
+      "rel": "described_by",
+      "dst": "openalex:W4409657397",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:colacare",
+      "rel": "implemented_by",
+      "dst": "https://github.com/PKU-AICare/ColaCare",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:colacare",
+      "rel": "built_by",
+      "dst": "org:pku-aicare",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/PKU-AICare/ColaCare",
+      "rel": "owned_by",
+      "dst": "org:pku-aicare",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:medaide",
+      "rel": "described_by",
+      "dst": "openalex:W4414304057",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:medaide",
+      "rel": "implemented_by",
+      "dst": "https://github.com/ydk122024/MedAIDE",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:medaide",
+      "rel": "built_by",
+      "dst": "org:ydk122024",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/ydk122024/MedAIDE",
+      "rel": "owned_by",
+      "dst": "org:ydk122024",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:sciagents",
+      "rel": "described_by",
+      "dst": "openalex:W4403618417",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:sciagents",
+      "rel": "implemented_by",
+      "dst": "https://github.com/openags/SciAgents",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:sciagents",
+      "rel": "built_by",
+      "dst": "org:openags",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/openags/SciAgents",
+      "rel": "owned_by",
+      "dst": "org:openags",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:sciagents",
+      "rel": "targets",
+      "dst": "domain:hypothesis_gen",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:sciagents",
+      "rel": "targets",
+      "dst": "domain:scientific_discovery",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:sciagents",
+      "rel": "built_on",
+      "dst": "toolenv:camel",
+      "primary": false,
+      "provenance": {
+        "source": "readme",
+        "evidence": "This repository is inspired by [CAMEL: Communicative Agents for \"Mind\" Exploration of Large Scale Language Model Society](https://github.com/camel-ai/camel)."
+      }
+    },
+    {
+      "src": "agent:ai-co-scientist",
+      "rel": "described_by",
+      "dst": "openalex:W4416043407",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:ai-co-scientist",
+      "rel": "implemented_by",
+      "dst": "https://github.com/The-Swarm-Corporation/AI-CoScientist",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:ai-co-scientist",
+      "rel": "built_by",
+      "dst": "org:the-swarm-corporation",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/The-Swarm-Corporation/AI-CoScientist",
+      "rel": "owned_by",
+      "dst": "org:the-swarm-corporation",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:ai-co-scientist",
+      "rel": "targets",
+      "dst": "domain:scientific_discovery",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:robin",
+      "rel": "described_by",
+      "dst": "openalex:W4417287919",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:robin",
+      "rel": "implemented_by",
+      "dst": "https://github.com/apurvsinghgautam/robin",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:robin",
+      "rel": "built_by",
+      "dst": "org:apurvsinghgautam",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/apurvsinghgautam/robin",
+      "rel": "owned_by",
+      "dst": "org:apurvsinghgautam",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:chatnt",
+      "rel": "described_by",
+      "dst": "openalex:W4396622252",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:chatnt",
+      "rel": "implemented_by",
+      "dst": "https://github.com/RuiSiang/chatNT",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:chatnt",
+      "rel": "built_by",
+      "dst": "org:ruisiang",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/RuiSiang/chatNT",
+      "rel": "owned_by",
+      "dst": "org:ruisiang",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:chatnt",
+      "rel": "targets",
+      "dst": "domain:genomics_db",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:chatnt",
+      "rel": "evaluated_on",
+      "dst": "benchmark:nucleotide-transformer",
+      "primary": false,
+      "provenance": {
+        "source": "abstract",
+        "evidence": "ChatNT achieves new state-of-the-art results on the Nucleotide Transformer benchmark"
+      }
+    },
+    {
+      "src": "agent:almanac-copilot",
+      "rel": "described_by",
+      "dst": "openalex:W4396914123",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:bioinformatics-agent",
+      "rel": "described_by",
+      "dst": "openalex:W4398203645",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:bioinformatics-agent",
+      "rel": "implemented_by",
+      "dst": "https://github.com/vin-bio/bioinformatics-agent",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:bioinformatics-agent",
+      "rel": "built_by",
+      "dst": "org:vin-bio",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/vin-bio/bioinformatics-agent",
+      "rel": "owned_by",
+      "dst": "org:vin-bio",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:bioinformatics-agent",
+      "rel": "targets",
+      "dst": "domain:proteomics",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:bioinformatics-agent",
+      "rel": "targets",
+      "dst": "domain:single_cell",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:sunnie",
+      "rel": "described_by",
+      "dst": "openalex:W4399029231",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:rdguru",
+      "rel": "described_by",
+      "dst": "openalex:W4402626956",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:rdguru",
+      "rel": "targets",
+      "dst": "domain:clinical_qa",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:autoba",
+      "rel": "described_by",
+      "dst": "openalex:W4403099947",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:autoba",
+      "rel": "targets",
+      "dst": "domain:multi_omics",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:kgarevion",
+      "rel": "described_by",
+      "dst": "openalex:W4403322813",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:kgarevion",
+      "rel": "targets",
+      "dst": "domain:clinical_qa",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:kgarevion",
+      "rel": "evaluated_on",
+      "dst": "benchmark:afrimed-qa",
+      "primary": false,
+      "provenance": {
+        "source": "abstract",
+        "evidence": "We evaluated KGARevion on AfriMed-QA, a newly introduced dataset focused on African healthcare"
+      }
+    },
+    {
+      "src": "agent:protchat",
+      "rel": "described_by",
+      "dst": "openalex:W4405483747",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:protchat",
+      "rel": "targets",
+      "dst": "domain:drug_discovery",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:rareagents",
+      "rel": "described_by",
+      "dst": "openalex:W4405562084",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:rareagents",
+      "rel": "targets",
+      "dst": "domain:clinical_qa",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:toursynbio",
+      "rel": "described_by",
+      "dst": "openalex:W4406259721",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:toursynbio",
+      "rel": "targets",
+      "dst": "domain:protein_structure",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:toursynbio",
+      "rel": "evaluated_on",
+      "dst": "benchmark:proteinlmbench",
+      "primary": false,
+      "provenance": {
+        "source": "abstract",
+        "evidence": "TourSynbio7B outperforms GPT-4 on the ProteinLMBench, a benchmark of 944 manually verified multiple-choice questions, with 62.18% accuracy."
+      }
+    },
+    {
+      "src": "agent:biomaster",
+      "rel": "described_by",
+      "dst": "openalex:W4406833248",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:biomaster",
+      "rel": "targets",
+      "dst": "domain:single_cell",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:medco",
+      "rel": "described_by",
+      "dst": "openalex:W4410706618",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:promptbio",
+      "rel": "described_by",
+      "dst": "openalex:W4412143524",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:promptbio",
+      "rel": "targets",
+      "dst": "domain:multi_omics",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:geneagent",
+      "rel": "described_by",
+      "dst": "openalex:W4412692453",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:geneagent",
+      "rel": "targets",
+      "dst": "domain:literature",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:prime",
+      "rel": "described_by",
+      "dst": "openalex:W4414484806",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:prime",
+      "rel": "targets",
+      "dst": "domain:protein_structure",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:prime",
+      "rel": "targets",
+      "dst": "domain:scientific_discovery",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:protagents",
+      "rel": "described_by",
+      "dst": "openalex:W4391670645",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:protagents",
+      "rel": "targets",
+      "dst": "domain:protein_structure",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:protagents",
+      "rel": "targets",
+      "dst": "domain:scientific_discovery",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:cellagent",
+      "rel": "described_by",
+      "dst": "openalex:W4396974446",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:cellagent",
+      "rel": "targets",
+      "dst": "domain:scientific_discovery",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:cellagent",
+      "rel": "targets",
+      "dst": "domain:spatial",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:cellagent",
+      "rel": "built_on",
+      "dst": "toolenv:sc-omni",
+      "primary": false,
+      "provenance": {
+        "source": "abstract",
+        "evidence": "we developed sc-Omni, a high-performance, expert-curated toolkit that consolidates essential tools for scRNA-seq and spatial transcriptomics analysis"
+      }
+    },
+    {
+      "src": "agent:drugagent",
+      "rel": "described_by",
+      "dst": "openalex:W4404986804",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:liddia",
+      "rel": "described_by",
+      "dst": "openalex:W4407785626",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:liddia",
+      "rel": "targets",
+      "dst": "domain:drug_discovery",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:cellvoyager",
+      "rel": "described_by",
+      "dst": "openalex:W4411076429",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:cellvoyager",
+      "rel": "targets",
+      "dst": "domain:hypothesis_gen",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:cellvoyager",
+      "rel": "targets",
+      "dst": "domain:single_cell",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:cellvoyager",
+      "rel": "evaluated_on",
+      "dst": "benchmark:cellbench",
+      "primary": false,
+      "provenance": {
+        "source": "abstract",
+        "evidence": "We evaluate CellVoyager on CellBench, a new benchmark based on 50 published scRNA-seq studies encompassing 483 analyses."
+      }
+    },
+    {
+      "src": "agent:crispr-gpt",
+      "rel": "described_by",
+      "dst": "openalex:W4412759774",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:bioscientist-agent",
+      "rel": "described_by",
+      "dst": "openalex:W4413127590",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:bioscientist-agent",
+      "rel": "targets",
+      "dst": "domain:drug_discovery",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:bioscientist-agent",
+      "rel": "targets",
+      "dst": "domain:hypothesis_gen",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:bioagents",
+      "rel": "described_by",
+      "dst": "openalex:W4415991135",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:bioagents",
+      "rel": "targets",
+      "dst": "domain:genomics_db",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:labos",
+      "rel": "described_by",
+      "dst": "openalex:W4416146224",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:labos",
+      "rel": "targets",
+      "dst": "domain:scientific_discovery",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:multi-agent-llm-framework",
+      "rel": "described_by",
+      "dst": "openalex:W4416540180",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:multi-agent-llm-framework",
+      "rel": "targets",
+      "dst": "domain:hypothesis_gen",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:multi-agent-llm-framework",
+      "rel": "targets",
+      "dst": "domain:scientific_discovery",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:cassia",
+      "rel": "described_by",
+      "dst": "openalex:W4417088107",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:cassia",
+      "rel": "targets",
+      "dst": "domain:single_cell",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:agent-laboratory",
+      "rel": "described_by",
+      "dst": "openalex:W4416035220",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:internagent",
+      "rel": "described_by",
+      "dst": "openalex:W4417439318",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:internagent",
+      "rel": "implemented_by",
+      "dst": "https://github.com/InternScience/InternAgent",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:internagent",
+      "rel": "built_by",
+      "dst": "org:internscience",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/InternScience/InternAgent",
+      "rel": "owned_by",
+      "dst": "org:internscience",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:internagent",
+      "rel": "evaluated_on",
+      "dst": "benchmark:mlebench",
+      "primary": false,
+      "provenance": {
+        "source": "readme",
+        "evidence": "As the open-source method to achieve #1 on MLEBench, MLEvolve demonstrates powerful capabilities in solution optimization within bounded hypothesis spaces."
+      }
+    },
+    {
+      "src": "agent:internagent",
+      "rel": "built_on",
+      "dst": "toolenv:mlevolve",
+      "primary": false,
+      "provenance": {
+        "source": "readme",
+        "evidence": "We open-source MLEvolve, the core implementation of InternAgent's solution optimization subsystem for algorithm design tasks."
+      }
+    },
+    {
+      "src": "agent:chemminer",
+      "rel": "described_by",
+      "dst": "openalex:W4392012805",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:chemminer",
+      "rel": "implemented_by",
+      "dst": "https://github.com/Nikki0526/ChemMiner",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:chemminer",
+      "rel": "built_by",
+      "dst": "org:nikki0526",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/Nikki0526/ChemMiner",
+      "rel": "owned_by",
+      "dst": "org:nikki0526",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:chemminer",
+      "rel": "targets",
+      "dst": "domain:literature",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:sciagents",
+      "rel": "described_by",
+      "dst": "openalex:W4405599065",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:autonomous-microscopy-experiments",
+      "rel": "described_by",
+      "dst": "openalex:W4406692223",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:autonomous-microscopy-experiments",
+      "rel": "targets",
+      "dst": "domain:scientific_discovery",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:autonomous-microscopy-experiments",
+      "rel": "evaluated_on",
+      "dst": "benchmark:afmbench",
+      "primary": false,
+      "provenance": {
+        "source": "abstract",
+        "evidence": "we develop AFMBench-a comprehensive evaluation suite that challenges AI agents"
+      }
+    },
+    {
+      "src": "agent:bora",
+      "rel": "described_by",
+      "dst": "openalex:W4406890618",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:bora",
+      "rel": "implemented_by",
+      "dst": "https://github.com/Weixiang-Sun/Bora",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:bora",
+      "rel": "built_by",
+      "dst": "org:weixiang-sun",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/Weixiang-Sun/Bora",
+      "rel": "owned_by",
+      "dst": "org:weixiang-sun",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:bora",
+      "rel": "targets",
+      "dst": "domain:medical_imaging",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:bora",
+      "rel": "built_on",
+      "dst": "toolenv:open-sora",
+      "primary": false,
+      "provenance": {
+        "source": null,
+        "evidence": "Open-Sora: Democratizing Efficient Video Production for All"
+      }
+    },
+    {
+      "src": "agent:dora-ai-scientist",
+      "rel": "described_by",
+      "dst": "openalex:W4408224138",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:dora-ai-scientist",
+      "rel": "targets",
+      "dst": "domain:hypothesis_gen",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:dora-ai-scientist",
+      "rel": "targets",
+      "dst": "domain:literature",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:dora-ai-scientist",
+      "rel": "targets",
+      "dst": "domain:scientific_discovery",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:ideasynth",
+      "rel": "described_by",
+      "dst": "openalex:W4409736143",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:ideasynth",
+      "rel": "implemented_by",
+      "dst": "https://github.com/abhi3114-glitch/IdeaSynth",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:ideasynth",
+      "rel": "built_by",
+      "dst": "org:abhi3114-glitch",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/abhi3114-glitch/IdeaSynth",
+      "rel": "owned_by",
+      "dst": "org:abhi3114-glitch",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:medco",
+      "rel": "described_by",
+      "dst": "openalex:W4402698695",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:sop-agent",
+      "rel": "described_by",
+      "dst": "openalex:W4406548306",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:phenomics-assistant",
+      "rel": "described_by",
+      "dst": "openalex:W4391873151",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:phenomics-assistant",
+      "rel": "implemented_by",
+      "dst": "https://github.com/monarch-initiative/phenomics-assistant",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:phenomics-assistant",
+      "rel": "built_by",
+      "dst": "org:monarch-initiative",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/monarch-initiative/phenomics-assistant",
+      "rel": "owned_by",
+      "dst": "org:monarch-initiative",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:phenomics-assistant",
+      "rel": "targets",
+      "dst": "domain:clinical_qa",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:phenomics-assistant",
+      "rel": "built_on",
+      "dst": "toolenv:agent-smith-ai",
+      "primary": false,
+      "provenance": {
+        "source": "README",
+        "evidence": "interfacing with [LLM-focused endpoints](https://github.com/monarch-initiative/oai-monarch-plugin) to the main [Monarch API](https://api-v3.monarchinitiative.org/v3/docs) via an [agent-based framework](https://github.com/monarch-initiative/agent-smith-ai)."
+      }
+    },
+    {
+      "src": "agent:varchat",
+      "rel": "described_by",
+      "dst": "openalex:W4394019136",
+      "primary": true,
+      "provenance": null
+    },
+    {
+      "src": "agent:varchat",
+      "rel": "implemented_by",
+      "dst": "https://github.com/Varkentin/Varchat",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:varchat",
+      "rel": "built_by",
+      "dst": "org:varkentin",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/Varkentin/Varchat",
+      "rel": "owned_by",
+      "dst": "org:varkentin",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:varchat",
+      "rel": "targets",
+      "dst": "domain:literature",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:varchat",
+      "rel": "queries",
+      "dst": "database:pubmed",
+      "primary": false,
+      "provenance": {
+        "source": "abstract",
+        "evidence": "VarChat (varchat.engenome.com), an innovative tool based on generative AI, developed to find and summarize the fragmented scientific literature"
+      }
+    },
+    {
+      "src": "agent:crispr-gpt",
+      "rel": "described_by",
+      "dst": "openalex:W4395703652",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:geneagent",
+      "rel": "described_by",
+      "dst": "openalex:W4399115364",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:geneagent",
+      "rel": "implemented_by",
+      "dst": "https://github.com/ncbi-nlp/GeneAgent",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:geneagent",
+      "rel": "built_by",
+      "dst": "org:ncbi-nlp",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "https://github.com/ncbi-nlp/GeneAgent",
+      "rel": "owned_by",
+      "dst": "org:ncbi-nlp",
+      "primary": false,
+      "provenance": null
+    },
+    {
+      "src": "agent:geneagent",
+      "rel": "targets",
+      "dst": "domain:genomics_db",
       "primary": false,
       "provenance": null
     }

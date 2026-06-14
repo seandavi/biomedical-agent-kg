@@ -6,6 +6,6 @@ exposes: [web_ui]
 architecture: [multi_agent, rag]
 ---
 
-MedAide is a multi-agent framework designed to enhance healthcare intelligence through intent-aware information fusion and coordinated reasoning. By utilizing a regularization-guided module that integrates syntactic constraints with rag, the system decomposes complex queries into structured representations to mitigate hallucinations and information redundancy.
+MedAide is a multi-agent system designed to facilitate information fusion and address medical intents through LLM-based collaboration. Built by [[org:ydk122024]], the framework utilizes a rag architecture to process complex queries and provides a web_ui for user interaction.
 
-The architecture employs a dynamic intent prototype matching module for adaptive recognition during multi-round dialogues and a rotation agent collaboration mechanism for decision-level information fusion. These capabilities allow MedAide to address complex medical intents, specifically targeting [[domain:clinical_qa]] tasks. The system is accessible via a web_ui and has demonstrated improved medical proficiency and strategic reasoning across multiple benchmarks.
+The system specifically targets [[domain:clinical_qa]] tasks by coordinating specialized agents. By leveraging its multi-agent design, MedAide aims to provide comprehensive support for medical information processing.

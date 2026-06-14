@@ -2,10 +2,10 @@
 slug: cellagent
 name: CellAgent
 type: agent
-exposes: [library]
+exposes: [library, web_ui]
 architecture: [multi_agent]
 ---
 
-CellAgent is an LLM-driven multi-agent framework designed to automate the analysis of [[domain:single_cell]] data. By leveraging a multi_agent architecture, the system streamlines complex computational workflows to improve efficiency in biological research.
+CellAgent is an autonomous, LLM-driven framework designed to streamline the analysis of [[domain:single_cell]] and [[domain:spatial]] transcriptomics data. By utilizing a multi-agent hierarchical decision-making architecture, the system translates natural language interactions into end-to-end analytical workflows, reducing the need for manual programming and tool manipulation.
 
-The framework is distributed as a library, providing researchers with a structured approach to processing and interpreting high-dimensional data. It focuses on automating analytical tasks within the [[domain:single_cell]] domain to support scalable biomedical investigations.
+The framework incorporates the sc-Omni toolkit and a self-reflective optimization mechanism to iteratively refine results. Available as both a library and a web_ui, CellAgent aims to facilitate [[domain:scientific_discovery]] by providing a scalable, automated approach to complex biological data analytics.
