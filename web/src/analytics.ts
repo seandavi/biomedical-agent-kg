@@ -1,8 +1,15 @@
-/** Google Analytics 4 (gtag.js), loaded only when VITE_GA_ID is set at build time,
+/** Google Analytics 4 (gtag.js), loaded only on the production host,
  * and never when Do-Not-Track is on. track() is a no-op until init succeeds, so call
  * sites stay clean. Outbound link clicks are captured globally here. */
 
-const GA_ID = import.meta.env.VITE_GA_ID as string | undefined;
+const GA_ID = "G-KLLV1GCF4E";
+
+function isProductionHost(): boolean {
+  const h = location.hostname;
+  if (!h || h === "localhost" || h === "127.0.0.1" || h === "[::1]") return false;
+  if (/^\d+\.\d+\.\d+\.\d+$/.test(h) || h.includes(":")) return false;
+  return !/\.(workers\.dev|netlify\.app|ts\.net)$/.test(h);
+}
 let enabled = false;
 
 declare global {
@@ -13,7 +20,7 @@ declare global {
 }
 
 export function initAnalytics(): void {
-  if (!GA_ID) return; // no tag configured (dev, or not yet provided)
+  if (!isProductionHost()) return; // dev / preview hosts never track
   try {
     const dnt = navigator.doNotTrack ?? (window as unknown as { doNotTrack?: string }).doNotTrack;
     if (dnt === "1" || dnt === "yes") return; // respect Do-Not-Track
@@ -32,7 +39,7 @@ export function initAnalytics(): void {
     window.dataLayer!.push(arguments);
   };
   window.gtag("js", new Date());
-  window.gtag("config", GA_ID);
+  window.gtag("config", GA_ID, { content_group: "biomed-agents" });
   enabled = true;
 
   // Outbound clicks: GitHub, repos, papers, OpenAlex, provenance + About links.
